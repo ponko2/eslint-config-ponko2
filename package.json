@@ -6,6 +6,10 @@
   "bugs": {
     "url": "https://github.com/ponko2/eslint-config-ponko2/issues"
   },
+  "devDependencies": {
+    "ava": "^0.11.0",
+    "eslint": "^1.10.3"
+  },
   "homepage": "https://github.com/ponko2/eslint-config-ponko2#readme",
   "license": "MIT",
   "main": "index.js",
@@ -14,6 +18,7 @@
     "url": "git+https://github.com/ponko2/eslint-config-ponko2.git"
   },
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "lint": "eslint .",
+    "test": "ava --verbose test/**/*.js"
   }
 }
