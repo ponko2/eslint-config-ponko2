@@ -1,19 +1,19 @@
 {
   "name": "eslint-config-ponko2",
-  "version": "1.5.0",
   "description": "ESLint Shareable Config",
-  "main": "index.js",
-  "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+  "version": "1.5.0",
+  "author": "Takahito Nakano",
+  "bugs": {
+    "url": "https://github.com/ponko2/eslint-config-ponko2/issues"
   },
+  "homepage": "https://github.com/ponko2/eslint-config-ponko2#readme",
+  "license": "MIT",
+  "main": "index.js",
   "repository": {
     "type": "git",
     "url": "git+https://github.com/ponko2/eslint-config-ponko2.git"
   },
-  "author": "Takahito Nakano",
-  "license": "MIT",
-  "bugs": {
-    "url": "https://github.com/ponko2/eslint-config-ponko2/issues"
-  },
-  "homepage": "https://github.com/ponko2/eslint-config-ponko2#readme"
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  }
 }
