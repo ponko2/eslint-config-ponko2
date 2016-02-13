@@ -3,9 +3,7 @@ import {CLIEngine} from 'eslint';
 import eslintrc    from '../';
 
 const validCode = (
-`'use strict';
-
-const message = 'Hello, World!';
+`const message = 'Hello, World!';
 
 if (message !== '') {
   console.log(message);
@@ -13,11 +11,9 @@ if (message !== '') {
 `);
 
 const invalidCode = (
-`'use strict';
+`const message = 'Hello, World!';
 
-const message = 'Hello, World!';
-
-if (message != '') {
+if(message !== '') {
   console.log(message);
 }
 `);
@@ -41,5 +37,5 @@ test('a warning with invalid code', t => {
   const result = cli.executeOnText(invalidCode).results[0];
 
   t.ok(result.errorCount, 'fails');
-  t.is(result.messages[0].ruleId, 'eqeqeq');
+  t.is(result.messages[0].ruleId, 'keyword-spacing');
 });

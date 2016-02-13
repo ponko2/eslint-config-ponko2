@@ -1,10 +1,5 @@
 {
-  "env": {
-    "node": true
-  },
-  "ecmaFeatures": {
-    "modules": true
-  },
+  "extends": "ponko2/rules/es6",
   "rules": {
     "no-unused-vars": [2, {
       "vars": "all",

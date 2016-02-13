@@ -1,6 +1,6 @@
 {
-  "env": {
-    "node": true
-  },
-  "extends": "ponko2"
+  "extends": "ponko2/legacy",
+  "rules": {
+    "quote-props": [2, "always"]
+  }
 }
