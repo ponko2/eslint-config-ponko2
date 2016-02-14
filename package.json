@@ -3,19 +3,25 @@
   "description": "ESLint Shareable Config",
   "version": "2.0.0",
   "author": "Takahito Nakano",
-  "bugs": {
-    "url": "https://github.com/ponko2/eslint-config-ponko2/issues"
-  },
   "devDependencies": {
     "ava": "^0.11.0",
     "eslint": "^2.0.0"
   },
-  "homepage": "https://github.com/ponko2/eslint-config-ponko2#readme",
+  "files": [
+    "base.js",
+    "index.js",
+    "legacy.js",
+    "rules"
+  ],
+  "keywords": [
+    "eslint",
+    "eslint-config"
+  ],
   "license": "MIT",
   "main": "index.js",
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/ponko2/eslint-config-ponko2.git"
+    "url": "https://github.com/ponko2/eslint-config-ponko2.git"
   },
   "scripts": {
     "lint": "eslint .",
