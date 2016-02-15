@@ -19,6 +19,9 @@
   ],
   "license": "MIT",
   "main": "index.js",
+  "peerDependencies": {
+    "eslint": "^2.0.0"
+  },
   "repository": {
     "type": "git",
     "url": "https://github.com/ponko2/eslint-config-ponko2.git"
