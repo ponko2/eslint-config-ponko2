@@ -81,7 +81,20 @@ module.exports = {
     'use-isnan': 2,
 
     // Ensure JSDoc comments are valid
-    'valid-jsdoc': [2, {'prefer': {'return': 'returns'}}],
+    'valid-jsdoc': [2, {
+      'requireReturn': true,
+      'prefer': {
+        'return': 'returns'
+      },
+      'preferType': {
+        'Boolean': 'boolean',
+        'Number': 'number',
+        'String': 'string',
+        'Object': 'object',
+        'Symbol': 'symbol',
+        'Function': 'function'
+      },
+    }],
 
     // Ensure that the results of typeof are compared against a valid string
     'valid-typeof': 2,

@@ -147,7 +147,7 @@ module.exports = {
     'no-proto': 2,
 
     // disallow declaring the same variable more than once
-    'no-redeclare': 2,
+    'no-redeclare': [2, {'builtinGlobals': true}],
 
     // disallow use of assignment in return statement
     'no-return-assign': 2,
@@ -183,7 +183,7 @@ module.exports = {
     'no-useless-concat': 2,
 
     // disallow use of the void operator
-    'no-void': 0,
+    'no-void': 2,
 
     // disallow usage of configurable warning terms in comments - e.g. TODO or FIXME
     'no-warning-comments': [0, {'terms': ['todo', 'fixme', 'xxx'], 'location': 'start'}],

@@ -156,7 +156,7 @@ module.exports = {
     'operator-assignment': [2, 'always'],
 
     // enforce operators to be placed before or after line breaks
-    'operator-linebreak': [2, 'after'],
+    'operator-linebreak': [2, 'after', {'overrides': {'?': 'ignore', ':': 'ignore'}}],
 
     // enforce padding within blocks
     'padded-blocks': [2, 'never'],
