@@ -14,6 +14,9 @@ module.exports = {
     // disallow labels that share a name with a variable
     'no-label-var': 2,
 
+    // restrict usage of specified global variables
+    'no-restricted-globals': 0,
+
     // disallow declaration of variables already declared in the outer scope
     'no-shadow': 2,
 
