@@ -44,11 +44,11 @@ module.exports = {
     // disallow use of this/super before calling super() in constructors
     'no-this-before-super': 2,
 
-    // require let or const instead of var
-    'no-var': 2,
-
     // disallow unnecessary constructor
     'no-useless-constructor': 2,
+
+    // require let or const instead of var
+    'no-var': 2,
 
     // require method and property shorthand syntax for object literals
     'object-shorthand': [2, 'always', {'ignoreConstructors': true}],

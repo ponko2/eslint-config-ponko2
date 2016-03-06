@@ -122,20 +122,20 @@ module.exports = {
     // disallow reassignments of native objects
     'no-native-reassign': 2,
 
+    // disallow use of the new operator when not part of an assignment or comparison
+    'no-new': 2,
+
     // disallow use of new operator for Function object
     'no-new-func': 2,
 
     // disallows creating new instances of String, Number, and Boolean
     'no-new-wrappers': 2,
 
-    // disallow use of the new operator when not part of an assignment or comparison
-    'no-new': 2,
+    // disallow use of octal literals
+    'no-octal': 2,
 
     // disallow use of octal escape sequences in string literals, such as var foo = "Copyright \251";
     'no-octal-escape': 2,
-
-    // disallow use of octal literals
-    'no-octal': 2,
 
     // disallow reassignment of function parameters
     'no-param-reassign': [2, {'props': true}],

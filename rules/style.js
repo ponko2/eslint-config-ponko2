@@ -35,14 +35,14 @@ module.exports = {
     // enforce use of function declarations or expressions
     'func-style': 0,
 
+    // blacklist certain identifiers to prevent them being used
+    'id-blacklist': 0,
+
     // this option enforces minimum and maximum identifier lengths (variable names, property names etc.)
     'id-length': [2, {'min': 2, 'properties': 'never', 'exceptions': ['$', '_']}],
 
     // require identifiers to match the provided regular expression
     'id-match': 0,
-
-    // blacklist certain identifiers to prevent them being used
-    'id-blacklist': 0,
 
     // specify tab or space width for your code
     'indent': [2, 2, {'SwitchCase': 1, 'VariableDeclarator': 1}],
@@ -125,9 +125,6 @@ module.exports = {
     // disallow use of certain syntax in code
     'no-restricted-syntax': [2, 'WithStatement'],
 
-    // disallow whitespace before properties
-    'no-whitespace-before-property': 2,
-
     // disallow space between function identifier and application
     'no-spaced-func': 2,
 
@@ -142,6 +139,9 @@ module.exports = {
 
     // disallow the use of ternary operators when a simpler alternative exists
     'no-unneeded-ternary': [2, {'defaultAssignment': false}],
+
+    // disallow whitespace before properties
+    'no-whitespace-before-property': 2,
 
     // require or disallow padding inside curly braces
     'object-curly-spacing': [2, 'never'],
@@ -174,17 +174,17 @@ module.exports = {
     // Require JSDoc comment
     'require-jsdoc': 2,
 
-    // enforce spacing before and after semicolons
-    'semi-spacing': [2, {'before': false, 'after': true}],
-
     // require or disallow use of semicolons instead of ASI
     'semi': [2, 'always'],
 
-    // sort variables within the same declaration block
-    'sort-vars': 0,
+    // enforce spacing before and after semicolons
+    'semi-spacing': [2, {'before': false, 'after': true}],
 
     // sort import declarations within module
     'sort-imports': 0,
+
+    // sort variables within the same declaration block
+    'sort-vars': 0,
 
     // require or disallow a space before blocks
     'space-before-blocks': [2, 'always'],
