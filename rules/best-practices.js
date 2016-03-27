@@ -179,6 +179,9 @@ module.exports = {
     // disallow unnecessary concatenation of literals or template literals
     'no-useless-concat': 2,
 
+    // disallow unnecessary usage of escape character
+    'no-useless-escape': 2,
+
     // disallow use of the void operator
     'no-void': 2,
 
