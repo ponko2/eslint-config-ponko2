@@ -41,6 +41,9 @@ module.exports = {
     // disallow use of the new operator with the Symbol object
     'no-new-symbol': 2,
 
+    // restrict usage of specified modules when loaded by import declaration
+    'no-restricted-imports': 0,
+
     // disallow use of this/super before calling super() in constructors
     'no-this-before-super': 2,
 

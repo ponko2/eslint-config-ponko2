@@ -140,9 +140,6 @@ module.exports = {
     // disallow reassignment of function parameters
     'no-param-reassign': [2, {'props': true}],
 
-    // disallow use of process.env
-    'no-process-env': 0,
-
     // disallow usage of __proto__ property
     'no-proto': 2,
 

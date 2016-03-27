@@ -23,11 +23,11 @@ module.exports = {
     // disallow string concatenation with __dirname and __filename
     'no-path-concat': 2,
 
+    // disallow use of process.env
+    'no-process-env': 0,
+
     // disallow process.exit()
     'no-process-exit': 0,
-
-    // restrict usage of specified node imports
-    'no-restricted-imports': 0,
 
     // restrict usage of specified modules when loaded by require function
     'no-restricted-modules': 0,
