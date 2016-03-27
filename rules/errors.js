@@ -71,7 +71,7 @@ module.exports = {
     // disallow sparse arrays
     'no-sparse-arrays': 2,
 
-    // Avoid code that looks like two expressions but is actually one
+    // disallow code that looks like two expressions but is actually one
     'no-unexpected-multiline': 2,
 
     // disallow unreachable statements after a return, throw, continue, or break statement
@@ -80,7 +80,7 @@ module.exports = {
     // disallow comparisons with the value NaN
     'use-isnan': 2,
 
-    // Ensure JSDoc comments are valid
+    // ensure JSDoc comments are valid
     'valid-jsdoc': [2, {
       'requireReturn': true,
       'prefer': {
@@ -96,7 +96,7 @@ module.exports = {
       },
     }],
 
-    // Ensure that the results of typeof are compared against a valid string
+    // ensure results of typeof are compared against a valid string
     'valid-typeof': 2,
   }
 };

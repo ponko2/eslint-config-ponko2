@@ -29,7 +29,7 @@ module.exports = {
     // restrict usage of specified node imports
     'no-restricted-imports': 0,
 
-    // restrict usage of specified node modules
+    // restrict usage of specified modules when loaded by require function
     'no-restricted-modules': 0,
 
     // disallow use of synchronous methods

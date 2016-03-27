@@ -20,7 +20,7 @@ module.exports = {
     // require space before/after arrow function's arrow
     'arrow-spacing': [2, {'before': true, 'after': true}],
 
-    // verify calls of super() in constructors
+    // ensure calling of super() in constructors
     'constructor-super': 2,
 
     // enforce spacing around the * in generator functions
@@ -56,7 +56,7 @@ module.exports = {
     // suggest using arrow functions as callbacks
     'prefer-arrow-callback': 2,
 
-    // suggest using const declaration for variables that are never modified after declared
+    // suggest using const declaration for variables that are never reassigned after declared
     'prefer-const': 2,
 
     // suggest using Reflect methods where applicable

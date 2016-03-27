@@ -2,10 +2,10 @@
 
 module.exports = {
   'rules': {
-    // Enforces getter/setter pairs in objects
+    // enforce getter/setter pairs in objects
     'accessor-pairs': [2, {'setWithoutGet': true}],
 
-    // Enforces return statements in callbacks of array's methods
+    // enforce return statements in callbacks of array's methods
     'array-callback-return': 2,
 
     // treat var statements as if they were block scoped
@@ -23,19 +23,19 @@ module.exports = {
     // require default case in switch statements
     'default-case': 2,
 
-    // enforces consistent newlines before or after dots
+    // enforce consistent newlines before or after dots
     'dot-location': [2, 'property'],
 
-    // encourages use of dot notation whenever possible
+    // encourage use of dot notation whenever possible
     'dot-notation': [2, {'allowKeywords': true, 'allowPattern': '^[a-z]+(_[a-z]+)+$'}],
 
-    // require the use of === and !==
+    // require use of === and !==
     'eqeqeq': [2, 'smart'],
 
-    // make sure for-in loops have an if statement
+    // ensure for-in loops have an if statement
     'guard-for-in': 2,
 
-    // disallow the use of alert, confirm, and prompt
+    // disallow use of alert, confirm, and prompt
     'no-alert': 1,
 
     // disallow use of arguments.caller or arguments.callee
@@ -128,7 +128,7 @@ module.exports = {
     // disallow use of new operator for Function object
     'no-new-func': 2,
 
-    // disallows creating new instances of String, Number, and Boolean
+    // disallow creating new instances of String,Number, and Boolean
     'no-new-wrappers': 2,
 
     // disallow use of octal literals
@@ -185,7 +185,7 @@ module.exports = {
     // disallow use of the void operator
     'no-void': 2,
 
-    // disallow usage of configurable warning terms in comments - e.g. TODO or FIXME
+    // disallow usage of configurable warning terms in comments: e.g. TODO or FIXME
     'no-warning-comments': [0, {'terms': ['todo', 'fixme', 'xxx'], 'location': 'start'}],
 
     // disallow use of the with statement

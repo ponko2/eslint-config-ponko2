@@ -35,10 +35,10 @@ module.exports = {
     // enforce use of function declarations or expressions
     'func-style': 0,
 
-    // blacklist certain identifiers to prevent them being used
+    // disallow certain identifiers to prevent them being used
     'id-blacklist': 0,
 
-    // this option enforces minimum and maximum identifier lengths (variable names, property names etc.)
+    // enforce minimum and maximum identifier lengths (variable names, property names etc.)
     'id-length': [2, {'min': 2, 'properties': 'never', 'exceptions': ['$', '_']}],
 
     // require identifiers to match the provided regular expression
@@ -56,7 +56,7 @@ module.exports = {
     // enforce spacing before and after keywords
     'keyword-spacing': 2,
 
-    // disallow mixed 'LF' and 'CRLF' as linebreaks
+    // enforce linebreak style
     'linebreak-style': [2, 'unix'],
 
     // enforce empty lines around comments
@@ -71,7 +71,7 @@ module.exports = {
     // specify the maximum depth callbacks can be nested
     'max-nested-callbacks': 0,
 
-    // limits the number of parameters that can be used in the function declaration
+    // specify the number of parameters that can be used in the function declaration
     'max-params': [1, 4],
 
     // specify the maximum number of statement allowed in a function
@@ -174,7 +174,7 @@ module.exports = {
     // specify whether backticks, double or single quotes should be used
     'quotes': [2, 'single', 'avoid-escape'],
 
-    // Require JSDoc comment
+    // require JSDoc comment
     'require-jsdoc': 2,
 
     // require or disallow use of semicolons instead of ASI
@@ -183,10 +183,10 @@ module.exports = {
     // enforce spacing before and after semicolons
     'semi-spacing': [2, {'before': false, 'after': true}],
 
-    // sort import declarations within module
+    // enforce sorting import declarations within module
     'sort-imports': 0,
 
-    // sort variables within the same declaration block
+    // enforce sorting variables within the same declaration block
     'sort-vars': 0,
 
     // require or disallow a space before blocks
