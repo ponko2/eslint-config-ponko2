@@ -2,8 +2,11 @@
 
 module.exports = {
   'extends': [
-    'eslint-config-ponko2/legacy',
-    'eslint-config-ponko2/rules/es6',
+    'eslint-config-ponko2/rules/best-practices',
+    'eslint-config-ponko2/rules/errors',
+    'eslint-config-ponko2/rules/strict',
+    'eslint-config-ponko2/rules/style',
+    'eslint-config-ponko2/rules/variables',
   ].map(require.resolve),
   'rules': {}
 };

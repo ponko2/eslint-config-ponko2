@@ -9,8 +9,10 @@
   },
   "files": [
     "base.js",
+    "browser.js",
     "index.js",
     "legacy.js",
+    "node.js",
     "rules"
   ],
   "keywords": [
