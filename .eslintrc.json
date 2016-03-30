@@ -1,5 +1,5 @@
 {
-  "extends": "ponko2/legacy",
+  "extends": "ponko2/node",
   "rules": {
     "quote-props": [2, "always"]
   }
