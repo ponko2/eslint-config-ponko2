@@ -10,5 +10,16 @@ module.exports = {
     'eslint-config-ponko2/rules/variables',
     'eslint-config-ponko2/rules/es5',
   ].map(require.resolve),
-  'rules': {},
+  'env': {
+    'node': true,
+    'es6': false,
+  },
+  'parserOptions': {
+    'ecmaVersion': 5,
+    'sourceType': 'script',
+    'ecmaFeatures': {
+      'impliedStrict': false,
+    },
+  },
+  'rules': {}
 };

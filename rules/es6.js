@@ -1,16 +1,6 @@
 'use strict';
 
 module.exports = {
-  'env': {
-    'es6': true
-  },
-  'parserOptions': {
-    'ecmaVersion': 6,
-    'sourceType': 'module',
-    'ecmaFeatures': {
-      'impliedStrict': true
-    }
-  },
   'rules': {
     // require braces in arrow function body
     'arrow-body-style': [2, 'as-needed'],
