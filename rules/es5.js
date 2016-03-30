@@ -2,89 +2,89 @@
 
 module.exports = {
   'env': {
-    'es6': true
+    'es6': false
   },
   'parserOptions': {
-    'ecmaVersion': 6,
-    'sourceType': 'module',
+    'ecmaVersion': 5,
+    'sourceType': 'script',
     'ecmaFeatures': {
-      'impliedStrict': true
+      'impliedStrict': false
     }
   },
   'rules': {
     // require braces in arrow function body
-    'arrow-body-style': [2, 'as-needed'],
+    'arrow-body-style': 0,
 
     // require parens in arrow function arguments
-    'arrow-parens': [2, 'as-needed'],
+    'arrow-parens': 0,
 
     // require space before/after arrow function's arrow
-    'arrow-spacing': [2, {'before': true, 'after': true}],
+    'arrow-spacing': 0,
 
     // ensure calling of super() in constructors
-    'constructor-super': 2,
+    'constructor-super': 0,
 
     // enforce spacing around the * in generator functions
-    'generator-star-spacing': [2, {'before': true, 'after': false}],
+    'generator-star-spacing': 0,
 
     // disallow modifying variables of class declarations
-    'no-class-assign': 2,
+    'no-class-assign': 0,
 
     // disallow arrow functions where they could be confused with comparisons
-    'no-confusing-arrow': 2,
+    'no-confusing-arrow': 0,
 
     // disallow modifying variables that are declared using const
-    'no-const-assign': 2,
+    'no-const-assign': 0,
 
     // disallow duplicate name in class members
-    'no-dupe-class-members': 2,
+    'no-dupe-class-members': 0,
 
     // disallow duplicate module imports
-    'no-duplicate-imports': [2, {'includeExports': false}],
+    'no-duplicate-imports': 0,
 
     // disallow use of the new operator with the Symbol object
-    'no-new-symbol': 2,
+    'no-new-symbol': 0,
 
     // restrict usage of specified modules when loaded by import declaration
     'no-restricted-imports': 0,
 
     // disallow use of this/super before calling super() in constructors
-    'no-this-before-super': 2,
+    'no-this-before-super': 0,
 
     // disallow unnecessary constructor
-    'no-useless-constructor': 2,
+    'no-useless-constructor': 0,
 
     // require let or const instead of var
-    'no-var': 2,
+    'no-var': 0,
 
     // require method and property shorthand syntax for object literals
-    'object-shorthand': [2, 'always', {'ignoreConstructors': true}],
+    'object-shorthand': 0,
 
     // suggest using arrow functions as callbacks
-    'prefer-arrow-callback': 2,
+    'prefer-arrow-callback': 0,
 
     // suggest using const declaration for variables that are never reassigned after declared
-    'prefer-const': 2,
+    'prefer-const': 0,
 
     // suggest using Reflect methods where applicable
     'prefer-reflect': 0,
 
     // suggest using the rest parameters instead of arguments
-    'prefer-rest-params': 2,
+    'prefer-rest-params': 0,
 
     // suggest using the spread operator instead of .apply()
-    'prefer-spread': 2,
+    'prefer-spread': 0,
 
     // suggest using template literals instead of strings concatenation
-    'prefer-template': 2,
+    'prefer-template': 0,
 
     // disallow generator functions that do not have yield
-    'require-yield': 2,
+    'require-yield': 0,
 
     // enforce spacing around embedded expressions of template strings
-    'template-curly-spacing': [2, 'never'],
+    'template-curly-spacing': 0,
 
     // enforce spacing around the * in yield* expressions
-    'yield-star-spacing': [2, {'before': false, 'after': true}],
+    'yield-star-spacing': 0,
   }
 };

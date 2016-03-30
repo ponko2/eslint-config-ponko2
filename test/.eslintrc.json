@@ -1,5 +1,5 @@
 {
-  "extends": "ponko2/rules/es6",
+  "extends": "ponko2",
   "rules": {
     "no-unused-vars": [2, {
       "vars": "all",

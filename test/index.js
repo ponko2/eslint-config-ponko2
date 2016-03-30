@@ -11,18 +11,18 @@ if (message !== '') {
 `);
 
 const invalidCode = (
-`const message = 'Hello, World!';
+`var message = 'Hello, World!';
 
-if(message !== '') {
+if (message !== '') {
   console.log(message);
 }
 `);
 
 const cli = new CLIEngine({
-  'useEslintrc': false,
-  'baseConfig': eslintrc,
-  'envs': ['browser'],
-  'rules': {'no-console': 0}
+  useEslintrc: false,
+  baseConfig: eslintrc,
+  envs: ['browser'],
+  rules: {'no-console': 0}
 });
 
 test('no warnings with valid code', t => {
@@ -37,5 +37,5 @@ test('a warning with invalid code', t => {
   const result = cli.executeOnText(invalidCode).results[0];
 
   t.ok(result.errorCount, 'fails');
-  t.is(result.messages[0].ruleId, 'keyword-spacing');
+  t.is(result.messages[0].ruleId, 'no-var');
 });
