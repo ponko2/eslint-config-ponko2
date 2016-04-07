@@ -30,7 +30,7 @@ test('no warnings with valid code', t => {
 
   t.falsy(result.warningCount, 'no warnings');
   t.falsy(result.errorCount, 'no errors');
-  t.same(result.messages, [], 'no messages in results');
+  t.deepEqual(result.messages, [], 'no messages in results');
 });
 
 test('a warning with invalid code', t => {
