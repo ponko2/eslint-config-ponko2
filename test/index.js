@@ -28,14 +28,14 @@ const cli = new CLIEngine({
 test('no warnings with valid code', t => {
   const result = cli.executeOnText(validCode).results[0];
 
-  t.notOk(result.warningCount, 'no warnings');
-  t.notOk(result.errorCount, 'no errors');
-  t.same(result.messages, [], 'no messages in results');
+  t.falsy(result.warningCount, 'no warnings');
+  t.falsy(result.errorCount, 'no errors');
+  t.deepEqual(result.messages, [], 'no messages in results');
 });
 
 test('a warning with invalid code', t => {
   const result = cli.executeOnText(invalidCode).results[0];
 
-  t.ok(result.errorCount, 'fails');
+  t.truthy(result.errorCount, 'fails');
   t.is(result.messages[0].ruleId, 'no-var');
 });
