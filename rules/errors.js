@@ -2,43 +2,43 @@
 
 module.exports = {
   'rules': {
-    // disallow or enforce trailing commas
+    // require or disallow trailing commas
     'comma-dangle': [2, 'only-multiline'],
 
-    // disallow assignment in conditional expressions
+    // disallow assignment operators in conditional expressions
     'no-cond-assign': [2, 'always'],
 
-    // disallow use of console
+    // disallow the use of console
     'no-console': 1,
 
-    // disallow use of constant expressions in conditions
+    // disallow constant expressions in conditions
     'no-constant-condition': 1,
 
     // disallow control characters in regular expressions
     'no-control-regex': 2,
 
-    // disallow use of debugger
+    // disallow the use of debugger
     'no-debugger': 1,
 
-    // disallow duplicate arguments in functions
+    // disallow duplicate arguments in function definitions
     'no-dupe-args': 2,
 
-    // disallow duplicate keys when creating object literals
+    // disallow duplicate keys in object literals
     'no-dupe-keys': 2,
 
-    // disallow a duplicate case label.
+    // disallow duplicate case labels
     'no-duplicate-case': 2,
 
     // disallow empty block statements
     'no-empty': 2,
 
-    // disallow the use of empty character classes in regular expressions
+    // disallow empty character classes in regular expressions
     'no-empty-character-class': 2,
 
-    // disallow assigning to the exception in a catch block
+    // disallow reassigning exceptions in catch clauses
     'no-ex-assign': 2,
 
-    // disallow double-negation boolean casts in a boolean context
+    // disallow unnecessary boolean casts
     'no-extra-boolean-cast': 0,
 
     // disallow unnecessary parentheses
@@ -47,40 +47,40 @@ module.exports = {
     // disallow unnecessary semicolons
     'no-extra-semi': 2,
 
-    // disallow overwriting functions written as function declarations
+    // disallow reassigning function declarations
     'no-func-assign': 2,
 
-    // disallow function or variable declarations in nested blocks
+    // disallow function or var declarations in nested blocks
     'no-inner-declarations': [2, 'functions'],
 
-    // disallow invalid regular expression strings in the RegExp constructor
+    // disallow invalid regular expression strings in RegExp constructors
     'no-invalid-regexp': 2,
 
     // disallow irregular whitespace outside of strings and comments
     'no-irregular-whitespace': 2,
 
-    // disallow negation of the left operand of an in expression
+    // disallow negating the left operand in in expressions
     'no-negated-in-lhs': 2,
 
-    // disallow the use of object properties of the global object (Math and JSON) as functions
+    // disallow calling global object properties as functions
     'no-obj-calls': 2,
 
-    // disallow multiple spaces in a regular expression literal
+    // disallow multiple spaces in regular expression literals
     'no-regex-spaces': 2,
 
     // disallow sparse arrays
     'no-sparse-arrays': 2,
 
-    // disallow code that looks like two expressions but is actually one
+    // disallow confusing multiline expressions
     'no-unexpected-multiline': 2,
 
-    // disallow unreachable statements after a return, throw, continue, or break statement
+    // disallow unreachable code after return, throw, continue, and break statements
     'no-unreachable': 2,
 
-    // disallow comparisons with the value NaN
+    // require calls to isNaN() when checking for NaN
     'use-isnan': 2,
 
-    // ensure JSDoc comments are valid
+    // enforce valid JSDoc comments
     'valid-jsdoc': [2, {
       'requireReturn': true,
       'prefer': {
@@ -96,7 +96,7 @@ module.exports = {
       },
     }],
 
-    // ensure results of typeof are compared against a valid string
+    // enforce comparing typeof expressions against valid strings
     'valid-typeof': 2,
   }
 };

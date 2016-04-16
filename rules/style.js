@@ -2,112 +2,112 @@
 
 module.exports = {
   'rules': {
-    // enforce spacing inside array brackets
+    // enforce consistent spacing inside array brackets
     'array-bracket-spacing': [2, 'never'],
 
-    // disallow or enforce spaces inside of single line blocks
+    // enforce consistent spacing inside single-line blocks
     'block-spacing': [2, 'always'],
 
-    // enforce one true brace style
+    // enforce consistent brace style for blocks
     'brace-style': [2, '1tbs', {'allowSingleLine': true}],
 
-    // require camel case names
+    // enforce camelcase naming convention
     'camelcase': [2, {'properties': 'never'}],
 
-    // enforce spacing before and after comma
+    // enforce consistent spacing before and after commas
     'comma-spacing': [2, {'before': false, 'after': true}],
 
-    // enforce one true comma style
+    // enforce consistent comma style
     'comma-style': [2, 'last'],
 
-    // require or disallow padding inside computed properties
+    // enforce consistent spacing inside computed property brackets
     'computed-property-spacing': [2, 'never'],
 
     // enforce consistent naming when capturing the current execution context
     'consistent-this': 0,
 
-    // enforce newline at the end of file, with no multiple empty lines
+    // enforce at least one newline at the end of files
     'eol-last': 2,
 
-    // require function expressions to have a name
+    // enforce named function expressions
     'func-names': 0,
 
-    // enforce use of function declarations or expressions
+    // enforce the consistent use of either function declarations or expressions
     'func-style': 0,
 
-    // disallow certain identifiers to prevent them being used
+    // disallow specified identifiers
     'id-blacklist': 0,
 
-    // enforce minimum and maximum identifier lengths (variable names, property names etc.)
+    // enforce minimum and maximum identifier lengths
     'id-length': [2, {'min': 2, 'properties': 'never', 'exceptions': ['$', '_']}],
 
-    // require identifiers to match the provided regular expression
+    // require identifiers to match a specified regular expression
     'id-match': 0,
 
-    // specify tab or space width for your code
+    // enforce consistent indentation
     'indent': [2, 2, {'SwitchCase': 1, 'VariableDeclarator': 1}],
 
-    // specify whether double or single quotes should be used in JSX attributes
+    // enforce the consistent use of either double or single quotes in JSX attributes
     'jsx-quotes': [2, 'prefer-double'],
 
-    // enforce spacing between keys and values in object literal properties
+    // enforce consistent spacing between keys and values in object literal properties
     'key-spacing': [2, {'beforeColon': false, 'afterColon': true, 'mode': 'minimum'}],
 
-    // enforce spacing before and after keywords
+    // enforce consistent spacing before and after keywords
     'keyword-spacing': 2,
 
-    // enforce linebreak style
+    // enforce consistent linebreak style
     'linebreak-style': [2, 'unix'],
 
-    // enforce empty lines around comments
+    // require empty lines around comments
     'lines-around-comment': 0,
 
-    // specify the maximum depth that blocks can be nested
+    // enforce a maximum depth that blocks can be nested
     'max-depth': [1, 4],
 
-    // specify the maximum length of a line in your program
+    // enforce a maximum line length
     'max-len': [2, {'code': 100, 'tabWidth': 2, 'ignoreComments': true, 'ignoreUrls': true}],
 
-    // specify the maximum depth callbacks can be nested
+    // enforce a maximum depth that callbacks can be nested
     'max-nested-callbacks': 0,
 
-    // specify the number of parameters that can be used in the function declaration
+    // enforce a maximum number of parameters in function definitions
     'max-params': [1, 4],
 
-    // specify the maximum number of statement allowed in a function
+    // enforce a maximum number of statements allowed in function blocks
     'max-statements': [1, 15, {'ignoreTopLevelFunctions': true}],
 
-    // specify the maximum number of statements allowed per line
+    // enforce a maximum number of statements allowed per line
     'max-statements-per-line': [2, {'max': 1}],
 
-    // require a capital letter for constructors
+    // require constructor function names to begin with a capital letter
     'new-cap': [2, {'newIsCap': true}],
 
-    // disallow the omission of parentheses when invoking a constructor with no arguments
+    // require parentheses when invoking a constructor with no arguments
     'new-parens': 2,
 
-    // require or disallow an empty newline after variable declarations
+    // require or disallow an empty line after var declarations
     'newline-after-var': 0,
 
-    // require newline before return statement
+    // require an empty line before return statements
     'newline-before-return': 0,
 
-    // enforce newline after each call when chaining the calls
+    // require a newline after each call in a method chain
     'newline-per-chained-call': [2, {'ignoreChainWithDepth': 3}],
 
-    // disallow use of the Array constructor
+    // disallow Array constructors
     'no-array-constructor': 2,
 
-    // disallow use of bitwise operators
+    // disallow bitwise operators
     'no-bitwise': 0,
 
-    // disallow use of the continue statement
+    // disallow continue statements
     'no-continue': 2,
 
-    // disallow comments inline after code
+    // disallow inline comments after code
     'no-inline-comments': 0,
 
-    // disallow if as the only statement in an else block
+    // disallow if statements as the only statement in else blocks
     'no-lonely-if': 2,
 
     // disallow mixed spaces and tabs for indentation
@@ -122,19 +122,19 @@ module.exports = {
     // disallow nested ternary expressions
     'no-nested-ternary': 2,
 
-    // disallow the use of the Object constructor
+    // disallow Object constructors
     'no-new-object': 2,
 
-    // disallow use of unary operators, ++ and --
+    // disallow the unary operators ++ and --
     'no-plusplus': [2, {'allowForLoopAfterthoughts': true}],
 
-    // disallow use of certain syntax in code
+    // disallow specified syntax
     'no-restricted-syntax': [2, 'WithStatement'],
 
-    // disallow space between function identifier and application
+    // disallow spacing between function identifiers and their applications
     'no-spaced-func': 2,
 
-    // disallow the use of ternary operators
+    // disallow ternary operators
     'no-ternary': 0,
 
     // disallow trailing whitespace at the end of lines
@@ -143,28 +143,28 @@ module.exports = {
     // disallow dangling underscores in identifiers
     'no-underscore-dangle': [2, {'allowAfterThis': true}],
 
-    // disallow the use of ternary operators when a simpler alternative exists
+    // disallow ternary operators when simpler alternatives exist
     'no-unneeded-ternary': [2, {'defaultAssignment': false}],
 
     // disallow whitespace before properties
     'no-whitespace-before-property': 2,
 
-    // require or disallow padding inside curly braces
+    // enforce consistent spacing inside braces
     'object-curly-spacing': [2, 'never'],
 
-    // require or disallow one variable declaration per function
+    // enforce variables to be declared either together or separately in functions
     'one-var': [2, {'uninitialized': 'always', 'initialized': 'never'}],
 
-    // require or disallow an newline around variable declarations
+    // require or disallow newlines around var declarations
     'one-var-declaration-per-line': [2, 'initializations'],
 
-    // require assignment operator shorthand where possible or prohibit it entirely
+    // require or disallow assignment operator shorthand where possible
     'operator-assignment': [2, 'always'],
 
-    // enforce operators to be placed before or after line breaks
+    // enforce consistent linebreak style for operators
     'operator-linebreak': [2, 'after', {'overrides': {'?': 'ignore', ':': 'ignore'}}],
 
-    // enforce padding within blocks
+    // require or disallow padding within blocks
     'padded-blocks': [2, 'never'],
 
     // require quotes around object literal property names
@@ -174,43 +174,43 @@ module.exports = {
       'numbers': false,
     }],
 
-    // specify whether backticks, double or single quotes should be used
+    // enforce the consistent use of either backticks, double, or single quotes
     'quotes': [2, 'single', 'avoid-escape'],
 
-    // require JSDoc comment
+    // require JSDoc comments
     'require-jsdoc': 2,
 
-    // require or disallow use of semicolons instead of ASI
+    // require or disallow semicolons instead of ASI
     'semi': [2, 'always'],
 
-    // enforce spacing before and after semicolons
+    // enforce consistent spacing before and after semicolons
     'semi-spacing': [2, {'before': false, 'after': true}],
 
-    // enforce sorting import declarations within module
+    // enforce sorted import declarations within module
     'sort-imports': 0,
 
-    // enforce sorting variables within the same declaration block
+    // require variables within the same declaration block to be sorted
     'sort-vars': 0,
 
-    // require or disallow a space before blocks
+    // enforce consistent spacing before blocks
     'space-before-blocks': [2, 'always'],
 
-    // require or disallow a space before function opening parenthesis
+    // enforce consistent spacing before function definition opening parenthesis
     'space-before-function-paren': [2, {'anonymous': 'always', 'named': 'never'}],
 
-    // require or disallow spaces inside parentheses
+    // enforce consistent spacing inside parentheses
     'space-in-parens': [2, 'never'],
 
-    // require spaces around operators
+    // require spacing around operators
     'space-infix-ops': 2,
 
-    // require or disallow spaces before/after unary operators
+    // enforce consistent spacing before or after unary operators
     'space-unary-ops': [2, {'words': true, 'nonwords': false}],
 
-    // require or disallow a space immediately following the // or /* in a comment
+    // enforce consistent spacing after the // or /* in a comment
     'spaced-comment': [2, 'always', {'exceptions': ['-', '+'], 'markers': ['=', '!']}],
 
-    // require regex literals to be wrapped in parentheses
+    // require parenthesis around regex literals
     'wrap-regex': 0,
   }
 };

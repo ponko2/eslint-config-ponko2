@@ -2,7 +2,7 @@
 
 module.exports = {
   'rules': {
-    // require effective use of strict mode directives
+    // require or disallow strict mode directives
     'strict': [2, 'safe'],
   }
 };

@@ -2,34 +2,34 @@
 
 module.exports = {
   'rules': {
-    // enforce return after a callback
+    // require return statements after callbacks
     'callback-return': 0,
 
-    // enforce require() on top-level module scope
+    // require require() calls to be placed at top-level module scope
     'global-require': 2,
 
-    // enforce error handling in callbacks
+    // require error handling in callbacks
     'handle-callback-err': 0,
 
-    // disallow mixing regular variable and require declarations
+    // disallow require calls to be mixed with regular var declarations
     'no-mixed-requires': 2,
 
-    // disallow use of new operator with the require function
+    // disallow new operators with calls to require
     'no-new-require': 2,
 
     // disallow string concatenation with __dirname and __filename
     'no-path-concat': 2,
 
-    // disallow use of process.env
+    // disallow the use of process.env
     'no-process-env': 0,
 
-    // disallow process.exit()
+    // disallow the use of process.exit()
     'no-process-exit': 0,
 
-    // restrict usage of specified modules when loaded by require function
+    // disallow specified modules when loaded by require
     'no-restricted-modules': 0,
 
-    // disallow use of synchronous methods
+    // disallow synchronous methods
     'no-sync': 0,
   }
 };
