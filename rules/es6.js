@@ -3,78 +3,78 @@
 module.exports = {
   'rules': {
     // require braces around arrow function bodies
-    'arrow-body-style': [2, 'as-needed'],
+    'arrow-body-style': ['error', 'as-needed'],
 
     // require parentheses around arrow function arguments
-    'arrow-parens': [2, 'as-needed'],
+    'arrow-parens': ['error', 'as-needed'],
 
     // enforce consistent spacing before and after the arrow in arrow functions
-    'arrow-spacing': [2, {'before': true, 'after': true}],
+    'arrow-spacing': ['error', {'before': true, 'after': true}],
 
     // require super() calls in constructors
-    'constructor-super': 2,
+    'constructor-super': 'error',
 
     // enforce consistent spacing around * operators in generator functions
-    'generator-star-spacing': [2, {'before': true, 'after': false}],
+    'generator-star-spacing': ['error', {'before': true, 'after': false}],
 
     // disallow reassigning class members
-    'no-class-assign': 2,
+    'no-class-assign': 'error',
 
     // disallow arrow functions where they could be confused with comparisons
-    'no-confusing-arrow': 2,
+    'no-confusing-arrow': 'error',
 
     // disallow reassigning const variables
-    'no-const-assign': 2,
+    'no-const-assign': 'error',
 
     // disallow duplicate class members
-    'no-dupe-class-members': 2,
+    'no-dupe-class-members': 'error',
 
     // disallow duplicate module imports
-    'no-duplicate-imports': [2, {'includeExports': false}],
+    'no-duplicate-imports': ['error', {'includeExports': false}],
 
     // disallow new operators with the Symbol object
-    'no-new-symbol': 2,
+    'no-new-symbol': 'error',
 
     // disallow specified modules when loaded by import
-    'no-restricted-imports': 0,
+    'no-restricted-imports': 'off',
 
     // disallow this/super before calling super() in constructors
-    'no-this-before-super': 2,
+    'no-this-before-super': 'error',
 
     // disallow unnecessary constructors
-    'no-useless-constructor': 2,
+    'no-useless-constructor': 'error',
 
     // require let or const instead of var
-    'no-var': 2,
+    'no-var': 'error',
 
     // require or disallow method and property shorthand syntax for object literals
-    'object-shorthand': [2, 'always', {'ignoreConstructors': true}],
+    'object-shorthand': ['error', 'always', {'ignoreConstructors': true}],
 
     // require arrow functions as callbacks
-    'prefer-arrow-callback': [2, {'allowNamedFunctions': true}],
+    'prefer-arrow-callback': ['error', {'allowNamedFunctions': true}],
 
     // require const declarations for variables that are never reassigned after declared
-    'prefer-const': 2,
+    'prefer-const': 'error',
 
     // require Reflect methods where applicable
-    'prefer-reflect': 0,
+    'prefer-reflect': 'off',
 
     // require rest parameters instead of arguments
-    'prefer-rest-params': 2,
+    'prefer-rest-params': 'error',
 
     // require spread operators instead of .apply()
-    'prefer-spread': 2,
+    'prefer-spread': 'error',
 
     // require template literals instead of string concatenation
-    'prefer-template': 2,
+    'prefer-template': 'error',
 
     // require generator functions to contain yield
-    'require-yield': 2,
+    'require-yield': 'error',
 
     // require or disallow spacing around embedded expressions of template strings
-    'template-curly-spacing': [2, 'never'],
+    'template-curly-spacing': ['error', 'never'],
 
     // require or disallow spacing around the * in yield* expressions
-    'yield-star-spacing': [2, {'before': false, 'after': true}],
+    'yield-star-spacing': ['error', {'before': false, 'after': true}],
   }
 };

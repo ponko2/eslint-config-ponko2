@@ -1,6 +1,6 @@
 {
   "extends": "ponko2/node",
   "rules": {
-    "quote-props": [2, "always"]
+    "quote-props": ["error", "always"]
   }
 }

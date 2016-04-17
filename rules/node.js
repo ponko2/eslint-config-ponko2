@@ -3,33 +3,33 @@
 module.exports = {
   'rules': {
     // require return statements after callbacks
-    'callback-return': 0,
+    'callback-return': 'off',
 
     // require require() calls to be placed at top-level module scope
-    'global-require': 2,
+    'global-require': 'error',
 
     // require error handling in callbacks
-    'handle-callback-err': 0,
+    'handle-callback-err': 'off',
 
     // disallow require calls to be mixed with regular var declarations
-    'no-mixed-requires': 2,
+    'no-mixed-requires': 'error',
 
     // disallow new operators with calls to require
-    'no-new-require': 2,
+    'no-new-require': 'error',
 
     // disallow string concatenation with __dirname and __filename
-    'no-path-concat': 2,
+    'no-path-concat': 'error',
 
     // disallow the use of process.env
-    'no-process-env': 0,
+    'no-process-env': 'off',
 
     // disallow the use of process.exit()
-    'no-process-exit': 0,
+    'no-process-exit': 'off',
 
     // disallow specified modules when loaded by require
-    'no-restricted-modules': 0,
+    'no-restricted-modules': 'off',
 
     // disallow synchronous methods
-    'no-sync': 0,
+    'no-sync': 'off',
   }
 };

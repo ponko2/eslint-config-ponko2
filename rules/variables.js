@@ -3,39 +3,39 @@
 module.exports = {
   'rules': {
     // require or disallow initialization in var declarations
-    'init-declarations': 0,
+    'init-declarations': 'off',
 
     // disallow catch clause parameters from shadowing variables in the outer scope
-    'no-catch-shadow': 2,
+    'no-catch-shadow': 'error',
 
     // disallow deleting variables
-    'no-delete-var': 2,
+    'no-delete-var': 'error',
 
     // disallow labels that share a name with a variable
-    'no-label-var': 2,
+    'no-label-var': 'error',
 
     // disallow specified global variables
-    'no-restricted-globals': 0,
+    'no-restricted-globals': 'off',
 
     // disallow var declarations from shadowing variables in the outer scope
-    'no-shadow': 2,
+    'no-shadow': 'error',
 
     // disallow identifiers from shadowing restricted names
-    'no-shadow-restricted-names': 2,
+    'no-shadow-restricted-names': 'error',
 
     // disallow the use of undeclared variables unless mentioned in /*global */ comments
-    'no-undef': [2, {'typeof': true}],
+    'no-undef': ['error', {'typeof': true}],
 
     // disallow initializing variables to undefined
-    'no-undef-init': 2,
+    'no-undef-init': 'error',
 
     // disallow the use of undefined as an identifier
-    'no-undefined': 2,
+    'no-undefined': 'error',
 
     // disallow unused variables
-    'no-unused-vars': [2, {'vars': 'local', 'args': 'after-used'}],
+    'no-unused-vars': ['error', {'vars': 'local', 'args': 'after-used'}],
 
     // disallow the use of variables before they are defined
-    'no-use-before-define': [2, {'functions': false, 'classes': true}],
+    'no-use-before-define': ['error', {'functions': false, 'classes': true}],
   }
 };

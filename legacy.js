@@ -19,78 +19,78 @@ module.exports = {
   },
   'rules': {
     // require braces around arrow function bodies
-    'arrow-body-style': 0,
+    'arrow-body-style': 'off',
 
     // require parentheses around arrow function arguments
-    'arrow-parens': 0,
+    'arrow-parens': 'off',
 
     // enforce consistent spacing before and after the arrow in arrow functions
-    'arrow-spacing': 0,
+    'arrow-spacing': 'off',
 
     // require super() calls in constructors
-    'constructor-super': 0,
+    'constructor-super': 'off',
 
     // enforce consistent spacing around * operators in generator functions
-    'generator-star-spacing': 0,
+    'generator-star-spacing': 'off',
 
     // disallow reassigning class members
-    'no-class-assign': 0,
+    'no-class-assign': 'off',
 
     // disallow arrow functions where they could be confused with comparisons
-    'no-confusing-arrow': 0,
+    'no-confusing-arrow': 'off',
 
     // disallow reassigning const variables
-    'no-const-assign': 0,
+    'no-const-assign': 'off',
 
     // disallow duplicate class members
-    'no-dupe-class-members': 0,
+    'no-dupe-class-members': 'off',
 
     // disallow duplicate module imports
-    'no-duplicate-imports': 0,
+    'no-duplicate-imports': 'off',
 
     // disallow new operators with the Symbol object
-    'no-new-symbol': 0,
+    'no-new-symbol': 'off',
 
     // disallow specified modules when loaded by import
-    'no-restricted-imports': 0,
+    'no-restricted-imports': 'off',
 
     // disallow this/super before calling super() in constructors
-    'no-this-before-super': 0,
+    'no-this-before-super': 'off',
 
     // disallow unnecessary constructors
-    'no-useless-constructor': 0,
+    'no-useless-constructor': 'off',
 
     // require let or const instead of var
-    'no-var': 0,
+    'no-var': 'off',
 
     // require or disallow method and property shorthand syntax for object literals
-    'object-shorthand': 0,
+    'object-shorthand': 'off',
 
     // require arrow functions as callbacks
-    'prefer-arrow-callback': 0,
+    'prefer-arrow-callback': 'off',
 
     // require const declarations for variables that are never reassigned after declared
-    'prefer-const': 0,
+    'prefer-const': 'off',
 
     // require Reflect methods where applicable
-    'prefer-reflect': 0,
+    'prefer-reflect': 'off',
 
     // require rest parameters instead of arguments
-    'prefer-rest-params': 0,
+    'prefer-rest-params': 'off',
 
     // require spread operators instead of .apply()
-    'prefer-spread': 0,
+    'prefer-spread': 'off',
 
     // require template literals instead of string concatenation
-    'prefer-template': 0,
+    'prefer-template': 'off',
 
     // require generator functions to contain yield
-    'require-yield': 0,
+    'require-yield': 'off',
 
     // require or disallow spacing around embedded expressions of template strings
-    'template-curly-spacing': 0,
+    'template-curly-spacing': 'off',
 
     // require or disallow spacing around the * in yield* expressions
-    'yield-star-spacing': 0,
+    'yield-star-spacing': 'off',
   }
 };
