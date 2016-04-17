@@ -51,7 +51,7 @@ module.exports = {
     'object-shorthand': [2, 'always', {'ignoreConstructors': true}],
 
     // require arrow functions as callbacks
-    'prefer-arrow-callback': 2,
+    'prefer-arrow-callback': [2, {'allowNamedFunctions': true}],
 
     // require const declarations for variables that are never reassigned after declared
     'prefer-const': 2,

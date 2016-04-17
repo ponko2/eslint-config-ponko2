@@ -42,7 +42,7 @@ module.exports = {
     'no-extra-boolean-cast': 0,
 
     // disallow unnecessary parentheses
-    'no-extra-parens': [2, 'functions'],
+    'no-extra-parens': [2, 'all', {'nestedBinaryExpressions': false}],
 
     // disallow unnecessary semicolons
     'no-extra-semi': 2,

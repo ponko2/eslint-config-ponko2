@@ -2,21 +2,21 @@ import test        from 'ava';
 import {CLIEngine} from 'eslint';
 import eslintrc    from '../';
 
-const validCode = (
+const validCode =
 `const message = 'Hello, World!';
 
 if (message !== '') {
   console.log(message);
 }
-`);
+`;
 
-const invalidCode = (
+const invalidCode =
 `var message = 'Hello, World!';
 
 if (message !== '') {
   console.log(message);
 }
-`);
+`;
 
 const cli = new CLIEngine({
   useEslintrc: false,
