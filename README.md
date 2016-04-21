@@ -23,7 +23,7 @@ Base + Node.js + Browser + ECMAScript 2015 (ES6)
 
 ### eslint-config-ponko2/legacy
 
-Base + Node.js + Browser
+Base + Node.js v0.10 + Browser
 
 ```json
 {
@@ -33,11 +33,19 @@ Base + Node.js + Browser
 
 ### eslint-config-ponko2/node
 
-Base + Node.js
+Base + Node.js v4
+
+```sh
+$ npm install --save-dev eslint-plugin-node
+```
 
 ```json
 {
-  "extends": "ponko2/node"
+  "extends": "ponko2/node",
+  "plugins": ["node"],
+  "rules": {
+    "node/no-unsupported-features": ["error", {"version": 4}]
+  }
 }
 ```
 
