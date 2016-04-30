@@ -77,6 +77,9 @@ module.exports = {
     // disallow unreachable code after return, throw, continue, and break statements
     'no-unreachable': 'error',
 
+    // disallow control flow statements in finally blocks
+    'no-unsafe-finally': 'error',
+
     // require calls to isNaN() when checking for NaN
     'use-isnan': 'error',
 

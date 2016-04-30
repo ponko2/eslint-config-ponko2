@@ -186,9 +186,6 @@ module.exports = {
     // enforce consistent spacing before and after semicolons
     'semi-spacing': ['error', {'before': false, 'after': true}],
 
-    // enforce sorted import declarations within module
-    'sort-imports': 'off',
-
     // require variables within the same declaration block to be sorted
     'sort-vars': 'off',
 

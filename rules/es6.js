@@ -41,6 +41,9 @@ module.exports = {
     // disallow this/super before calling super() in constructors
     'no-this-before-super': 'error',
 
+    // disallow unnecessary computed property keys in object literals
+    'no-useless-computed-key': 'error',
+
     // disallow unnecessary constructors
     'no-useless-constructor': 'error',
 
@@ -70,6 +73,9 @@ module.exports = {
 
     // require generator functions to contain yield
     'require-yield': 'error',
+
+    // enforce sorted import declarations within module
+    'sort-imports': 'off',
 
     // require or disallow spacing around embedded expressions of template strings
     'template-curly-spacing': ['error', 'never'],
