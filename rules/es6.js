@@ -71,6 +71,9 @@ module.exports = {
     // require generator functions to contain yield
     'require-yield': 'error',
 
+    // enforce sorted import declarations within module
+    'sort-imports': 'off',
+
     // require or disallow spacing around embedded expressions of template strings
     'template-curly-spacing': ['error', 'never'],
 
