@@ -6,7 +6,7 @@
   "devDependencies": {
     "ava": "^0.14.0",
     "eslint": "2.9.0",
-    "eslint-find-rules": "^1.7.0"
+    "eslint-find-rules": "^1.9.2"
   },
   "files": [
     "base.js",
