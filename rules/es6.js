@@ -51,13 +51,13 @@ module.exports = {
     'no-var': 'error',
 
     // require or disallow method and property shorthand syntax for object literals
-    'object-shorthand': ['error', 'always', {'ignoreConstructors': true}],
+    'object-shorthand': ['error', 'always', {'avoidQuotes': true, 'ignoreConstructors': true}],
 
     // require arrow functions as callbacks
     'prefer-arrow-callback': ['error', {'allowNamedFunctions': true}],
 
     // require const declarations for variables that are never reassigned after declared
-    'prefer-const': 'error',
+    'prefer-const': ['error', {'ignoreReadBeforeAssign': true}],
 
     // require Reflect methods where applicable
     'prefer-reflect': 'off',
