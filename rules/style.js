@@ -152,6 +152,9 @@ module.exports = {
     // enforce consistent spacing inside braces
     'object-curly-spacing': ['error', 'never'],
 
+    // enforce placing object properties on separate lines
+    'object-property-newline': ['error', {'allowMultiplePropertiesPerLine': true}],
+
     // enforce variables to be declared either together or separately in functions
     'one-var': ['error', {'uninitialized': 'always', 'initialized': 'never'}],
 
