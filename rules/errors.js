@@ -61,7 +61,11 @@ module.exports = {
     'no-invalid-regexp': 'error',
 
     // disallow irregular whitespace outside of strings and comments
-    'no-irregular-whitespace': 'error',
+    'no-irregular-whitespace': ['error', {
+      'skipStrings': true,
+      'skipRegExps': true,
+      'skipTemplates': true
+    }],
 
     // disallow negating the left operand in in expressions
     'no-negated-in-lhs': 'error',
