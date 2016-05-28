@@ -12,7 +12,7 @@ module.exports = {
     'no-console': 'warn',
 
     // disallow constant expressions in conditions
-    'no-constant-condition': 'warn',
+    'no-constant-condition': ['warn', {'checkLoops': false}],
 
     // disallow control characters in regular expressions
     'no-control-regex': 'error',
@@ -72,6 +72,9 @@ module.exports = {
 
     // disallow calling global object properties as functions
     'no-obj-calls': 'error',
+
+    // Disallow use of Object.prototypes builtins directly
+    'no-prototype-builtins': 'off',
 
     // disallow multiple spaces in regular expression literals
     'no-regex-spaces': 'error',
