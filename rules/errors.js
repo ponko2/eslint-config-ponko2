@@ -73,6 +73,9 @@ module.exports = {
     // disallow calling global object properties as functions
     'no-obj-calls': 'error',
 
+    // Disallow use of Object.prototypes builtins directly
+    'no-prototype-builtins': 'off',
+
     // disallow multiple spaces in regular expression literals
     'no-regex-spaces': 'error',
 

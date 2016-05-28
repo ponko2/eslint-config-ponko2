@@ -60,6 +60,9 @@ module.exports = {
     // disallow unnecessary constructors
     'no-useless-constructor': 'off',
 
+    // disallow renaming import, export, and destructured assignments to the same name
+    'no-useless-rename': 'off',
+
     // require let or const instead of var
     'no-var': 'off',
 
