@@ -15,7 +15,7 @@ module.exports = {
     'complexity': ['warn', 11],
 
     // require return statements to either always or never specify values
-    'consistent-return': 'error',
+    'consistent-return': ['error', {'treatUndefinedAsUnspecified': true}],
 
     // enforce consistent brace style for all control statements
     'curly': ['error', 'all'],
