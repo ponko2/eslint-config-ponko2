@@ -210,6 +210,9 @@ module.exports = {
     // enforce consistent spacing after the // or /* in a comment
     'spaced-comment': ['error', 'always', {'exceptions': ['-', '+'], 'markers': ['=', '!']}],
 
+    // require or disallow the Unicode BOM
+    'unicode-bom': 'error',
+
     // require parenthesis around regex literals
     'wrap-regex': 'off',
   }
