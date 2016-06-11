@@ -3,7 +3,7 @@
 module.exports = {
   'rules': {
     // require braces around arrow function bodies
-    'arrow-body-style': ['error', 'as-needed'],
+    'arrow-body-style': ['error', 'as-needed', {'requireReturnForObjectLiteral': true}],
 
     // require parentheses around arrow function arguments
     'arrow-parens': ['error', 'as-needed'],
