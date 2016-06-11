@@ -4,9 +4,9 @@
   "version": "3.4.0",
   "author": "Takahito Nakano",
   "devDependencies": {
-    "ava": "^0.15.0",
+    "ava": "^0.15.2",
     "eslint": "2.12.0",
-    "eslint-find-rules": "^1.9.2"
+    "eslint-find-rules": "^1.10.0"
   },
   "files": [
     "base.js",
@@ -23,7 +23,7 @@
   "license": "MIT",
   "main": "index.js",
   "peerDependencies": {
-    "eslint": "^2.11.1"
+    "eslint": "^2.12.0"
   },
   "repository": {
     "type": "git",
