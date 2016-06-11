@@ -1,4 +1,5 @@
 {
+  "root": true,
   "extends": "ponko2",
   "rules": {
     "no-unused-vars": ["error", {
