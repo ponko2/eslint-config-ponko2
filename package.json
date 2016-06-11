@@ -1,7 +1,7 @@
 {
   "name": "eslint-config-ponko2",
   "description": "ESLint Shareable Config",
-  "version": "3.4.0",
+  "version": "3.5.0",
   "author": "Takahito Nakano",
   "devDependencies": {
     "ava": "^0.15.2",
