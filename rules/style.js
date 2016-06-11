@@ -68,6 +68,9 @@ module.exports = {
     // enforce a maximum line length
     'max-len': ['error', {'code': 100, 'tabWidth': 2, 'ignoreComments': true, 'ignoreUrls': true}],
 
+    // enforce a maximum file length
+    'max-lines': 'off',
+
     // enforce a maximum depth that callbacks can be nested
     'max-nested-callbacks': 'off',
 
@@ -110,6 +113,9 @@ module.exports = {
     // disallow if statements as the only statement in else blocks
     'no-lonely-if': 'error',
 
+    // disallow mixes of different operators
+    'no-mixed-operators': 'off',
+
     // disallow mixed spaces and tabs for indentation
     'no-mixed-spaces-and-tabs': 'error',
 
@@ -148,6 +154,9 @@ module.exports = {
 
     // disallow whitespace before properties
     'no-whitespace-before-property': 'error',
+
+    // enforce consistent line breaks inside braces
+    'object-curly-newline': 'off',
 
     // enforce consistent spacing inside braces
     'object-curly-spacing': ['error', 'never'],

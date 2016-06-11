@@ -77,6 +77,9 @@ module.exports = {
     // require generator functions to contain yield
     'require-yield': 'error',
 
+    // enforce spacing between rest and spread operators and their expressions
+    'rest-spread-spacing': ['error', 'never'],
+
     // enforce sorted import declarations within module
     'sort-imports': 'off',
 
