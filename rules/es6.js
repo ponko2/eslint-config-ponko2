@@ -3,7 +3,7 @@
 module.exports = {
   'rules': {
     // require braces around arrow function bodies
-    'arrow-body-style': ['error', 'as-needed'],
+    'arrow-body-style': ['error', 'as-needed', {'requireReturnForObjectLiteral': true}],
 
     // require parentheses around arrow function arguments
     'arrow-parens': ['error', 'as-needed'],
@@ -76,6 +76,9 @@ module.exports = {
 
     // require generator functions to contain yield
     'require-yield': 'error',
+
+    // enforce spacing between rest and spread operators and their expressions
+    'rest-spread-spacing': ['error', 'never'],
 
     // enforce sorted import declarations within module
     'sort-imports': 'off',
