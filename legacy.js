@@ -13,9 +13,7 @@ module.exports = {
   'parserOptions': {
     'ecmaVersion': 5,
     'sourceType': 'script',
-    'ecmaFeatures': {
-      'impliedStrict': false,
-    },
+    'ecmaFeatures': {'impliedStrict': false},
   },
   'rules': {
     // require braces around arrow function bodies
