@@ -110,11 +110,13 @@ module.exports = {
     'no-magic-numbers': 'off',
 
     // disallow multiple spaces
-    'no-multi-spaces': ['error', {'exceptions': {
-      'ImportDeclaration': true,
-      'VariableDeclarator': true,
-      'AssignmentExpression': true
-    }}],
+    'no-multi-spaces': ['error', {
+      'exceptions': {
+        'ImportDeclaration': true,
+        'VariableDeclarator': true,
+        'AssignmentExpression': true
+      }
+    }],
 
     // disallow multiline strings
     'no-multi-str': 'error',

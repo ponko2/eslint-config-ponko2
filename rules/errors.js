@@ -97,9 +97,7 @@ module.exports = {
     // enforce valid JSDoc comments
     'valid-jsdoc': ['error', {
       'requireReturn': true,
-      'prefer': {
-        'return': 'returns'
-      },
+      'prefer': {'return': 'returns'},
       'preferType': {
         'Boolean': 'boolean',
         'Number': 'number',

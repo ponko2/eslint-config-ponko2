@@ -14,9 +14,7 @@ module.exports = {
   'parserOptions': {
     'ecmaVersion': 6,
     'sourceType': 'module',
-    'ecmaFeatures': {
-      'impliedStrict': true,
-    },
+    'ecmaFeatures': {'impliedStrict': true},
   },
   'rules': {}
 };
