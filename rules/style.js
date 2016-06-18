@@ -29,7 +29,7 @@ module.exports = {
     // enforce at least one newline at the end of files
     'eol-last': 'error',
 
-    // enforce named function expressions
+    // require or disallow named function expressions
     'func-names': 'off',
 
     // enforce the consistent use of either function declarations or expressions
