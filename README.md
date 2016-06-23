@@ -41,11 +41,11 @@ $ npm install --save-dev eslint-plugin-node
 
 ```json
 {
-  "extends": "ponko2/node",
-  "plugins": ["node"],
-  "rules": {
-    "node/no-unsupported-features": ["error", {"version": 4}]
-  }
+  "extends": [
+    "ponko2/node",
+    "plugin:node/recommended"
+  ],
+  "plugins": ["node"]
 }
 ```
 
