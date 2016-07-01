@@ -5,7 +5,7 @@
   "author": "Takahito Nakano",
   "devDependencies": {
     "ava": "^0.15.2",
-    "eslint": "2.13.1",
+    "eslint": "3.0.0",
     "eslint-find-rules": "^1.10.0"
   },
   "files": [
