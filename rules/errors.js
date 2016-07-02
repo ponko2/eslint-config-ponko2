@@ -2,9 +2,6 @@
 
 module.exports = {
   'rules': {
-    // require or disallow trailing commas
-    'comma-dangle': ['error', 'only-multiline'],
-
     // disallow assignment operators in conditional expressions
     'no-cond-assign': ['error', 'always'],
 
