@@ -5,8 +5,7 @@
   "author": "Takahito Nakano",
   "devDependencies": {
     "ava": "^0.15.2",
-    "eslint": "3.0.0",
-    "eslint-find-rules": "^1.10.0"
+    "eslint": "3.0.0"
   },
   "files": [
     "base.js",
@@ -31,7 +30,6 @@
   },
   "scripts": {
     "lint": "eslint .",
-    "pretest": "eslint-find-rules --unused",
     "test": "ava --verbose test/**/*.js"
   }
 }
