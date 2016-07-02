@@ -121,7 +121,7 @@ module.exports = {
     // disallow multiline strings
     'no-multi-str': 'error',
 
-    // disallow reassigning native objects
+    // disallow assignments to native objects or read-only global variables
     'no-native-reassign': 'error',
 
     // disallow new operators outside of assignments or comparisons

@@ -14,6 +14,9 @@ module.exports = {
     // enforce camelcase naming convention
     'camelcase': ['error', {'properties': 'never'}],
 
+    // require or disallow trailing commas
+    'comma-dangle': ['error', 'only-multiline'],
+
     // enforce consistent spacing before and after commas
     'comma-spacing': ['error', {'before': false, 'after': true}],
 
