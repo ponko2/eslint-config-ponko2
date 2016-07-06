@@ -48,7 +48,7 @@ module.exports = {
     'id-match': 'off',
 
     // enforce consistent indentation
-    'indent': ['error', 2, {'SwitchCase': 1, 'VariableDeclarator': 1}],
+    'indent': ['error', 2, {'SwitchCase': 1, 'VariableDeclarator': 1, 'outerIIFEBody': 0}],
 
     // enforce the consistent use of either double or single quotes in JSX attributes
     'jsx-quotes': ['error', 'prefer-double'],
