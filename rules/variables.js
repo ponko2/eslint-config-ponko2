@@ -30,7 +30,7 @@ module.exports = {
     'no-undef-init': 'error',
 
     // disallow the use of undefined as an identifier
-    'no-undefined': 'error',
+    'no-undefined': 'off',
 
     // disallow unused variables
     'no-unused-vars': ['error', {'vars': 'local', 'args': 'after-used'}],
