@@ -223,7 +223,11 @@ module.exports = {
     'space-unary-ops': ['error', {'words': true, 'nonwords': false}],
 
     // enforce consistent spacing after the // or /* in a comment
-    'spaced-comment': ['error', 'always', {'exceptions': ['-', '+'], 'markers': ['=', '!']}],
+    'spaced-comment': ['error', 'always', {
+      'exceptions': ['-', '+'],
+      'markers': ['=', '!'],
+      'block': {'balanced': true},
+    }],
 
     // require or disallow the Unicode BOM
     'unicode-bom': 'error',
