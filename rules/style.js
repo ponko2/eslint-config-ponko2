@@ -48,7 +48,12 @@ module.exports = {
     'id-match': 'off',
 
     // enforce consistent indentation
-    'indent': ['error', 2, {'SwitchCase': 1, 'VariableDeclarator': 1, 'outerIIFEBody': 0}],
+    'indent': ['error', 2, {
+      'SwitchCase': 1,
+      'VariableDeclarator': 1,
+      'outerIIFEBody': 0,
+      'MemberExpression': 1,
+    }],
 
     // enforce the consistent use of either double or single quotes in JSX attributes
     'jsx-quotes': ['error', 'prefer-double'],
@@ -156,7 +161,7 @@ module.exports = {
     'no-trailing-spaces': 'error',
 
     // disallow dangling underscores in identifiers
-    'no-underscore-dangle': ['error', {'allowAfterThis': true}],
+    'no-underscore-dangle': ['error', {'allowAfterThis': true, 'allowAfterSuper': true}],
 
     // disallow ternary operators when simpler alternatives exist
     'no-unneeded-ternary': ['error', {'defaultAssignment': false}],
