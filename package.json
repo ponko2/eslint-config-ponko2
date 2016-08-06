@@ -4,7 +4,7 @@
   "version": "4.5.0",
   "author": "Takahito Nakano",
   "devDependencies": {
-    "ava": "^0.15.2",
+    "ava": "^0.16.0",
     "eslint": "3.2.2",
     "eslint-find-rules": "^1.11.1"
   },
