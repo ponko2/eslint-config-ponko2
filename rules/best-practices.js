@@ -77,6 +77,9 @@ module.exports = {
     // disallow leading or trailing decimal points in numeric literals
     'no-floating-decimal': 'error',
 
+    // disallow assignments to native objects or read-only global variables
+    'no-global-assign': 'error',
+
     // disallow shorthand type conversions
     'no-implicit-coercion': ['error', {
       'boolean': true,

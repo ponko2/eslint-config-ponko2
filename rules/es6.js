@@ -38,6 +38,9 @@ module.exports = {
     // disallow specified modules when loaded by import
     'no-restricted-imports': 'off',
 
+    // Disallow template literal placeholder syntax in regular strings
+    'no-template-curly-in-string': 'error',
+
     // disallow this/super before calling super() in constructors
     'no-this-before-super': 'error',
 

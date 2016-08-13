@@ -88,6 +88,9 @@ module.exports = {
     // disallow control flow statements in finally blocks
     'no-unsafe-finally': 'error',
 
+    // disallow negating the left operand of relational operators
+    'no-unsafe-negation': 'error',
+
     // require calls to isNaN() when checking for NaN
     'use-isnan': 'error',
 
