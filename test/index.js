@@ -25,7 +25,7 @@ const cli = new CLIEngine({
   rules: {'no-console': 0}
 });
 
-test('no warnings with valid code', t => {
+test('no warnings with valid code', (t) => {
   const result = cli.executeOnText(validCode).results[0];
 
   t.falsy(result.warningCount, 'no warnings');
@@ -33,7 +33,7 @@ test('no warnings with valid code', t => {
   t.deepEqual(result.messages, [], 'no messages in results');
 });
 
-test('a warning with invalid code', t => {
+test('a warning with invalid code', (t) => {
   const result = cli.executeOnText(invalidCode).results[0];
 
   t.truthy(result.errorCount, 'fails');

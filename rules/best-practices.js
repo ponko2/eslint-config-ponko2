@@ -158,7 +158,7 @@ module.exports = {
     'no-script-url': 'error',
 
     // disallow assignments where both sides are exactly the same
-    'no-self-assign': 'error',
+    'no-self-assign': ['error', {'props': true}],
 
     // disallow comparisons where both sides are exactly the same
     'no-self-compare': 'error',

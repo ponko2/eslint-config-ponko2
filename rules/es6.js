@@ -6,7 +6,7 @@ module.exports = {
     'arrow-body-style': ['error', 'as-needed', {'requireReturnForObjectLiteral': true}],
 
     // require parentheses around arrow function arguments
-    'arrow-parens': ['error', 'as-needed'],
+    'arrow-parens': ['error', 'as-needed', {'requireForBlockBody': true}],
 
     // enforce consistent spacing before and after the arrow in arrow functions
     'arrow-spacing': ['error', {'before': true, 'after': true}],
