@@ -77,6 +77,9 @@ module.exports = {
     // disallow leading or trailing decimal points in numeric literals
     'no-floating-decimal': 'error',
 
+    // disallow assignments to native objects or read-only global variables
+    'no-global-assign': 'error',
+
     // disallow shorthand type conversions
     'no-implicit-coercion': ['error', {
       'boolean': true,
@@ -155,7 +158,7 @@ module.exports = {
     'no-script-url': 'error',
 
     // disallow assignments where both sides are exactly the same
-    'no-self-assign': 'error',
+    'no-self-assign': ['error', {'props': true}],
 
     // disallow comparisons where both sides are exactly the same
     'no-self-compare': 'error',

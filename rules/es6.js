@@ -6,7 +6,7 @@ module.exports = {
     'arrow-body-style': ['error', 'as-needed', {'requireReturnForObjectLiteral': true}],
 
     // require parentheses around arrow function arguments
-    'arrow-parens': ['error', 'as-needed'],
+    'arrow-parens': ['error', 'as-needed', {'requireForBlockBody': true}],
 
     // enforce consistent spacing before and after the arrow in arrow functions
     'arrow-spacing': ['error', {'before': true, 'after': true}],
@@ -37,6 +37,9 @@ module.exports = {
 
     // disallow specified modules when loaded by import
     'no-restricted-imports': 'off',
+
+    // Disallow template literal placeholder syntax in regular strings
+    'no-template-curly-in-string': 'error',
 
     // disallow this/super before calling super() in constructors
     'no-this-before-super': 'error',

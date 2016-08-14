@@ -32,6 +32,9 @@ module.exports = {
     // enforce at least one newline at the end of files
     'eol-last': 'error',
 
+    // require or disallow spacing between function identifiers and their invocations
+    'func-call-spacing': ['error', 'never'],
+
     // require or disallow named function expressions
     'func-names': 'off',
 
@@ -211,6 +214,9 @@ module.exports = {
 
     // enforce consistent spacing before and after semicolons
     'semi-spacing': ['error', {'before': false, 'after': true}],
+
+    // requires object keys to be sorted
+    'sort-keys': 'off',
 
     // require variables within the same declaration block to be sorted
     'sort-vars': 'off',
