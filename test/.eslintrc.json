@@ -1,6 +1,12 @@
 {
   "root": true,
-  "extends": "ponko2",
+  "plugins": [
+    "ava"
+  ],
+  "extends": [
+    "ponko2",
+    "plugin:ava/recommended"
+  ],
   "rules": {
     "no-unused-vars": ["error", {
       "vars": "all",
