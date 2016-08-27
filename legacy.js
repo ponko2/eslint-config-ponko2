@@ -25,6 +25,9 @@ module.exports = {
     // enforce consistent spacing before and after the arrow in arrow functions
     'arrow-spacing': 'off',
 
+    // enforce that class methods utilize this
+    'class-methods-use-this': 'off',
+
     // require super() calls in constructors
     'constructor-super': 'off',
 
@@ -96,6 +99,9 @@ module.exports = {
 
     // enforce sorted import declarations within module
     'sort-imports': 'off',
+
+    // require symbol descriptions
+    'symbol-description': 'off',
 
     // require or disallow spacing around embedded expressions of template strings
     'template-curly-spacing': 'off',

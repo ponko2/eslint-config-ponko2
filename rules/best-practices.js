@@ -11,6 +11,9 @@ module.exports = {
     // enforce the use of variables within the scope they are defined
     'block-scoped-var': 'error',
 
+    // enforce that class methods utilize this
+    'class-methods-use-this': 'error',
+
     // enforce a maximum cyclomatic complexity allowed in a program
     'complexity': ['warn', 11],
 
