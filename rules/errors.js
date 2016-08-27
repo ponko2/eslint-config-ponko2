@@ -79,6 +79,9 @@ module.exports = {
     // disallow sparse arrays
     'no-sparse-arrays': 'error',
 
+    // Disallow template literal placeholder syntax in regular strings
+    'no-template-curly-in-string': 'error',
+
     // disallow confusing multiline expressions
     'no-unexpected-multiline': 'error',
 
