@@ -12,7 +12,7 @@ module.exports = {
     'es6': true,
   },
   'parserOptions': {
-    'ecmaVersion': 6,
+    'ecmaVersion': 2015,
     'sourceType': 'module',
     'ecmaFeatures': {'impliedStrict': true},
   },
