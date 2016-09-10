@@ -86,7 +86,14 @@ module.exports = {
     'max-depth': ['warn', 4],
 
     // enforce a maximum line length
-    'max-len': ['error', {'code': 100, 'tabWidth': 2, 'ignoreComments': true, 'ignoreUrls': true}],
+    'max-len': ['error', {
+      'code': 100,
+      'tabWidth': 2,
+      'ignoreComments': true,
+      'ignoreUrls': true,
+      'ignoreStrings': true,
+      'ignoreTemplateLiterals': true,
+    }],
 
     // enforce a maximum file length
     'max-lines': 'off',
