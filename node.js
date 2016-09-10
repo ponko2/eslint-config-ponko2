@@ -17,6 +17,9 @@ module.exports = {
     'ecmaFeatures': {'impliedStrict': false},
   },
   'rules': {
+    // disallow parseInt() in favor of binary, octal, and hexadecimal literals
+    'prefer-numeric-literals': 'off',
+
     // require Reflect methods where applicable
     'prefer-reflect': 'off',
 

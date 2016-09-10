@@ -29,6 +29,9 @@ module.exports = {
     // disallow specified modules when loaded by require
     'no-restricted-modules': 'off',
 
+    // disallow certain properties on certain objects
+    'no-restricted-properties': 'off',
+
     // disallow synchronous methods
     'no-sync': 'off',
   }
