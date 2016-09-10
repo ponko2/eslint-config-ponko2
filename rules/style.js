@@ -67,11 +67,20 @@ module.exports = {
     // enforce consistent spacing before and after keywords
     'keyword-spacing': 'error',
 
+    // enforce position of line comments
+    'line-comment-position': 'off',
+
     // enforce consistent linebreak style
     'linebreak-style': ['error', 'unix'],
 
     // require empty lines around comments
     'lines-around-comment': 'off',
+
+    // require or disallow newlines around directives
+    'lines-around-directive': ['error', {
+      'before': 'always',
+      'after': 'always',
+    }],
 
     // enforce a maximum depth that blocks can be nested
     'max-depth': ['warn', 4],
