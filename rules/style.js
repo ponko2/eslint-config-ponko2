@@ -244,7 +244,11 @@ module.exports = {
     'space-before-blocks': ['error', 'always'],
 
     // enforce consistent spacing before function definition opening parenthesis
-    'space-before-function-paren': ['error', {'anonymous': 'always', 'named': 'never'}],
+    'space-before-function-paren': ['error', {
+      'anonymous': 'always',
+      'named': 'never',
+      'asyncArrow': 'always',
+    }],
 
     // enforce consistent spacing inside parentheses
     'space-in-parens': ['error', 'never'],

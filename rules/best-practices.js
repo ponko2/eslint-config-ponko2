@@ -206,7 +206,7 @@ module.exports = {
     'vars-on-top': 'error',
 
     // require parentheses around immediate function invocations
-    'wrap-iife': ['error', 'outside'],
+    'wrap-iife': ['error', 'outside', {'functionPrototypeMethods': false}],
 
     // require or disallow "Yoda" conditions
     'yoda': ['error', 'never', {'exceptRange': true, 'onlyEquality': true}],
