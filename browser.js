@@ -18,7 +18,7 @@ module.exports = {
     // require error handling in callbacks
     'handle-callback-err': 'off',
 
-    // disallow require calls to be mixed with regular var declarations
+    // disallow require calls to be mixed with regular variable declarations
     'no-mixed-requires': 'off',
 
     // disallow new operators with calls to require

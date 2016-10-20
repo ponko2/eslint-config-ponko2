@@ -91,7 +91,7 @@ module.exports = {
       'allow': ['!!'],
     }],
 
-    // disallow var and named function declarations in the global scope
+    // disallow variable and function declarations in the global scope
     'no-implicit-globals': 'error',
 
     // disallow the use of eval()-like methods
@@ -151,7 +151,7 @@ module.exports = {
     // disallow the use of the __proto__ property
     'no-proto': 'error',
 
-    // disallow var redeclaration
+    // disallow variable redeclaration
     'no-redeclare': ['error', {'builtinGlobals': true}],
 
     // disallow assignment operators in return statements
@@ -206,7 +206,7 @@ module.exports = {
     'vars-on-top': 'error',
 
     // require parentheses around immediate function invocations
-    'wrap-iife': ['error', 'outside'],
+    'wrap-iife': ['error', 'outside', {'functionPrototypeMethods': false}],
 
     // require or disallow "Yoda" conditions
     'yoda': ['error', 'never', {'exceptRange': true, 'onlyEquality': true}],

@@ -29,11 +29,14 @@ module.exports = {
     // enforce consistent naming when capturing the current execution context
     'consistent-this': 'off',
 
-    // enforce at least one newline at the end of files
+    // require or disallow newline at the end of files
     'eol-last': 'error',
 
     // require or disallow spacing between function identifiers and their invocations
     'func-call-spacing': ['error', 'never'],
+
+    // require function names to match the name of the variable or property to which they are assigned
+    'func-name-matching': ['error', {'includeCommonJSModuleExports': false}],
 
     // require or disallow named function expressions
     'func-names': 'off',
@@ -113,13 +116,13 @@ module.exports = {
     // enforce newlines between operands of ternary expressions
     'multiline-ternary': 'off',
 
-    // require constructor function names to begin with a capital letter
+    // require constructor names to begin with a capital letter
     'new-cap': ['error', {'newIsCap': true}],
 
     // require parentheses when invoking a constructor with no arguments
     'new-parens': 'error',
 
-    // require or disallow an empty line after var declarations
+    // require or disallow an empty line after variable declarations
     'newline-after-var': 'off',
 
     // require an empty line before return statements
@@ -200,7 +203,7 @@ module.exports = {
     // enforce variables to be declared either together or separately in functions
     'one-var': ['error', {'uninitialized': 'always', 'initialized': 'never'}],
 
-    // require or disallow newlines around var declarations
+    // require or disallow newlines around variable declarations
     'one-var-declaration-per-line': ['error', 'initializations'],
 
     // require or disallow assignment operator shorthand where possible
@@ -231,7 +234,7 @@ module.exports = {
     // enforce consistent spacing before and after semicolons
     'semi-spacing': ['error', {'before': false, 'after': true}],
 
-    // requires object keys to be sorted
+    // require object keys to be sorted
     'sort-keys': 'off',
 
     // require variables within the same declaration block to be sorted
@@ -241,12 +244,16 @@ module.exports = {
     'space-before-blocks': ['error', 'always'],
 
     // enforce consistent spacing before function definition opening parenthesis
-    'space-before-function-paren': ['error', {'anonymous': 'always', 'named': 'never'}],
+    'space-before-function-paren': ['error', {
+      'anonymous': 'always',
+      'named': 'never',
+      'asyncArrow': 'always',
+    }],
 
     // enforce consistent spacing inside parentheses
     'space-in-parens': ['error', 'never'],
 
-    // require spacing around operators
+    // require spacing around infix operators
     'space-infix-ops': 'error',
 
     // enforce consistent spacing before or after unary operators

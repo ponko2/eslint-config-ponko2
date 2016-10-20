@@ -2,7 +2,7 @@
 
 module.exports = {
   'rules': {
-    // require or disallow initialization in var declarations
+    // require or disallow initialization in variable declarations
     'init-declarations': 'off',
 
     // disallow catch clause parameters from shadowing variables in the outer scope
@@ -17,7 +17,7 @@ module.exports = {
     // disallow specified global variables
     'no-restricted-globals': 'off',
 
-    // disallow var declarations from shadowing variables in the outer scope
+    // disallow variable declarations from shadowing variables declared in the outer scope
     'no-shadow': 'error',
 
     // disallow identifiers from shadowing restricted names
