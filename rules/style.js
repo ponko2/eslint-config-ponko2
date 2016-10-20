@@ -35,6 +35,9 @@ module.exports = {
     // require or disallow spacing between function identifiers and their invocations
     'func-call-spacing': ['error', 'never'],
 
+    // require function names to match the name of the variable or property to which they are assigned
+    'func-name-matching': ['error', {'includeCommonJSModuleExports': false}],
+
     // require or disallow named function expressions
     'func-names': 'off',
 
