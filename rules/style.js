@@ -36,7 +36,7 @@ module.exports = {
     'func-call-spacing': ['error', 'never'],
 
     // require function names to match the name of the variable or property to which they are assigned
-    'func-name-matching': ['error', {'includeCommonJSModuleExports': false}],
+    'func-name-matching': ['error', 'always', {'includeCommonJSModuleExports': false}],
 
     // require or disallow named function expressions
     'func-names': 'off',
@@ -59,6 +59,15 @@ module.exports = {
       'VariableDeclarator': 1,
       'outerIIFEBody': 0,
       'MemberExpression': 1,
+      'FunctionDeclaration': {
+        'parameters': 1,
+        'body': 1
+      },
+      'FunctionExpression': {
+        'parameters': 1,
+        'body': 1
+      },
+      'CallExpression': {'parameters': 1},
     }],
 
     // enforce the consistent use of either double or single quotes in JSX attributes
@@ -96,6 +105,7 @@ module.exports = {
       'ignoreUrls': true,
       'ignoreStrings': true,
       'ignoreTemplateLiterals': true,
+      'ignoreRegExpLiterals': true,
     }],
 
     // enforce a maximum file length
