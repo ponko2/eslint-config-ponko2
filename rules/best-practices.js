@@ -190,6 +190,9 @@ module.exports = {
     // disallow unnecessary escape characters
     'no-useless-escape': 'error',
 
+    // disallow redundant return statements
+    'no-useless-return': 'error',
+
     // disallow void operators
     'no-void': 'error',
 
