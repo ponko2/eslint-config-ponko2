@@ -5,8 +5,8 @@
   "author": "Takahito Nakano",
   "devDependencies": {
     "ava": "^0.16.0",
-    "eslint": "^3.8.1",
-    "eslint-find-rules": "^1.14.0",
+    "eslint": "^3.9.0",
+    "eslint-find-rules": "^1.14.3",
     "eslint-plugin-ava": "^3.1.1"
   },
   "files": [
@@ -24,7 +24,7 @@
   "license": "MIT",
   "main": "index.js",
   "peerDependencies": {
-    "eslint": "^3.8.1"
+    "eslint": "^3.9.0"
   },
   "repository": {
     "type": "git",
