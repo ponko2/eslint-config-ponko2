@@ -7,7 +7,7 @@
     "ava": "^0.16.0",
     "eslint": "^3.9.0",
     "eslint-find-rules": "^1.14.3",
-    "eslint-plugin-ava": "^3.1.1"
+    "eslint-plugin-ava": "^4.0.0"
   },
   "files": [
     "base.js",
