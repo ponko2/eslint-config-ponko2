@@ -14,6 +14,9 @@ module.exports = {
     // enforce camelcase naming convention
     'camelcase': ['error', {'properties': 'never'}],
 
+    // enforce or disallow capitalization of the first letter of a comment
+    'capitalized-comments': 'off',
+
     // require or disallow trailing commas
     'comma-dangle': ['error', 'only-multiline'],
 
