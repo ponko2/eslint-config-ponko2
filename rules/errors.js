@@ -2,6 +2,9 @@
 
 module.exports = {
   'rules': {
+    // disallow await inside of loops
+    'no-await-in-loop': 'error',
+
     // disallow assignment operators in conditional expressions
     'no-cond-assign': ['error', 'always'],
 
