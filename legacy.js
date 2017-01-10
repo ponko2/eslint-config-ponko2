@@ -79,6 +79,9 @@ module.exports = {
     // require const declarations for variables that are never reassigned after declared
     'prefer-const': 'off',
 
+    // require destructuring from arrays and/or objects
+    'prefer-destructuring': 'off',
+
     // disallow parseInt() in favor of binary, octal, and hexadecimal literals
     'prefer-numeric-literals': 'off',
 
