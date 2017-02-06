@@ -282,6 +282,9 @@ module.exports = {
       'block': {'balanced': true},
     }],
 
+    // require or disallow spacing between template tags and their literals
+    'template-tag-spacing': ['error', 'never'],
+
     // require or disallow the Unicode BOM
     'unicode-bom': 'error',
 
