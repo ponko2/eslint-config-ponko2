@@ -84,12 +84,14 @@ module.exports = {
     'no-global-assign': 'error',
 
     // disallow shorthand type conversions
-    'no-implicit-coercion': ['error', {
-      'boolean': true,
-      'number': true,
-      'string': true,
-      'allow': ['!!'],
-    }],
+    'no-implicit-coercion': [
+      'error', {
+        'boolean': true,
+        'number': true,
+        'string': true,
+        'allow': ['!!'],
+      }
+    ],
 
     // disallow variable and function declarations in the global scope
     'no-implicit-globals': 'error',
@@ -116,13 +118,15 @@ module.exports = {
     'no-magic-numbers': 'off',
 
     // disallow multiple spaces
-    'no-multi-spaces': ['error', {
-      'exceptions': {
-        'ImportDeclaration': true,
-        'VariableDeclarator': true,
-        'AssignmentExpression': true
+    'no-multi-spaces': [
+      'error', {
+        'exceptions': {
+          'ImportDeclaration': true,
+          'VariableDeclarator': true,
+          'AssignmentExpression': true
+        }
       }
-    }],
+    ],
 
     // disallow multiline strings
     'no-multi-str': 'error',
@@ -179,11 +183,13 @@ module.exports = {
     'no-unmodified-loop-condition': 'error',
 
     // disallow unused expressions
-    'no-unused-expressions': ['error', {
-      'allowShortCircuit': false,
-      'allowTernary': false,
-      'allowTaggedTemplates': false,
-    }],
+    'no-unused-expressions': [
+      'error', {
+        'allowShortCircuit': false,
+        'allowTernary': false,
+        'allowTaggedTemplates': false,
+      }
+    ],
 
     // disallow unused labels
     'no-unused-labels': 'error',

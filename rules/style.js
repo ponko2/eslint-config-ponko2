@@ -119,15 +119,17 @@ module.exports = {
     'max-depth': ['warn', 4],
 
     // enforce a maximum line length
-    'max-len': ['error', {
-      'code': 100,
-      'tabWidth': 2,
-      'ignoreComments': true,
-      'ignoreUrls': true,
-      'ignoreStrings': true,
-      'ignoreTemplateLiterals': true,
-      'ignoreRegExpLiterals': true,
-    }],
+    'max-len': [
+      'error', {
+        'code': 100,
+        'tabWidth': 2,
+        'ignoreComments': true,
+        'ignoreUrls': true,
+        'ignoreStrings': true,
+        'ignoreTemplateLiterals': true,
+        'ignoreRegExpLiterals': true,
+      }
+    ],
 
     // enforce a maximum file length
     'max-lines': 'off',
@@ -287,11 +289,13 @@ module.exports = {
     ],
 
     // require quotes around object literal property names
-    'quote-props': ['error', 'consistent-as-needed', {
-      'keywords': false,
-      'unnecessary': true,
-      'numbers': false,
-    }],
+    'quote-props': [
+      'error', 'consistent-as-needed', {
+        'keywords': false,
+        'unnecessary': true,
+        'numbers': false,
+      }
+    ],
 
     // enforce the consistent use of either backticks, double, or single quotes
     'quotes': ['error', 'single', 'avoid-escape'],
@@ -318,11 +322,13 @@ module.exports = {
     'space-before-blocks': ['error', 'always'],
 
     // enforce consistent spacing before function definition opening parenthesis
-    'space-before-function-paren': ['error', {
-      'anonymous': 'always',
-      'named': 'never',
-      'asyncArrow': 'always',
-    }],
+    'space-before-function-paren': [
+      'error', {
+        'anonymous': 'always',
+        'named': 'never',
+        'asyncArrow': 'always',
+      }
+    ],
 
     // enforce consistent spacing inside parentheses
     'space-in-parens': ['error', 'never'],
@@ -334,11 +340,13 @@ module.exports = {
     'space-unary-ops': ['error', {'words': true, 'nonwords': false}],
 
     // enforce consistent spacing after the // or /* in a comment
-    'spaced-comment': ['error', 'always', {
-      'exceptions': ['-', '+'],
-      'markers': ['=', '!'],
-      'block': {'balanced': true},
-    }],
+    'spaced-comment': [
+      'error', 'always', {
+        'exceptions': ['-', '+'],
+        'markers': ['=', '!'],
+        'block': {'balanced': true},
+      }
+    ],
 
     // enforce spacing around colons of switch statements
     'switch-colon-spacing': [

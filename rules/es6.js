@@ -54,11 +54,13 @@ module.exports = {
     'no-var': 'error',
 
     // require or disallow method and property shorthand syntax for object literals
-    'object-shorthand': ['error', 'always', {
-      'avoidQuotes': true,
-      'ignoreConstructors': true,
-      'avoidExplicitReturnArrows': true
-    }],
+    'object-shorthand': [
+      'error', 'always', {
+        'avoidQuotes': true,
+        'ignoreConstructors': true,
+        'avoidExplicitReturnArrows': true
+      }
+    ],
 
     // require arrow functions as callbacks
     'prefer-arrow-callback': ['error', {'allowNamedFunctions': true}],
@@ -67,10 +69,12 @@ module.exports = {
     'prefer-const': ['error', {'ignoreReadBeforeAssign': true}],
 
     // require destructuring from arrays and/or objects
-    'prefer-destructuring': ['error', {
-      'array': false,
-      'object': true
-    }, {'enforceForRenamedProperties': false}],
+    'prefer-destructuring': [
+      'error', {
+        'array': false,
+        'object': true
+      }, {'enforceForRenamedProperties': false}
+    ],
 
     // disallow parseInt() in favor of binary, octal, and hexadecimal literals
     'prefer-numeric-literals': 'error',

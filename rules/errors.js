@@ -71,11 +71,13 @@ module.exports = {
     'no-invalid-regexp': 'error',
 
     // disallow irregular whitespace outside of strings and comments
-    'no-irregular-whitespace': ['error', {
-      'skipStrings': true,
-      'skipRegExps': true,
-      'skipTemplates': true
-    }],
+    'no-irregular-whitespace': [
+      'error', {
+        'skipStrings': true,
+        'skipRegExps': true,
+        'skipTemplates': true
+      }
+    ],
 
     // disallow negating the left operand in in expressions
     'no-negated-in-lhs': 'error',
@@ -111,18 +113,20 @@ module.exports = {
     'use-isnan': 'error',
 
     // enforce valid JSDoc comments
-    'valid-jsdoc': ['error', {
-      'requireReturn': true,
-      'prefer': {'return': 'returns'},
-      'preferType': {
-        'Boolean': 'boolean',
-        'Number': 'number',
-        'String': 'string',
-        'Object': 'object',
-        'Symbol': 'symbol',
-        'Function': 'function'
-      },
-    }],
+    'valid-jsdoc': [
+      'error', {
+        'requireReturn': true,
+        'prefer': {'return': 'returns'},
+        'preferType': {
+          'Boolean': 'boolean',
+          'Number': 'number',
+          'String': 'string',
+          'Object': 'object',
+          'Symbol': 'symbol',
+          'Function': 'function'
+        },
+      }
+    ],
 
     // enforce comparing typeof expressions against valid strings
     'valid-typeof': 'error',

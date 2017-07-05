@@ -1,9 +1,7 @@
 'use strict';
 
 module.exports = {
-  'extends': [
-    'eslint-config-ponko2/legacy',
-  ].map(require.resolve),
+  'extends': ['eslint-config-ponko2/legacy'].map(require.resolve),
   'env': {
     'browser': true,
     'node': false,
