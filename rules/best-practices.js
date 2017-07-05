@@ -179,7 +179,11 @@ module.exports = {
     'no-unmodified-loop-condition': 'error',
 
     // disallow unused expressions
-    'no-unused-expressions': 'error',
+    'no-unused-expressions': ['error', {
+      'allowShortCircuit': false,
+      'allowTernary': false,
+      'allowTaggedTemplates': false,
+    }],
 
     // disallow unused labels
     'no-unused-labels': 'error',
