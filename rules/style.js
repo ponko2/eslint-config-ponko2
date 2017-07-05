@@ -2,6 +2,17 @@
 
 module.exports = {
   'rules': {
+    // enforce linebreaks after opening and before closing array brackets
+    'array-bracket-newline': [
+      'error', {
+        'multiline': true,
+        'minItems': null,
+      }
+    ],
+
+    // enforce line breaks after each array element
+    'array-element-newline': 'off',
+
     // enforce consistent spacing inside array brackets
     'array-bracket-spacing': ['error', 'never'],
 
@@ -57,21 +68,31 @@ module.exports = {
     'id-match': 'off',
 
     // enforce consistent indentation
-    'indent': ['error', 2, {
-      'SwitchCase': 1,
-      'VariableDeclarator': 1,
-      'outerIIFEBody': 0,
-      'MemberExpression': 1,
-      'FunctionDeclaration': {
-        'parameters': 1,
-        'body': 1
-      },
-      'FunctionExpression': {
-        'parameters': 1,
-        'body': 1
-      },
-      'CallExpression': {'parameters': 1},
-    }],
+    'indent': [
+      'error',
+      2,
+      {
+        'SwitchCase': 1,
+        'VariableDeclarator': 1,
+        'outerIIFEBody': 0,
+        'MemberExpression': 1,
+        'FunctionDeclaration': {
+          'parameters': 1,
+          'body': 1
+        },
+        'FunctionExpression': {
+          'parameters': 1,
+          'body': 1
+        },
+        'CallExpression': {'arguments': 1},
+        'ArrayExpression': 1,
+        'ObjectExpression': 1,
+        'flatTernaryExpressions': true,
+      }
+    ],
+
+    // enforce consistent indentation
+    'indent-legacy': 'off',
 
     // enforce the consistent use of either double or single quotes in JSX attributes
     'jsx-quotes': ['error', 'prefer-double'],
@@ -234,6 +255,21 @@ module.exports = {
     // require or disallow padding within blocks
     'padded-blocks': ['error', 'never'],
 
+    // require or disallow padding lines between statements
+    'padding-line-between-statements': [
+      'error',
+      {
+        'blankLine': 'always',
+        'prev': 'directive',
+        'next': '*'
+      },
+      {
+        'blankLine': 'any',
+        'prev': 'directive',
+        'next': 'directive'
+      }
+    ],
+
     // require quotes around object literal property names
     'quote-props': ['error', 'consistent-as-needed', {
       'keywords': false,
@@ -252,6 +288,9 @@ module.exports = {
 
     // enforce consistent spacing before and after semicolons
     'semi-spacing': ['error', {'before': false, 'after': true}],
+
+    // enforce location of semicolons
+    'semi-style': ['error', 'last'],
 
     // require object keys to be sorted
     'sort-keys': 'off',
@@ -284,6 +323,14 @@ module.exports = {
       'markers': ['=', '!'],
       'block': {'balanced': true},
     }],
+
+    // enforce spacing around colons of switch statements
+    'switch-colon-spacing': [
+      'error', {
+        'after': true,
+        'before': false,
+      }
+    ],
 
     // require or disallow spacing between template tags and their literals
     'template-tag-spacing': ['error', 'never'],
