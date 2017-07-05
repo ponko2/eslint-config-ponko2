@@ -113,10 +113,7 @@ module.exports = {
     'lines-around-comment': 'off',
 
     // require or disallow newlines around directives
-    'lines-around-directive': ['error', {
-      'before': 'always',
-      'after': 'always',
-    }],
+    'lines-around-directive': 'off',
 
     // enforce a maximum depth that blocks can be nested
     'max-depth': ['warn', 4],
