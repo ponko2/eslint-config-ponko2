@@ -5,6 +5,9 @@ module.exports = {
     // disallow await inside of loops
     'no-await-in-loop': 'error',
 
+    // disallow comparing against -0
+    'no-compare-neg-zero': 'error',
+
     // disallow assignment operators in conditional expressions
     'no-cond-assign': ['error', 'always'],
 
