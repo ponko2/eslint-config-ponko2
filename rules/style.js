@@ -232,7 +232,21 @@ module.exports = {
     'nonblock-statement-body-position': 'off',
 
     // enforce consistent line breaks inside braces
-    'object-curly-newline': ['error', {'multiline': true}],
+    'object-curly-newline': [
+      'error',
+      {
+        'ObjectExpression': {
+          'minProperties': 0,
+          'multiline': true,
+          'consistent': true,
+        },
+        'ObjectPattern': {
+          'minProperties': 0,
+          'multiline': true,
+          'consistent': true,
+        },
+      }
+    ],
 
     // enforce consistent spacing inside braces
     'object-curly-spacing': ['error', 'never'],
