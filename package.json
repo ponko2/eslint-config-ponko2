@@ -6,7 +6,7 @@
   "devDependencies": {
     "ava": "^0.19.1",
     "eslint": "^3.15.0",
-    "eslint-find-rules": "^1.14.3",
+    "eslint-find-rules": "^2.0.0",
     "eslint-plugin-ava": "^4.0.0"
   },
   "files": [
