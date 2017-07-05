@@ -1,9 +1,7 @@
 'use strict';
 
 module.exports = {
-  'extends': [
-    'eslint-config-ponko2/legacy',
-  ].map(require.resolve),
+  'extends': ['eslint-config-ponko2/legacy'].map(require.resolve),
   'env': {
     'browser': true,
     'node': false,
@@ -17,6 +15,9 @@ module.exports = {
 
     // require error handling in callbacks
     'handle-callback-err': 'off',
+
+    // disallow use of the Buffer() constructor
+    'no-buffer-constructor': 'off',
 
     // disallow require calls to be mixed with regular variable declarations
     'no-mixed-requires': 'off',

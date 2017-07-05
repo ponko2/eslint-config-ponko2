@@ -2,8 +2,14 @@
 
 module.exports = {
   'rules': {
+    // enforce “for” loop update clause moving the counter in the right direction.
+    'for-direction': 'error',
+
     // disallow await inside of loops
     'no-await-in-loop': 'error',
+
+    // disallow comparing against -0
+    'no-compare-neg-zero': 'error',
 
     // disallow assignment operators in conditional expressions
     'no-cond-assign': ['error', 'always'],
@@ -42,12 +48,15 @@ module.exports = {
     'no-extra-boolean-cast': 'off',
 
     // disallow unnecessary parentheses
-    'no-extra-parens': ['error', 'all', {
-      'conditionalAssign': false,
-      'returnAssign': false,
-      'nestedBinaryExpressions': false,
-      'ignoreJSX': 'all'
-    }],
+    'no-extra-parens': [
+      'error', 'all', {
+        'conditionalAssign': false,
+        'returnAssign': false,
+        'nestedBinaryExpressions': false,
+        'ignoreJSX': 'all',
+        'enforceForArrowConditionals': false,
+      }
+    ],
 
     // disallow unnecessary semicolons
     'no-extra-semi': 'error',
@@ -62,11 +71,13 @@ module.exports = {
     'no-invalid-regexp': 'error',
 
     // disallow irregular whitespace outside of strings and comments
-    'no-irregular-whitespace': ['error', {
-      'skipStrings': true,
-      'skipRegExps': true,
-      'skipTemplates': true
-    }],
+    'no-irregular-whitespace': [
+      'error', {
+        'skipStrings': true,
+        'skipRegExps': true,
+        'skipTemplates': true
+      }
+    ],
 
     // disallow negating the left operand in in expressions
     'no-negated-in-lhs': 'error',
@@ -102,18 +113,20 @@ module.exports = {
     'use-isnan': 'error',
 
     // enforce valid JSDoc comments
-    'valid-jsdoc': ['error', {
-      'requireReturn': true,
-      'prefer': {'return': 'returns'},
-      'preferType': {
-        'Boolean': 'boolean',
-        'Number': 'number',
-        'String': 'string',
-        'Object': 'object',
-        'Symbol': 'symbol',
-        'Function': 'function'
-      },
-    }],
+    'valid-jsdoc': [
+      'error', {
+        'requireReturn': true,
+        'prefer': {'return': 'returns'},
+        'preferType': {
+          'Boolean': 'boolean',
+          'Number': 'number',
+          'String': 'string',
+          'Object': 'object',
+          'Symbol': 'symbol',
+          'Function': 'function'
+        },
+      }
+    ],
 
     // enforce comparing typeof expressions against valid strings
     'valid-typeof': 'error',
