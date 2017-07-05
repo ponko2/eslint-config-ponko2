@@ -48,12 +48,15 @@ module.exports = {
     'no-extra-boolean-cast': 'off',
 
     // disallow unnecessary parentheses
-    'no-extra-parens': ['error', 'all', {
-      'conditionalAssign': false,
-      'returnAssign': false,
-      'nestedBinaryExpressions': false,
-      'ignoreJSX': 'all'
-    }],
+    'no-extra-parens': [
+      'error', 'all', {
+        'conditionalAssign': false,
+        'returnAssign': false,
+        'nestedBinaryExpressions': false,
+        'ignoreJSX': 'all',
+        'enforceForArrowConditionals': false,
+      }
+    ],
 
     // disallow unnecessary semicolons
     'no-extra-semi': 'error',

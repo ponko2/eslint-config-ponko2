@@ -214,7 +214,12 @@ module.exports = {
     'no-ternary': 'off',
 
     // disallow trailing whitespace at the end of lines
-    'no-trailing-spaces': 'error',
+    'no-trailing-spaces': [
+      'error', {
+        'skipBlankLines': false,
+        'ignoreComments': false,
+      }
+    ],
 
     // disallow dangling underscores in identifiers
     'no-underscore-dangle': ['error', {'allowAfterThis': true, 'allowAfterSuper': true}],
