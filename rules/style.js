@@ -118,6 +118,9 @@ module.exports = {
     // require or disallow newlines around directives
     'lines-around-directive': 'off',
 
+    // require or disallow an empty line between class members
+    'lines-between-class-members': ['error', 'always', {'exceptAfterSingleLine': false}],
+
     // enforce a maximum depth that blocks can be nested
     'max-depth': ['warn', 4],
 
@@ -148,6 +151,9 @@ module.exports = {
 
     // enforce a maximum number of statements allowed per line
     'max-statements-per-line': ['error', {'max': 1}],
+
+    // enforce a particular style for multiline comments
+    'multiline-comment-style': ['error', 'starred-block'],
 
     // enforce newlines between operands of ternary expressions
     'multiline-ternary': 'off',
