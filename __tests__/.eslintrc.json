@@ -1,22 +1,8 @@
 {
   "root": true,
-  "plugins": [
-    "ava"
-  ],
-  "extends": [
-    "ponko2",
-    "plugin:ava/recommended"
-  ],
-  "rules": {
-    "no-unused-vars": ["error", {
-      "vars": "all",
-      "args": "after-used",
-      "argsIgnorePattern": "^t$"
-    }],
-    "id-length": ["error", {
-      "min": 2,
-      "properties": "never",
-      "exceptions": ["$", "_", "t"]
-    }]
+  "plugins": ["jest"],
+  "extends": ["ponko2", "plugin:jest/recommended"],
+  "env": {
+    "jest/globals": true
   }
 }

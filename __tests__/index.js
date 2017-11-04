@@ -1,17 +1,14 @@
-import test        from 'ava';
-import {CLIEngine} from 'eslint';
-import eslintrc    from '../';
+const {CLIEngine} = require('eslint');
+const eslintrc = require('../');
 
-const validCode =
-`const message = 'Hello, World!';
+const validCode = `const message = 'Hello, World!';
 
 if (message !== '') {
   console.log(message);
 }
 `;
 
-const invalidCode =
-`var message = 'Hello, World!';
+const invalidCode = `var message = 'Hello, World!';
 
 if (message !== '') {
   console.log(message);
@@ -25,17 +22,38 @@ const cli = new CLIEngine({
   rules: {'no-console': 0}
 });
 
-test('no warnings with valid code', (t) => {
-  const result = cli.executeOnText(validCode).results[0];
+describe('no warnings with valid code', () => {
+  let result;
 
-  t.falsy(result.warningCount, 'no warnings');
-  t.falsy(result.errorCount, 'no errors');
-  t.deepEqual(result.messages, [], 'no messages in results');
+  beforeEach(() => {
+    result = cli.executeOnText(validCode).results[0];
+  });
+
+  it('did not warning', () => {
+    expect(result.warningCount).toBeFalsy();
+  });
+
+  it('did not error', () => {
+    expect(result.errorCount).toBeFalsy();
+  });
+
+  it('no messages in results', () => {
+    expect(result.messages.length).toBe(0);
+  });
 });
 
-test('a warning with invalid code', (t) => {
-  const result = cli.executeOnText(invalidCode).results[0];
+describe('a warning with invalid code', () => {
+  let result;
 
-  t.truthy(result.errorCount, 'fails');
-  t.is(result.messages[0].ruleId, 'no-var');
+  beforeEach(() => {
+    result = cli.executeOnText(invalidCode).results[0];
+  });
+
+  it('did error', () => {
+    expect(result.errorCount).toBeTruthy();
+  });
+
+  it('correct rule flagged', () => {
+    expect(result.messages[0].ruleId).toBe('no-var');
+  });
 });
