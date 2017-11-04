@@ -5,7 +5,6 @@
   "author": "Takahito Nakano",
   "devDependencies": {
     "eslint": "^4.10.0",
-    "eslint-find-rules": "^3.1.1",
     "eslint-plugin-jest": "^21.2.0",
     "jest": "^21.2.1"
   },
@@ -35,8 +34,7 @@
     "url": "https://github.com/ponko2/eslint-config-ponko2.git"
   },
   "scripts": {
-    "lint": "eslint .",
-    "pretest": "eslint-find-rules --unused",
+    "lint": "eslint --report-unused-disable-directives .",
     "test": "jest"
   }
 }

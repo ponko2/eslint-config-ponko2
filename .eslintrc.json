@@ -1,6 +1,6 @@
 {
   "root": true,
-  "extends": "ponko2/node",
+  "extends": "./node.js",
   "rules": {
     "quote-props": ["error", "always"]
   }

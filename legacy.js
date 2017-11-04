@@ -2,8 +2,8 @@
 
 module.exports = {
   'extends': [
-    'eslint-config-ponko2/base',
-    'eslint-config-ponko2/rules/node',
+    './base',
+    './rules/node',
   ].map(require.resolve),
   'env': {
     'browser': true,

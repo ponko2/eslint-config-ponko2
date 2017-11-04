@@ -1,7 +1,7 @@
 {
   "root": true,
   "plugins": ["jest"],
-  "extends": ["ponko2", "plugin:jest/recommended"],
+  "extends": ["../index.js", "plugin:jest/recommended"],
   "env": {
     "jest/globals": true
   }
