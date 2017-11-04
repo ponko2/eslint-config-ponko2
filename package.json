@@ -33,6 +33,6 @@
   "scripts": {
     "lint": "eslint .",
     "pretest": "eslint-find-rules --unused",
-    "test": "ava --verbose test/**/*.js"
+    "test": "ava --verbose __tests__/**/*.js"
   }
 }
