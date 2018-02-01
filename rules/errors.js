@@ -51,18 +51,10 @@ module.exports = {
     'no-extra-boolean-cast': 'off',
 
     // disallow unnecessary parentheses
-    'no-extra-parens': [
-      'error', 'all', {
-        'conditionalAssign': false,
-        'returnAssign': false,
-        'nestedBinaryExpressions': false,
-        'ignoreJSX': 'all',
-        'enforceForArrowConditionals': false,
-      }
-    ],
+    'no-extra-parens': 'off',
 
     // disallow unnecessary semicolons
-    'no-extra-semi': 'error',
+    'no-extra-semi': 'off',
 
     // disallow reassigning function declarations
     'no-func-assign': 'error',
@@ -101,7 +93,7 @@ module.exports = {
     'no-template-curly-in-string': 'error',
 
     // disallow confusing multiline expressions
-    'no-unexpected-multiline': 'error',
+    'no-unexpected-multiline': 'off',
 
     // disallow unreachable code after return, throw, continue, and break statements
     'no-unreachable': 'error',

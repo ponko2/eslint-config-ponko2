@@ -27,7 +27,7 @@ module.exports = {
     'default-case': 'error',
 
     // enforce consistent newlines before and after dots
-    'dot-location': ['error', 'property'],
+    'dot-location': 'off',
 
     // enforce dot notation whenever possible
     'dot-notation': ['error', {'allowKeywords': true, 'allowPattern': '^[a-z]+(_[a-z]+)+$'}],
@@ -78,7 +78,7 @@ module.exports = {
     'no-fallthrough': 'error',
 
     // disallow leading or trailing decimal points in numeric literals
-    'no-floating-decimal': 'error',
+    'no-floating-decimal': 'off',
 
     // disallow assignments to native objects or read-only global variables
     'no-global-assign': 'error',
@@ -118,15 +118,7 @@ module.exports = {
     'no-magic-numbers': 'off',
 
     // disallow multiple spaces
-    'no-multi-spaces': [
-      'error', {
-        'exceptions': {
-          'ImportDeclaration': true,
-          'VariableDeclarator': true,
-          'AssignmentExpression': true
-        }
-      }
-    ],
+    'no-multi-spaces': 'off',
 
     // disallow multiline strings
     'no-multi-str': 'error',
@@ -228,7 +220,7 @@ module.exports = {
     'vars-on-top': 'error',
 
     // require parentheses around immediate function invocations
-    'wrap-iife': ['error', 'outside', {'functionPrototypeMethods': false}],
+    'wrap-iife': 'off',
 
     // require or disallow "Yoda" conditions
     'yoda': ['error', 'never', {'exceptRange': true, 'onlyEquality': true}],

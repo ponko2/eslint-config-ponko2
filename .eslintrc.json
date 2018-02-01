@@ -1,7 +1,4 @@
 {
   "root": true,
-  "extends": "./node.js",
-  "rules": {
-    "quote-props": ["error", "always"]
-  }
+  "extends": "./node.js"
 }

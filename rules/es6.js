@@ -6,16 +6,16 @@ module.exports = {
     'arrow-body-style': ['error', 'as-needed', {'requireReturnForObjectLiteral': true}],
 
     // require parentheses around arrow function arguments
-    'arrow-parens': ['error', 'as-needed', {'requireForBlockBody': true}],
+    'arrow-parens': 'off',
 
     // enforce consistent spacing before and after the arrow in arrow functions
-    'arrow-spacing': ['error', {'before': true, 'after': true}],
+    'arrow-spacing': 'off',
 
     // require super() calls in constructors
     'constructor-super': 'error',
 
     // enforce consistent spacing around * operators in generator functions
-    'generator-star-spacing': ['error', {'before': true, 'after': false}],
+    'generator-star-spacing': 'off',
 
     // disallow reassigning class members
     'no-class-assign': 'error',
@@ -95,7 +95,7 @@ module.exports = {
     'require-yield': 'error',
 
     // enforce spacing between rest and spread operators and their expressions
-    'rest-spread-spacing': ['error', 'never'],
+    'rest-spread-spacing': 'off',
 
     // enforce sorted import declarations within module
     'sort-imports': 'off',
@@ -104,9 +104,9 @@ module.exports = {
     'symbol-description': 'error',
 
     // require or disallow spacing around embedded expressions of template strings
-    'template-curly-spacing': ['error', 'never'],
+    'template-curly-spacing': 'off',
 
     // require or disallow spacing around the * in yield* expressions
-    'yield-star-spacing': ['error', {'before': false, 'after': true}],
+    'yield-star-spacing': 'off',
   }
 };
