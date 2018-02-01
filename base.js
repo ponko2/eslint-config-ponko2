@@ -7,6 +7,8 @@ module.exports = {
     './rules/strict',
     './rules/style',
     './rules/variables',
-  ].map(require.resolve),
+  ]
+    .map(require.resolve)
+    .concat('plugin:prettier/recommended'),
   'rules': {}
 };
