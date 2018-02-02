@@ -6,7 +6,7 @@ module.exports = {
     "accessor-pairs": ["error", { setWithoutGet: true }],
 
     // enforce return statements in callbacks of array methods
-    "array-callback-return": "error",
+    "array-callback-return": ["error", { allowImplicit: true }],
 
     // enforce the use of variables within the scope they are defined
     "block-scoped-var": "error",
