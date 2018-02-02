@@ -61,6 +61,9 @@ module.exports = {
     // disallow this/super before calling super() in constructors
     "no-this-before-super": "off",
 
+    // disallow unnecessary computed property keys in object literals
+    "no-useless-computed-key": "off",
+
     // disallow unnecessary constructors
     "no-useless-constructor": "off",
 
