@@ -1,5 +1,6 @@
 const { CLIEngine } = require("eslint");
 const eslintrc = require("../");
+const getRuleFinder = require("eslint-find-rules");
 
 const validCode = `const message = "Hello, World!";
 
@@ -55,5 +56,27 @@ describe("a warning with invalid code", () => {
 
   it("correct rule flagged", () => {
     expect(result.messages[0].ruleId).toBe("no-var");
+  });
+});
+
+describe("unused rules", () => {
+  it("browser", () => {
+    const ruleFinder = getRuleFinder("./browser.js");
+    expect(ruleFinder.getUnusedRules()).toHaveLength(0);
+  });
+
+  it("index", () => {
+    const ruleFinder = getRuleFinder("./index.js");
+    expect(ruleFinder.getUnusedRules()).toHaveLength(0);
+  });
+
+  it("legacy", () => {
+    const ruleFinder = getRuleFinder("./legacy.js");
+    expect(ruleFinder.getUnusedRules()).toHaveLength(0);
+  });
+
+  it("node", () => {
+    const ruleFinder = getRuleFinder("./node.js");
+    expect(ruleFinder.getUnusedRules()).toHaveLength(0);
   });
 });
