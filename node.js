@@ -8,9 +8,12 @@ module.exports = {
     es6: true
   },
   parserOptions: {
-    ecmaVersion: 2015,
+    ecmaVersion: 2018,
     sourceType: "script",
-    ecmaFeatures: { impliedStrict: false }
+    ecmaFeatures: {
+      impliedStrict: false,
+      experimentalObjectRestSpread: true
+    }
   },
   rules: {
     // disallow parseInt() in favor of binary, octal, and hexadecimal literals

@@ -8,9 +8,12 @@ module.exports = {
     es6: true
   },
   parserOptions: {
-    ecmaVersion: 2015,
+    ecmaVersion: 2018,
     sourceType: "module",
-    ecmaFeatures: { impliedStrict: true }
+    ecmaFeatures: {
+      impliedStrict: true,
+      experimentalObjectRestSpread: true
+    }
   },
   rules: {}
 };
