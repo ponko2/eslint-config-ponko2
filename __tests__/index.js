@@ -38,7 +38,7 @@ describe('no warnings with valid code', () => {
   });
 
   it('no messages in results', () => {
-    expect(result.messages.length).toBe(0);
+    expect(result.messages).toHaveLength(0);
   });
 });
 
