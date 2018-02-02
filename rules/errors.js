@@ -118,9 +118,25 @@ module.exports = {
           Boolean: "boolean",
           Number: "number",
           String: "string",
-          Object: "object",
-          Symbol: "symbol",
-          Function: "function"
+          object: "Object",
+          symbol: "Symbol",
+          function: "Function",
+          array: "Array",
+          event: "Event",
+          byte: "number",
+          Byte: "number",
+          short: "number",
+          Short: "number",
+          int: "number",
+          Int: "number",
+          integer: "number",
+          Integer: "number",
+          long: "number",
+          Long: "number",
+          float: "number",
+          Float: "number",
+          double: "number",
+          Double: "number"
         }
       }
     ],
