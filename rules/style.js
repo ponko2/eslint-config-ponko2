@@ -72,6 +72,9 @@ module.exports = {
     // require identifiers to match a specified regular expression
     "id-match": "off",
 
+    // enforce the location of arrow function bodies
+    "implicit-arrow-linebreak": "off",
+
     // enforce consistent indentation
     indent: "off",
 
