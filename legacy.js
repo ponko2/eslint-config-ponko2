@@ -11,8 +11,7 @@ module.exports = {
     ecmaVersion: 5,
     sourceType: "script",
     ecmaFeatures: {
-      impliedStrict: false,
-      experimentalObjectRestSpread: false
+      impliedStrict: false
     }
   },
   rules: {
