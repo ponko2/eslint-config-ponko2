@@ -3,19 +3,17 @@
   "description": "ESLint Shareable Config",
   "version": "12.0.0",
   "author": "Takahito Nakano",
-  "dependencies": {
-    "eslint-config-prettier": "^2.9.0",
-    "eslint-plugin-prettier": "^2.6.0"
-  },
   "devDependencies": {
-    "eslint": "^4.18.1",
+    "eslint": "^4.18.2",
+    "eslint-config-prettier": "^2.9.0",
     "eslint-find-rules": "^3.2.1",
-    "eslint-plugin-jest": "^21.12.2",
+    "eslint-plugin-jest": "^21.14.0",
+    "eslint-plugin-prettier": "^2.6.0",
     "husky": "^0.14.3",
     "jest": "^22.4.2",
     "lint-staged": "^7.0.0",
     "npm-run-all": "^4.1.2",
-    "prettier": "^1.11.0"
+    "prettier": "^1.11.1"
   },
   "files": [
     "base.js",
@@ -42,7 +40,10 @@
   },
   "main": "index.js",
   "peerDependencies": {
-    "eslint": "^4.18.1"
+    "eslint": "^4.18.2",
+    "eslint-config-prettier": "^2.9.0",
+    "eslint-plugin-prettier": "^2.6.0",
+    "prettier": "^1.11.1"
   },
   "repository": {
     "type": "git",
