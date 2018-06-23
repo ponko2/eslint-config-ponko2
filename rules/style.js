@@ -118,6 +118,9 @@ module.exports = {
     // enforce a maximum file length
     "max-lines": "off",
 
+    // enforce a maximum number of line of code in a function
+    "max-lines-per-function": "off",
+
     // enforce a maximum depth that callbacks can be nested
     "max-nested-callbacks": "off",
 
@@ -258,6 +261,9 @@ module.exports = {
         next: "directive"
       }
     ],
+
+    // disallow using Object.assign with an object literal as the first argument and prefer the use of object spread instead.
+    "prefer-object-spread": "error",
 
     // require quotes around object literal property names
     "quote-props": "off",
