@@ -20,7 +20,15 @@ const cli = new CLIEngine({
   useEslintrc: false,
   baseConfig: eslintrc,
   envs: ["browser"],
-  rules: { "no-console": 0 }
+  rules: {
+    "no-console": 0,
+    "prettier/prettier": [
+      "error",
+      {
+        parser: "babylon"
+      }
+    ]
+  }
 });
 
 describe("no warnings with valid code", () => {
