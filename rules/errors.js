@@ -8,6 +8,9 @@ module.exports = {
     // enforce return statements in getters
     "getter-return": "error",
 
+    // disallow using an async function as a Promise executor
+    "no-async-promise-executor": "error",
+
     // disallow await inside of loops
     "no-await-in-loop": "error",
 
@@ -75,6 +78,9 @@ module.exports = {
       }
     ],
 
+    // disallow characters which are made with multiple code points in character class syntax
+    "no-misleading-character-class": "error",
+
     // disallow negating the left operand in in expressions
     "no-negated-in-lhs": "error",
 
@@ -104,6 +110,9 @@ module.exports = {
 
     // disallow negating the left operand of relational operators
     "no-unsafe-negation": "error",
+
+    // disallow assignments that can lead to race conditions due to usage of await or yield
+    "require-atomic-updates": "error",
 
     // require calls to isNaN() when checking for NaN
     "use-isnan": "error",
