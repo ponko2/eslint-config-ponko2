@@ -56,7 +56,6 @@
     "eslint-check:legacy": "eslint --print-config ./legacy.js | eslint-config-prettier-check",
     "eslint-check:node": "eslint --print-config ./node.js | eslint-config-prettier-check",
     "lint": "eslint --report-unused-disable-directives .",
-    "precommit": "lint-staged",
     "test": "jest"
   }
 }
