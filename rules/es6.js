@@ -3,11 +3,7 @@
 module.exports = {
   rules: {
     // require braces around arrow function bodies
-    "arrow-body-style": [
-      "error",
-      "as-needed",
-      { requireReturnForObjectLiteral: true }
-    ],
+    "arrow-body-style": "off",
 
     // require parentheses around arrow function arguments
     "arrow-parens": "off",
@@ -69,7 +65,7 @@ module.exports = {
     ],
 
     // require arrow functions as callbacks
-    "prefer-arrow-callback": ["error", { allowNamedFunctions: true }],
+    "prefer-arrow-callback": "off",
 
     // require const declarations for variables that are never reassigned after declared
     "prefer-const": ["error", { ignoreReadBeforeAssign: true }],

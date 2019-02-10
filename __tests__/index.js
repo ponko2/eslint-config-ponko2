@@ -25,7 +25,7 @@ const cli = new CLIEngine({
     "prettier/prettier": [
       "error",
       {
-        parser: "babylon"
+        parser: "babel"
       }
     ]
   }
