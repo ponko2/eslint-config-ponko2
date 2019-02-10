@@ -34,7 +34,7 @@ Base + Node.js v0.10 + Browser
 
 ### eslint-config-ponko2/node
 
-Base + Node.js v4
+Base + Node.js v10
 
 ```sh
 $ npm install --save-dev eslint-plugin-node
@@ -45,8 +45,7 @@ $ npm install --save-dev eslint-plugin-node
   "extends": [
     "ponko2/node",
     "plugin:node/recommended"
-  ],
-  "plugins": ["node"]
+  ]
 }
 ```
 
