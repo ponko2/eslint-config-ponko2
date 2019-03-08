@@ -221,6 +221,9 @@ module.exports = {
     // disallow with statements
     "no-with": "error",
 
+    // enforce using named capture group in regular expression
+    "prefer-named-capture-group": "off",
+
     // require using Error objects as Promise rejection reasons
     "prefer-promise-reject-errors": ["error", { allowEmptyReject: true }],
 
