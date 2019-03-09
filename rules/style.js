@@ -64,10 +64,7 @@ module.exports = {
     "id-blacklist": "off",
 
     // enforce minimum and maximum identifier lengths
-    "id-length": [
-      "error",
-      { min: 2, properties: "never", exceptions: ["$", "_"] }
-    ],
+    "id-length": "off",
 
     // require identifiers to match a specified regular expression
     "id-match": "off",
@@ -110,7 +107,7 @@ module.exports = {
     ],
 
     // enforce a maximum depth that blocks can be nested
-    "max-depth": ["warn", 4],
+    "max-depth": ["off", 4],
 
     // enforce a maximum line length
     "max-len": "off",
@@ -125,16 +122,16 @@ module.exports = {
     "max-nested-callbacks": "off",
 
     // enforce a maximum number of parameters in function definitions
-    "max-params": ["warn", 4],
+    "max-params": ["off", 4],
 
     // enforce a maximum number of statements allowed in function blocks
-    "max-statements": ["warn", 15, { ignoreTopLevelFunctions: true }],
+    "max-statements": ["off", 15, { ignoreTopLevelFunctions: true }],
 
     // enforce a maximum number of statements allowed per line
-    "max-statements-per-line": ["error", { max: 1 }],
+    "max-statements-per-line": ["off", { max: 1 }],
 
     // enforce a particular style for multiline comments
-    "multiline-comment-style": ["error", "starred-block"],
+    "multiline-comment-style": ["off", "starred-block"],
 
     // enforce newlines between operands of ternary expressions
     "multiline-ternary": "off",
