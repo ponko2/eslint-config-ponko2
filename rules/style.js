@@ -194,7 +194,7 @@ module.exports = {
     "no-plusplus": ["error", { allowForLoopAfterthoughts: true }],
 
     // disallow specified syntax
-    "no-restricted-syntax": ["error", "WithStatement"],
+    "no-restricted-syntax": ["error", "LabeledStatement", "WithStatement"],
 
     // disallow spacing between function identifiers and their applications
     "no-spaced-func": "off",
