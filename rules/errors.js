@@ -118,37 +118,7 @@ module.exports = {
     "use-isnan": "error",
 
     // enforce valid JSDoc comments
-    "valid-jsdoc": [
-      "error",
-      {
-        requireReturn: true,
-        prefer: { return: "returns" },
-        preferType: {
-          Boolean: "boolean",
-          Number: "number",
-          String: "string",
-          object: "Object",
-          symbol: "Symbol",
-          function: "Function",
-          array: "Array",
-          event: "Event",
-          byte: "number",
-          Byte: "number",
-          short: "number",
-          Short: "number",
-          int: "number",
-          Int: "number",
-          integer: "number",
-          Integer: "number",
-          long: "number",
-          Long: "number",
-          float: "number",
-          Float: "number",
-          double: "number",
-          Double: "number"
-        }
-      }
-    ],
+    "valid-jsdoc": "off",
 
     // enforce comparing typeof expressions against valid strings
     "valid-typeof": "error"

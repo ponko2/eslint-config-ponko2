@@ -272,7 +272,7 @@ module.exports = {
     quotes: "off",
 
     // require JSDoc comments
-    "require-jsdoc": "error",
+    "require-jsdoc": "off",
 
     // require or disallow semicolons instead of ASI
     semi: "off",
