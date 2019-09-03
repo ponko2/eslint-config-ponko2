@@ -5,7 +5,7 @@
   "author": "Takahito Nakano",
   "devDependencies": {
     "eslint": "^5.16.0",
-    "eslint-config-prettier": "^6.1.0",
+    "eslint-config-prettier": "^6.2.0",
     "eslint-find-rules": "^3.4.0",
     "eslint-plugin-jest": "^22.16.0",
     "eslint-plugin-prettier": "^3.1.0",
@@ -35,7 +35,7 @@
   "main": "index.js",
   "peerDependencies": {
     "eslint": "^5.16.0",
-    "eslint-config-prettier": "^6.1.0",
+    "eslint-config-prettier": "^6.2.0",
     "eslint-plugin-prettier": "^3.1.0",
     "prettier": "^1.18.2"
   },
