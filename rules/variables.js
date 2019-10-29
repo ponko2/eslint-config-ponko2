@@ -6,7 +6,7 @@ module.exports = {
     "init-declarations": "off",
 
     // disallow catch clause parameters from shadowing variables in the outer scope
-    "no-catch-shadow": "error",
+    "no-catch-shadow": "off",
 
     // disallow deleting variables
     "no-delete-var": "error",
