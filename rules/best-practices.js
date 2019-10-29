@@ -158,7 +158,7 @@ module.exports = {
     "no-proto": "error",
 
     // disallow variable redeclaration
-    "no-redeclare": ["error", { builtinGlobals: true }],
+    "no-redeclare": "error",
 
     // disallow assignment operators in return statements
     "no-return-assign": "error",
@@ -216,10 +216,7 @@ module.exports = {
     "no-void": "error",
 
     // disallow specified warning terms in comments
-    "no-warning-comments": [
-      "off",
-      { terms: ["todo", "fixme", "xxx"], location: "start" }
-    ],
+    "no-warning-comments": "off",
 
     // disallow with statements
     "no-with": "error",

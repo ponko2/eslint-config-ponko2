@@ -66,7 +66,7 @@ module.exports = {
     "no-import-assign": "error",
 
     // disallow variable or function declarations in nested blocks
-    "no-inner-declarations": ["error", "functions"],
+    "no-inner-declarations": "error",
 
     // disallow invalid regular expression strings in RegExp constructors
     "no-invalid-regexp": "error",

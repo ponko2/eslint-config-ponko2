@@ -110,7 +110,7 @@ module.exports = {
     ],
 
     // enforce a maximum depth that blocks can be nested
-    "max-depth": ["off", 4],
+    "max-depth": "off",
 
     // enforce a maximum line length
     "max-len": "off",
@@ -125,16 +125,16 @@ module.exports = {
     "max-nested-callbacks": "off",
 
     // enforce a maximum number of parameters in function definitions
-    "max-params": ["off", 4],
+    "max-params": "off",
 
     // enforce a maximum number of statements allowed in function blocks
-    "max-statements": ["off", 15, { ignoreTopLevelFunctions: true }],
+    "max-statements": "off",
 
     // enforce a maximum number of statements allowed per line
-    "max-statements-per-line": ["off", { max: 1 }],
+    "max-statements-per-line": "off",
 
     // enforce a particular style for multiline comments
-    "multiline-comment-style": ["off", "starred-block"],
+    "multiline-comment-style": "off",
 
     // enforce newlines between operands of ternary expressions
     "multiline-ternary": "off",
