@@ -26,6 +26,9 @@ module.exports = {
     // require default cases in switch statements
     "default-case": "error",
 
+    // enforce default parameters to be last
+    "default-param-last": "error",
+
     // enforce consistent newlines before and after dots
     "dot-location": "off",
 
@@ -226,6 +229,9 @@ module.exports = {
 
     // require using Error objects as Promise rejection reasons
     "prefer-promise-reject-errors": ["error", { allowEmptyReject: true }],
+
+    // disallow use of the RegExp constructor in favor of regular expression literals
+    "prefer-regex-literals": "error",
 
     // enforce the consistent use of the radix argument when using parseInt()
     radix: "error",

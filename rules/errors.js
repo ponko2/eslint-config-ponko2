@@ -62,6 +62,9 @@ module.exports = {
     // disallow reassigning function declarations
     "no-func-assign": "error",
 
+    // disallow assigning to imported bindings
+    "no-import-assign": "error",
+
     // disallow variable or function declarations in nested blocks
     "no-inner-declarations": ["error", "functions"],
 
