@@ -21,7 +21,7 @@ module.exports = {
     "no-class-assign": "error",
 
     // disallow arrow functions where they could be confused with comparisons
-    "no-confusing-arrow": "error",
+    "no-confusing-arrow": "off",
 
     // disallow reassigning const variables
     "no-const-assign": "error",

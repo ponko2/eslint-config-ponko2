@@ -94,7 +94,7 @@ module.exports = {
     "line-comment-position": "off",
 
     // enforce consistent linebreak style
-    "linebreak-style": ["error", "unix"],
+    "linebreak-style": "off",
 
     // require empty lines around comments
     "lines-around-comment": "off",
