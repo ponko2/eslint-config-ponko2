@@ -57,6 +57,9 @@ module.exports = {
     // enforce the consistent use of either function declarations or expressions
     "func-style": "off",
 
+    // enforce line breaks between arguments of a function call
+    "function-call-argument-newline": "off",
+
     // enforce consistent line breaks inside function parentheses
     "function-paren-newline": "off",
 
