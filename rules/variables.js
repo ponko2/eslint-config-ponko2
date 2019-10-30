@@ -33,7 +33,10 @@ module.exports = {
     "no-undefined": "off",
 
     // disallow unused variables
-    "no-unused-vars": ["error", { vars: "local", args: "after-used" }],
+    "no-unused-vars": [
+      "error",
+      { vars: "all", args: "after-used", ignoreRestSiblings: true }
+    ],
 
     // disallow the use of variables before they are defined
     "no-use-before-define": ["error", { functions: false, classes: true }]

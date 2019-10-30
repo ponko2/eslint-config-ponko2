@@ -2,8 +2,8 @@
 
 module.exports = {
   rules: {
-    // enforce getter and setter pairs in objects
-    "accessor-pairs": ["error", { setWithoutGet: true }],
+    // enforce getter and setter pairs in objects and classes
+    "accessor-pairs": "off",
 
     // enforce return statements in callbacks of array methods
     "array-callback-return": ["error", { allowImplicit: true }],
@@ -15,7 +15,7 @@ module.exports = {
     "class-methods-use-this": "error",
 
     // enforce a maximum cyclomatic complexity allowed in a program
-    complexity: ["warn", 11],
+    complexity: "off",
 
     // require return statements to either always or never specify values
     "consistent-return": ["error", { treatUndefinedAsUnspecified: true }],
@@ -39,7 +39,7 @@ module.exports = {
     ],
 
     // require the use of === and !==
-    eqeqeq: ["error", "smart"],
+    eqeqeq: ["error", "always", { null: "ignore" }],
 
     // require for-in loops to include an if statement
     "guard-for-in": "error",
@@ -57,10 +57,10 @@ module.exports = {
     "no-case-declarations": "error",
 
     // disallow division operators explicitly at the beginning of regular expressions
-    "no-div-regex": "error",
+    "no-div-regex": "off",
 
     // disallow else blocks after return statements in if statements
-    "no-else-return": "error",
+    "no-else-return": ["error", { allowElseIf: false }],
 
     // disallow empty functions
     "no-empty-function": "error",
@@ -69,10 +69,10 @@ module.exports = {
     "no-empty-pattern": "error",
 
     // disallow null comparisons without type-checking operators
-    "no-eq-null": "error",
+    "no-eq-null": "off",
 
     // disallow the use of eval()
-    "no-eval": ["error", { allowIndirect: true }],
+    "no-eval": "error",
 
     // disallow extending native types
     "no-extend-native": "error",
@@ -93,15 +93,7 @@ module.exports = {
     "no-global-assign": "error",
 
     // disallow shorthand type conversions
-    "no-implicit-coercion": [
-      "error",
-      {
-        boolean: true,
-        number: true,
-        string: true,
-        allow: ["!!"]
-      }
-    ],
+    "no-implicit-coercion": "off",
 
     // disallow variable and function declarations in the global scope
     "no-implicit-globals": "error",
@@ -121,7 +113,7 @@ module.exports = {
     // disallow unnecessary nested blocks
     "no-lone-blocks": "error",
 
-    // disallow function declarations and expressions inside loop statements
+    // disallow function declarations that contain unsafe references inside loop statements
     "no-loop-func": "error",
 
     // disallow magic numbers
@@ -152,7 +144,27 @@ module.exports = {
     "no-octal-escape": "error",
 
     // disallow reassigning function parameters
-    "no-param-reassign": ["error", { props: true }],
+    "no-param-reassign": [
+      "error",
+      {
+        props: true,
+        ignorePropertyModificationsFor: [
+          "acc", // for reduce accumulators
+          "accumulator", // for reduce accumulators
+          "e", // for e.returnValue
+          "event", // for event.returnValue
+          "ctx", // for Koa routing
+          "context", // for Koa routing
+          "req", // for Express requests
+          "request", // for Express requests
+          "res", // for Express responses
+          "response", // for Express responses
+          "$scope", // for Angular 1 scopes
+          "staticContext", // for ReactRouter context
+          "registration" // for Create React App ServiceWorker registration
+        ]
+      }
+    ],
 
     // disallow the use of the __proto__ property
     "no-proto": "error",
@@ -160,8 +172,11 @@ module.exports = {
     // disallow variable redeclaration
     "no-redeclare": "error",
 
+    // disallow certain properties on certain objects
+    "no-restricted-properties": "off",
+
     // disallow assignment operators in return statements
-    "no-return-assign": "error",
+    "no-return-assign": ["error", "always"],
 
     // disallow unnecessary return await
     "no-return-await": "error",
@@ -182,7 +197,7 @@ module.exports = {
     "no-throw-literal": "error",
 
     // disallow unmodified loop conditions
-    "no-unmodified-loop-condition": "error",
+    "no-unmodified-loop-condition": "off",
 
     // disallow unused expressions
     "no-unused-expressions": [
@@ -198,7 +213,7 @@ module.exports = {
     "no-unused-labels": "error",
 
     // disallow unnecessary calls to .call() and .apply()
-    "no-useless-call": "error",
+    "no-useless-call": "off",
 
     // disallow unnecessary catch clauses
     "no-useless-catch": "error",
@@ -234,7 +249,7 @@ module.exports = {
     radix: "error",
 
     // disallow async functions which have no await expression
-    "require-await": "error",
+    "require-await": "off",
 
     // enforce the use of u flag on RegExp
     "require-unicode-regexp": "off",

@@ -30,7 +30,7 @@ module.exports = {
     "no-dupe-class-members": "error",
 
     // disallow duplicate module imports
-    "no-duplicate-imports": ["error", { includeExports: false }],
+    "no-duplicate-imports": "off",
 
     // disallow new operators with the Symbol object
     "no-new-symbol": "error",
@@ -64,7 +64,7 @@ module.exports = {
       }
     ],
 
-    // require arrow functions as callbacks
+    // require using arrow functions for callbacks
     "prefer-arrow-callback": "off",
 
     // require const declarations for variables that are never reassigned after declared
@@ -73,14 +73,11 @@ module.exports = {
     // require destructuring from arrays and/or objects
     "prefer-destructuring": [
       "error",
-      {
-        array: false,
-        object: true
-      },
+      { array: false, object: true },
       { enforceForRenamedProperties: false }
     ],
 
-    // disallow parseInt() in favor of binary, octal, and hexadecimal literals
+    // disallow parseInt() and Number.parseInt() in favor of binary, octal, and hexadecimal literals
     "prefer-numeric-literals": "error",
 
     // require Reflect methods where applicable
@@ -101,7 +98,7 @@ module.exports = {
     // enforce spacing between rest and spread operators and their expressions
     "rest-spread-spacing": "off",
 
-    // enforce sorted import declarations within module
+    // enforce sorted import declarations within modules
     "sort-imports": "off",
 
     // require symbol descriptions

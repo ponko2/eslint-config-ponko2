@@ -2,11 +2,11 @@
 
 module.exports = {
   rules: {
-    // enforce “for” loop update clause moving the counter in the right direction.
+    // enforce “for” loop update clause moving the counter in the right directin.
     "for-direction": "error",
 
     // enforce return statements in getters
-    "getter-return": "error",
+    "getter-return": ["error", { allowImplicit: true }],
 
     // disallow using an async function as a Promise executor
     "no-async-promise-executor": "error",
@@ -21,7 +21,7 @@ module.exports = {
     "no-cond-assign": ["error", "always"],
 
     // disallow the use of console
-    "no-console": "warn",
+    "no-console": "off",
 
     // disallow constant expressions in conditions
     "no-constant-condition": ["warn", { checkLoops: false }],
@@ -30,7 +30,7 @@ module.exports = {
     "no-control-regex": "error",
 
     // disallow the use of debugger
-    "no-debugger": "warn",
+    "no-debugger": "error",
 
     // disallow duplicate arguments in function definitions
     "no-dupe-args": "error",
@@ -51,7 +51,7 @@ module.exports = {
     "no-ex-assign": "error",
 
     // disallow unnecessary boolean casts
-    "no-extra-boolean-cast": "off",
+    "no-extra-boolean-cast": "error",
 
     // disallow unnecessary parentheses
     "no-extra-parens": "off",
@@ -71,7 +71,7 @@ module.exports = {
     // disallow invalid regular expression strings in RegExp constructors
     "no-invalid-regexp": "error",
 
-    // disallow irregular whitespace outside of strings and comments
+    // disallow irregular whitespace
     "no-irregular-whitespace": [
       "error",
       {
@@ -85,21 +85,21 @@ module.exports = {
     "no-misleading-character-class": "error",
 
     // disallow negating the left operand in in expressions
-    "no-negated-in-lhs": "error",
+    "no-negated-in-lhs": "off",
 
     // disallow calling global object properties as functions
     "no-obj-calls": "error",
 
-    // Disallow use of Object.prototypes builtins directly
-    "no-prototype-builtins": "off",
+    // disallow calling some Object.prototype methods directly on objects
+    "no-prototype-builtins": "error",
 
-    // disallow multiple spaces in regular expression literals
+    // disallow multiple spaces in regular expressions
     "no-regex-spaces": "error",
 
     // disallow sparse arrays
     "no-sparse-arrays": "error",
 
-    // Disallow template literal placeholder syntax in regular strings
+    // disallow template literal placeholder syntax in regular strings
     "no-template-curly-in-string": "error",
 
     // disallow confusing multiline expressions
@@ -115,7 +115,7 @@ module.exports = {
     "no-unsafe-negation": "error",
 
     // disallow assignments that can lead to race conditions due to usage of await or yield
-    "require-atomic-updates": "error",
+    "require-atomic-updates": "off",
 
     // require calls to isNaN() when checking for NaN
     "use-isnan": "error",
@@ -124,6 +124,6 @@ module.exports = {
     "valid-jsdoc": "off",
 
     // enforce comparing typeof expressions against valid strings
-    "valid-typeof": "error"
+    "valid-typeof": ["error", { requireStringLiterals: true }]
   }
 };

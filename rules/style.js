@@ -11,14 +11,14 @@ module.exports = {
     // enforce consistent spacing inside array brackets
     "array-bracket-spacing": "off",
 
-    // enforce consistent spacing inside single-line blocks
+    // disallow or enforce spaces inside of blocks after opening block and before closing block
     "block-spacing": "off",
 
     // enforce consistent brace style for blocks
     "brace-style": "off",
 
     // enforce camelcase naming convention
-    camelcase: ["error", { properties: "never" }],
+    camelcase: ["error", { properties: "never", ignoreDestructuring: false }],
 
     // enforce or disallow capitalization of the first letter of a comment
     "capitalized-comments": "off",
@@ -115,7 +115,7 @@ module.exports = {
     // enforce a maximum line length
     "max-len": "off",
 
-    // enforce a maximum file length
+    // enforce a maximum number of lines per file
     "max-lines": "off",
 
     // enforce a maximum number of line of code in a function
@@ -142,7 +142,7 @@ module.exports = {
     // require constructor names to begin with a capital letter
     "new-cap": ["error", { newIsCap: true }],
 
-    // require parentheses when invoking a constructor with no arguments
+    // enforce or disallow parentheses when invoking a constructor with no arguments
     "new-parens": "off",
 
     // require or disallow an empty line after variable declarations
@@ -169,7 +169,7 @@ module.exports = {
     // disallow if statements as the only statement in else blocks
     "no-lonely-if": "error",
 
-    // disallow mixes of different operators
+    // disallow mixed binary operators
     "no-mixed-operators": "off",
 
     // disallow mixed spaces and tabs for indentation
@@ -199,7 +199,7 @@ module.exports = {
     // disallow spacing between function identifiers and their applications
     "no-spaced-func": "off",
 
-    // disallow tabs in file
+    // disallow all tabs
     "no-tabs": "off",
 
     // disallow ternary operators
@@ -309,9 +309,15 @@ module.exports = {
       "error",
       "always",
       {
-        exceptions: ["-", "+"],
-        markers: ["=", "!"],
-        block: { balanced: true }
+        line: {
+          exceptions: ["-", "+"],
+          markers: ["=", "!", "/"]
+        },
+        block: {
+          exceptions: ["-", "+"],
+          markers: ["=", "!"],
+          balanced: true
+        }
       }
     ],
 
@@ -321,7 +327,7 @@ module.exports = {
     // require or disallow spacing between template tags and their literals
     "template-tag-spacing": "off",
 
-    // require or disallow the Unicode BOM
+    // require or disallow Unicode byte order mark (BOM)
     "unicode-bom": "off",
 
     // require parenthesis around regex literals

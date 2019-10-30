@@ -15,7 +15,7 @@ module.exports = {
     "no-buffer-constructor": "error",
 
     // disallow require calls to be mixed with regular variable declarations
-    "no-mixed-requires": "error",
+    "no-mixed-requires": "off",
 
     // disallow new operators with calls to require
     "no-new-require": "error",
@@ -31,9 +31,6 @@ module.exports = {
 
     // disallow specified modules when loaded by require
     "no-restricted-modules": "off",
-
-    // disallow certain properties on certain objects
-    "no-restricted-properties": "off",
 
     // disallow synchronous methods
     "no-sync": "off"
