@@ -10,5 +10,7 @@ module.exports = {
   ]
     .map(require.resolve)
     .concat('plugin:prettier/recommended'),
-  rules: {}
+  rules: {
+    'prettier/prettier': ['error', { singleQuote: true }]
+  }
 };
