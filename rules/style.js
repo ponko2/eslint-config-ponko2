@@ -1,336 +1,336 @@
-"use strict";
+'use strict';
 
 module.exports = {
   rules: {
     // enforce linebreaks after opening and before closing array brackets
-    "array-bracket-newline": "off",
+    'array-bracket-newline': 'off',
 
     // enforce line breaks after each array element
-    "array-element-newline": "off",
+    'array-element-newline': 'off',
 
     // enforce consistent spacing inside array brackets
-    "array-bracket-spacing": "off",
+    'array-bracket-spacing': 'off',
 
     // disallow or enforce spaces inside of blocks after opening block and before closing block
-    "block-spacing": "off",
+    'block-spacing': 'off',
 
     // enforce consistent brace style for blocks
-    "brace-style": "off",
+    'brace-style': 'off',
 
     // enforce camelcase naming convention
-    camelcase: ["error", { properties: "never", ignoreDestructuring: false }],
+    camelcase: ['error', { properties: 'never', ignoreDestructuring: false }],
 
     // enforce or disallow capitalization of the first letter of a comment
-    "capitalized-comments": "off",
+    'capitalized-comments': 'off',
 
     // require or disallow trailing commas
-    "comma-dangle": "off",
+    'comma-dangle': 'off',
 
     // enforce consistent spacing before and after commas
-    "comma-spacing": "off",
+    'comma-spacing': 'off',
 
     // enforce consistent comma style
-    "comma-style": "off",
+    'comma-style': 'off',
 
     // enforce consistent spacing inside computed property brackets
-    "computed-property-spacing": "off",
+    'computed-property-spacing': 'off',
 
     // enforce consistent naming when capturing the current execution context
-    "consistent-this": "off",
+    'consistent-this': 'off',
 
     // require or disallow newline at the end of files
-    "eol-last": "off",
+    'eol-last': 'off',
 
     // require or disallow spacing between function identifiers and their invocations
-    "func-call-spacing": "off",
+    'func-call-spacing': 'off',
 
     // require function names to match the name of the variable or property to which they are assigned
-    "func-name-matching": [
-      "error",
-      "always",
+    'func-name-matching': [
+      'error',
+      'always',
       { includeCommonJSModuleExports: false }
     ],
 
     // require or disallow named function expressions
-    "func-names": "off",
+    'func-names': 'off',
 
     // enforce the consistent use of either function declarations or expressions
-    "func-style": "off",
+    'func-style': 'off',
 
     // enforce line breaks between arguments of a function call
-    "function-call-argument-newline": "off",
+    'function-call-argument-newline': 'off',
 
     // enforce consistent line breaks inside function parentheses
-    "function-paren-newline": "off",
+    'function-paren-newline': 'off',
 
     // disallow specified identifiers
-    "id-blacklist": "off",
+    'id-blacklist': 'off',
 
     // enforce minimum and maximum identifier lengths
-    "id-length": "off",
+    'id-length': 'off',
 
     // require identifiers to match a specified regular expression
-    "id-match": "off",
+    'id-match': 'off',
 
     // enforce the location of arrow function bodies
-    "implicit-arrow-linebreak": "off",
+    'implicit-arrow-linebreak': 'off',
 
     // enforce consistent indentation
-    indent: "off",
+    indent: 'off',
 
     // enforce consistent indentation
-    "indent-legacy": "off",
+    'indent-legacy': 'off',
 
     // enforce the consistent use of either double or single quotes in JSX attributes
-    "jsx-quotes": "off",
+    'jsx-quotes': 'off',
 
     // enforce consistent spacing between keys and values in object literal properties
-    "key-spacing": "off",
+    'key-spacing': 'off',
 
     // enforce consistent spacing before and after keywords
-    "keyword-spacing": "off",
+    'keyword-spacing': 'off',
 
     // enforce position of line comments
-    "line-comment-position": "off",
+    'line-comment-position': 'off',
 
     // enforce consistent linebreak style
-    "linebreak-style": "off",
+    'linebreak-style': 'off',
 
     // require empty lines around comments
-    "lines-around-comment": "off",
+    'lines-around-comment': 'off',
 
     // require or disallow newlines around directives
-    "lines-around-directive": "off",
+    'lines-around-directive': 'off',
 
     // require or disallow an empty line between class members
-    "lines-between-class-members": [
-      "error",
-      "always",
+    'lines-between-class-members': [
+      'error',
+      'always',
       { exceptAfterSingleLine: false }
     ],
 
     // enforce a maximum depth that blocks can be nested
-    "max-depth": "off",
+    'max-depth': 'off',
 
     // enforce a maximum line length
-    "max-len": "off",
+    'max-len': 'off',
 
     // enforce a maximum number of lines per file
-    "max-lines": "off",
+    'max-lines': 'off',
 
     // enforce a maximum number of line of code in a function
-    "max-lines-per-function": "off",
+    'max-lines-per-function': 'off',
 
     // enforce a maximum depth that callbacks can be nested
-    "max-nested-callbacks": "off",
+    'max-nested-callbacks': 'off',
 
     // enforce a maximum number of parameters in function definitions
-    "max-params": "off",
+    'max-params': 'off',
 
     // enforce a maximum number of statements allowed in function blocks
-    "max-statements": "off",
+    'max-statements': 'off',
 
     // enforce a maximum number of statements allowed per line
-    "max-statements-per-line": "off",
+    'max-statements-per-line': 'off',
 
     // enforce a particular style for multiline comments
-    "multiline-comment-style": "off",
+    'multiline-comment-style': 'off',
 
     // enforce newlines between operands of ternary expressions
-    "multiline-ternary": "off",
+    'multiline-ternary': 'off',
 
     // require constructor names to begin with a capital letter
-    "new-cap": ["error", { newIsCap: true }],
+    'new-cap': ['error', { newIsCap: true }],
 
     // enforce or disallow parentheses when invoking a constructor with no arguments
-    "new-parens": "off",
+    'new-parens': 'off',
 
     // require or disallow an empty line after variable declarations
-    "newline-after-var": "off",
+    'newline-after-var': 'off',
 
     // require an empty line before return statements
-    "newline-before-return": "off",
+    'newline-before-return': 'off',
 
     // require a newline after each call in a method chain
-    "newline-per-chained-call": "off",
+    'newline-per-chained-call': 'off',
 
     // disallow Array constructors
-    "no-array-constructor": "error",
+    'no-array-constructor': 'error',
 
     // disallow bitwise operators
-    "no-bitwise": "off",
+    'no-bitwise': 'off',
 
     // disallow continue statements
-    "no-continue": "error",
+    'no-continue': 'error',
 
     // disallow inline comments after code
-    "no-inline-comments": "off",
+    'no-inline-comments': 'off',
 
     // disallow if statements as the only statement in else blocks
-    "no-lonely-if": "error",
+    'no-lonely-if': 'error',
 
     // disallow mixed binary operators
-    "no-mixed-operators": "off",
+    'no-mixed-operators': 'off',
 
     // disallow mixed spaces and tabs for indentation
-    "no-mixed-spaces-and-tabs": "off",
+    'no-mixed-spaces-and-tabs': 'off',
 
     // disallow use of chained assignment expressions
-    "no-multi-assign": "error",
+    'no-multi-assign': 'error',
 
     // disallow multiple empty lines
-    "no-multiple-empty-lines": "off",
+    'no-multiple-empty-lines': 'off',
 
     // disallow negated conditions
-    "no-negated-condition": "off",
+    'no-negated-condition': 'off',
 
     // disallow nested ternary expressions
-    "no-nested-ternary": "error",
+    'no-nested-ternary': 'error',
 
     // disallow Object constructors
-    "no-new-object": "error",
+    'no-new-object': 'error',
 
     // disallow the unary operators ++ and --
-    "no-plusplus": ["error", { allowForLoopAfterthoughts: true }],
+    'no-plusplus': ['error', { allowForLoopAfterthoughts: true }],
 
     // disallow specified syntax
-    "no-restricted-syntax": ["error", "LabeledStatement", "WithStatement"],
+    'no-restricted-syntax': ['error', 'LabeledStatement', 'WithStatement'],
 
     // disallow spacing between function identifiers and their applications
-    "no-spaced-func": "off",
+    'no-spaced-func': 'off',
 
     // disallow all tabs
-    "no-tabs": "off",
+    'no-tabs': 'off',
 
     // disallow ternary operators
-    "no-ternary": "off",
+    'no-ternary': 'off',
 
     // disallow trailing whitespace at the end of lines
-    "no-trailing-spaces": "off",
+    'no-trailing-spaces': 'off',
 
     // disallow dangling underscores in identifiers
-    "no-underscore-dangle": [
-      "error",
+    'no-underscore-dangle': [
+      'error',
       { allowAfterThis: true, allowAfterSuper: true }
     ],
 
     // disallow ternary operators when simpler alternatives exist
-    "no-unneeded-ternary": ["error", { defaultAssignment: false }],
+    'no-unneeded-ternary': ['error', { defaultAssignment: false }],
 
     // disallow whitespace before properties
-    "no-whitespace-before-property": "off",
+    'no-whitespace-before-property': 'off',
 
     // enforce the location of single-line statements
-    "nonblock-statement-body-position": "off",
+    'nonblock-statement-body-position': 'off',
 
     // enforce consistent line breaks inside braces
-    "object-curly-newline": "off",
+    'object-curly-newline': 'off',
 
     // enforce consistent spacing inside braces
-    "object-curly-spacing": "off",
+    'object-curly-spacing': 'off',
 
     // enforce placing object properties on separate lines
-    "object-property-newline": "off",
+    'object-property-newline': 'off',
 
     // enforce variables to be declared either together or separately in functions
-    "one-var": ["error", { uninitialized: "always", initialized: "never" }],
+    'one-var': ['error', { uninitialized: 'always', initialized: 'never' }],
 
     // require or disallow newlines around variable declarations
-    "one-var-declaration-per-line": "off",
+    'one-var-declaration-per-line': 'off',
 
     // require or disallow assignment operator shorthand where possible
-    "operator-assignment": ["error", "always"],
+    'operator-assignment': ['error', 'always'],
 
     // enforce consistent linebreak style for operators
-    "operator-linebreak": "off",
+    'operator-linebreak': 'off',
 
     // require or disallow padding within blocks
-    "padded-blocks": "off",
+    'padded-blocks': 'off',
 
     // require or disallow padding lines between statements
-    "padding-line-between-statements": [
-      "error",
+    'padding-line-between-statements': [
+      'error',
       {
-        blankLine: "always",
-        prev: "directive",
-        next: "*"
+        blankLine: 'always',
+        prev: 'directive',
+        next: '*'
       },
       {
-        blankLine: "any",
-        prev: "directive",
-        next: "directive"
+        blankLine: 'any',
+        prev: 'directive',
+        next: 'directive'
       }
     ],
 
     // disallow using Object.assign with an object literal as the first argument and prefer the use of object spread instead.
-    "prefer-object-spread": "error",
+    'prefer-object-spread': 'error',
 
     // require quotes around object literal property names
-    "quote-props": "off",
+    'quote-props': 'off',
 
     // enforce the consistent use of either backticks, double, or single quotes
-    quotes: "off",
+    quotes: 'off',
 
     // require JSDoc comments
-    "require-jsdoc": "off",
+    'require-jsdoc': 'off',
 
     // require or disallow semicolons instead of ASI
-    semi: "off",
+    semi: 'off',
 
     // enforce consistent spacing before and after semicolons
-    "semi-spacing": "off",
+    'semi-spacing': 'off',
 
     // enforce location of semicolons
-    "semi-style": "off",
+    'semi-style': 'off',
 
     // require object keys to be sorted
-    "sort-keys": "off",
+    'sort-keys': 'off',
 
     // require variables within the same declaration block to be sorted
-    "sort-vars": "off",
+    'sort-vars': 'off',
 
     // enforce consistent spacing before blocks
-    "space-before-blocks": "off",
+    'space-before-blocks': 'off',
 
     // enforce consistent spacing before function definition opening parenthesis
-    "space-before-function-paren": "off",
+    'space-before-function-paren': 'off',
 
     // enforce consistent spacing inside parentheses
-    "space-in-parens": "off",
+    'space-in-parens': 'off',
 
     // require spacing around infix operators
-    "space-infix-ops": "off",
+    'space-infix-ops': 'off',
 
     // enforce consistent spacing before or after unary operators
-    "space-unary-ops": "off",
+    'space-unary-ops': 'off',
 
     // enforce consistent spacing after the // or /* in a comment
-    "spaced-comment": [
-      "error",
-      "always",
+    'spaced-comment': [
+      'error',
+      'always',
       {
         line: {
-          exceptions: ["-", "+"],
-          markers: ["=", "!", "/"]
+          exceptions: ['-', '+'],
+          markers: ['=', '!', '/']
         },
         block: {
-          exceptions: ["-", "+"],
-          markers: ["=", "!"],
+          exceptions: ['-', '+'],
+          markers: ['=', '!'],
           balanced: true
         }
       }
     ],
 
     // enforce spacing around colons of switch statements
-    "switch-colon-spacing": "off",
+    'switch-colon-spacing': 'off',
 
     // require or disallow spacing between template tags and their literals
-    "template-tag-spacing": "off",
+    'template-tag-spacing': 'off',
 
     // require or disallow Unicode byte order mark (BOM)
-    "unicode-bom": "off",
+    'unicode-bom': 'off',
 
     // require parenthesis around regex literals
-    "wrap-regex": "off"
+    'wrap-regex': 'off'
   }
 };

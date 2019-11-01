@@ -1,7 +1,7 @@
-"use strict";
+'use strict';
 
 module.exports = {
-  extends: ["./base", "./rules/node", "./rules/es6"].map(require.resolve),
+  extends: ['./base', './rules/node', './rules/es6'].map(require.resolve),
   env: {
     browser: true,
     node: true,
@@ -9,7 +9,7 @@ module.exports = {
   },
   parserOptions: {
     ecmaVersion: 2019,
-    sourceType: "module",
+    sourceType: 'module',
     ecmaFeatures: {
       impliedStrict: true
     }

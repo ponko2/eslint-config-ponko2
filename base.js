@@ -1,14 +1,14 @@
-"use strict";
+'use strict';
 
 module.exports = {
   extends: [
-    "./rules/best-practices",
-    "./rules/errors",
-    "./rules/strict",
-    "./rules/style",
-    "./rules/variables"
+    './rules/best-practices',
+    './rules/errors',
+    './rules/strict',
+    './rules/style',
+    './rules/variables'
   ]
     .map(require.resolve)
-    .concat("plugin:prettier/recommended"),
+    .concat('plugin:prettier/recommended'),
   rules: {}
 };

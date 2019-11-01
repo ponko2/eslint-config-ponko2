@@ -1,79 +1,79 @@
-"use strict";
+'use strict';
 
 module.exports = {
   rules: {
     // enforce “for” loop update clause moving the counter in the right directin.
-    "for-direction": "error",
+    'for-direction': 'error',
 
     // enforce return statements in getters
-    "getter-return": ["error", { allowImplicit: true }],
+    'getter-return': ['error', { allowImplicit: true }],
 
     // disallow using an async function as a Promise executor
-    "no-async-promise-executor": "error",
+    'no-async-promise-executor': 'error',
 
     // disallow await inside of loops
-    "no-await-in-loop": "error",
+    'no-await-in-loop': 'error',
 
     // disallow comparing against -0
-    "no-compare-neg-zero": "error",
+    'no-compare-neg-zero': 'error',
 
     // disallow assignment operators in conditional expressions
-    "no-cond-assign": ["error", "always"],
+    'no-cond-assign': ['error', 'always'],
 
     // disallow the use of console
-    "no-console": "off",
+    'no-console': 'off',
 
     // disallow constant expressions in conditions
-    "no-constant-condition": ["warn", { checkLoops: false }],
+    'no-constant-condition': ['warn', { checkLoops: false }],
 
     // disallow control characters in regular expressions
-    "no-control-regex": "error",
+    'no-control-regex': 'error',
 
     // disallow the use of debugger
-    "no-debugger": "error",
+    'no-debugger': 'error',
 
     // disallow duplicate arguments in function definitions
-    "no-dupe-args": "error",
+    'no-dupe-args': 'error',
 
     // disallow duplicate keys in object literals
-    "no-dupe-keys": "error",
+    'no-dupe-keys': 'error',
 
     // disallow duplicate case labels
-    "no-duplicate-case": "error",
+    'no-duplicate-case': 'error',
 
     // disallow empty block statements
-    "no-empty": "error",
+    'no-empty': 'error',
 
     // disallow empty character classes in regular expressions
-    "no-empty-character-class": "error",
+    'no-empty-character-class': 'error',
 
     // disallow reassigning exceptions in catch clauses
-    "no-ex-assign": "error",
+    'no-ex-assign': 'error',
 
     // disallow unnecessary boolean casts
-    "no-extra-boolean-cast": "error",
+    'no-extra-boolean-cast': 'error',
 
     // disallow unnecessary parentheses
-    "no-extra-parens": "off",
+    'no-extra-parens': 'off',
 
     // disallow unnecessary semicolons
-    "no-extra-semi": "off",
+    'no-extra-semi': 'off',
 
     // disallow reassigning function declarations
-    "no-func-assign": "error",
+    'no-func-assign': 'error',
 
     // disallow assigning to imported bindings
-    "no-import-assign": "error",
+    'no-import-assign': 'error',
 
     // disallow variable or function declarations in nested blocks
-    "no-inner-declarations": "error",
+    'no-inner-declarations': 'error',
 
     // disallow invalid regular expression strings in RegExp constructors
-    "no-invalid-regexp": "error",
+    'no-invalid-regexp': 'error',
 
     // disallow irregular whitespace
-    "no-irregular-whitespace": [
-      "error",
+    'no-irregular-whitespace': [
+      'error',
       {
         skipStrings: true,
         skipRegExps: true,
@@ -82,48 +82,48 @@ module.exports = {
     ],
 
     // disallow characters which are made with multiple code points in character class syntax
-    "no-misleading-character-class": "error",
+    'no-misleading-character-class': 'error',
 
     // disallow negating the left operand in in expressions
-    "no-negated-in-lhs": "off",
+    'no-negated-in-lhs': 'off',
 
     // disallow calling global object properties as functions
-    "no-obj-calls": "error",
+    'no-obj-calls': 'error',
 
     // disallow calling some Object.prototype methods directly on objects
-    "no-prototype-builtins": "error",
+    'no-prototype-builtins': 'error',
 
     // disallow multiple spaces in regular expressions
-    "no-regex-spaces": "error",
+    'no-regex-spaces': 'error',
 
     // disallow sparse arrays
-    "no-sparse-arrays": "error",
+    'no-sparse-arrays': 'error',
 
     // disallow template literal placeholder syntax in regular strings
-    "no-template-curly-in-string": "error",
+    'no-template-curly-in-string': 'error',
 
     // disallow confusing multiline expressions
-    "no-unexpected-multiline": "off",
+    'no-unexpected-multiline': 'off',
 
     // disallow unreachable code after return, throw, continue, and break statements
-    "no-unreachable": "error",
+    'no-unreachable': 'error',
 
     // disallow control flow statements in finally blocks
-    "no-unsafe-finally": "error",
+    'no-unsafe-finally': 'error',
 
     // disallow negating the left operand of relational operators
-    "no-unsafe-negation": "error",
+    'no-unsafe-negation': 'error',
 
     // disallow assignments that can lead to race conditions due to usage of await or yield
-    "require-atomic-updates": "off",
+    'require-atomic-updates': 'off',
 
     // require calls to isNaN() when checking for NaN
-    "use-isnan": "error",
+    'use-isnan': 'error',
 
     // enforce valid JSDoc comments
-    "valid-jsdoc": "off",
+    'valid-jsdoc': 'off',
 
     // enforce comparing typeof expressions against valid strings
-    "valid-typeof": ["error", { requireStringLiterals: true }]
+    'valid-typeof': ['error', { requireStringLiterals: true }]
   }
 };
