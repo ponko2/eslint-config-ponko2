@@ -13,7 +13,7 @@ $ npx install-peerdeps --dev eslint-config-ponko2
 
 ### eslint-config-ponko2
 
-Base + Node.js + Browser + ECMAScript 2015 (ES6)
+Base + Node.js + Browser
 
 ```json
 {
@@ -23,7 +23,7 @@ Base + Node.js + Browser + ECMAScript 2015 (ES6)
 
 ### eslint-config-ponko2/node
 
-Base + Node.js v10
+Base + Node.js
 
 ```sh
 $ npm install --save-dev eslint-plugin-node

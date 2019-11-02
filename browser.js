@@ -1,14 +1,12 @@
 'use strict';
 
 module.exports = {
-  extends: ['./base', './rules/es6'].map(require.resolve),
+  extends: ['./base'].map(require.resolve),
   env: {
     browser: true,
-    node: false,
-    es6: true
+    node: false
   },
   parserOptions: {
-    ecmaVersion: 2019,
     sourceType: 'script',
     ecmaFeatures: {
       impliedStrict: false
