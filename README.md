@@ -21,16 +21,6 @@ Base + Node.js + Browser + ECMAScript 2015 (ES6)
 }
 ```
 
-### eslint-config-ponko2/legacy
-
-Base + Node.js v0.10 + Browser
-
-```json
-{
-  "extends": "ponko2/legacy"
-}
-```
-
 ### eslint-config-ponko2/node
 
 Base + Node.js v10

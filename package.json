@@ -19,7 +19,6 @@
     "base.js",
     "browser.js",
     "index.js",
-    "legacy.js",
     "node.js",
     "rules"
   ],
@@ -47,7 +46,6 @@
     "eslint-check": "run-p eslint-check:**",
     "eslint-check:browser": "eslint --print-config ./browser.js | eslint-config-prettier-check",
     "eslint-check:index": "eslint --print-config ./index.js | eslint-config-prettier-check",
-    "eslint-check:legacy": "eslint --print-config ./legacy.js | eslint-config-prettier-check",
     "eslint-check:node": "eslint --print-config ./node.js | eslint-config-prettier-check",
     "lint": "eslint --report-unused-disable-directives .",
     "test": "jest"

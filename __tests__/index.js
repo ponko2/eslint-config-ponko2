@@ -78,11 +78,6 @@ describe('unused rules', () => {
     expect(ruleFinder.getUnusedRules()).toHaveLength(0);
   });
 
-  it('legacy', () => {
-    const ruleFinder = getRuleFinder('./legacy.js');
-    expect(ruleFinder.getUnusedRules()).toHaveLength(0);
-  });
-
   it('node', () => {
     const ruleFinder = getRuleFinder('./node.js');
     expect(ruleFinder.getUnusedRules()).toHaveLength(0);

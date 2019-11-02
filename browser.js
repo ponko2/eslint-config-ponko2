@@ -1,10 +1,18 @@
 'use strict';
 
 module.exports = {
-  extends: ['./legacy'].map(require.resolve),
+  extends: ['./base', './rules/es6'].map(require.resolve),
   env: {
     browser: true,
-    node: false
+    node: false,
+    es6: true
+  },
+  parserOptions: {
+    ecmaVersion: 2019,
+    sourceType: 'script',
+    ecmaFeatures: {
+      impliedStrict: false
+    }
   },
   rules: {
     // require return statements after callbacks
