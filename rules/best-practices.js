@@ -161,7 +161,8 @@ module.exports = {
           'response', // for Express responses
           '$scope', // for Angular 1 scopes
           'staticContext', // for ReactRouter context
-          'registration' // for Create React App ServiceWorker registration
+          'registration', // for Create React App ServiceWorker registration
+          'state' // for Redux Toolkit state
         ]
       }
     ],
