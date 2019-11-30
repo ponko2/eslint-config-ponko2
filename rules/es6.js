@@ -42,7 +42,7 @@ module.exports = {
     'no-this-before-super': 'error',
 
     // disallow unnecessary computed property keys in object literals
-    'no-useless-computed-key': 'error',
+    'no-useless-computed-key': ['error', { enforceForClassMembers: true }],
 
     // disallow unnecessary constructors
     'no-useless-constructor': 'error',
