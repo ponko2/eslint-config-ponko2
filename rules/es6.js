@@ -60,8 +60,8 @@ module.exports = {
       {
         avoidQuotes: true,
         ignoreConstructors: true,
-        avoidExplicitReturnArrows: true
-      }
+        avoidExplicitReturnArrows: true,
+      },
     ],
 
     // require using arrow functions for callbacks
@@ -74,7 +74,7 @@ module.exports = {
     'prefer-destructuring': [
       'error',
       { array: false, object: true },
-      { enforceForRenamedProperties: false }
+      { enforceForRenamedProperties: false },
     ],
 
     // disallow parseInt() and Number.parseInt() in favor of binary, octal, and hexadecimal literals
@@ -108,6 +108,6 @@ module.exports = {
     'template-curly-spacing': 'off',
 
     // require or disallow spacing around the * in yield* expressions
-    'yield-star-spacing': 'off'
-  }
+    'yield-star-spacing': 'off',
+  },
 };

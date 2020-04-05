@@ -35,7 +35,7 @@ module.exports = {
     // enforce dot notation whenever possible
     'dot-notation': [
       'error',
-      { allowKeywords: true, allowPattern: '^[a-z]+(_[a-z]+)+$' }
+      { allowKeywords: true, allowPattern: '^[a-z]+(_[a-z]+)+$' },
     ],
 
     // require the use of === and !==
@@ -168,9 +168,9 @@ module.exports = {
           '$scope', // for Angular 1 scopes
           'staticContext', // for ReactRouter context
           'registration', // for Create React App ServiceWorker registration
-          'state' // for Redux Toolkit state
-        ]
-      }
+          'state', // for Redux Toolkit state
+        ],
+      },
     ],
 
     // disallow the use of the __proto__ property
@@ -212,8 +212,8 @@ module.exports = {
       {
         allowShortCircuit: false,
         allowTernary: false,
-        allowTaggedTemplates: false
-      }
+        allowTaggedTemplates: false,
+      },
     ],
 
     // disallow unused labels
@@ -268,6 +268,6 @@ module.exports = {
     'wrap-iife': 'off',
 
     // require or disallow "Yoda" conditions
-    yoda: ['error', 'never', { exceptRange: true, onlyEquality: true }]
-  }
+    yoda: ['error', 'never', { exceptRange: true, onlyEquality: true }],
+  },
 };

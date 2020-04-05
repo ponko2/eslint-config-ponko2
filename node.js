@@ -4,12 +4,12 @@ module.exports = {
   extends: ['./base', './rules/node'].map(require.resolve),
   env: {
     browser: false,
-    node: true
+    node: true,
   },
   parserOptions: {
     sourceType: 'script',
     ecmaFeatures: {
-      impliedStrict: false
-    }
-  }
+      impliedStrict: false,
+    },
+  },
 };

@@ -48,7 +48,7 @@ module.exports = {
     'func-name-matching': [
       'error',
       'always',
-      { includeCommonJSModuleExports: false }
+      { includeCommonJSModuleExports: false },
     ],
 
     // require or disallow named function expressions
@@ -106,7 +106,7 @@ module.exports = {
     'lines-between-class-members': [
       'error',
       'always',
-      { exceptAfterSingleLine: false }
+      { exceptAfterSingleLine: false },
     ],
 
     // enforce a maximum depth that blocks can be nested
@@ -211,7 +211,7 @@ module.exports = {
     // disallow dangling underscores in identifiers
     'no-underscore-dangle': [
       'error',
-      { allowAfterThis: true, allowAfterSuper: true }
+      { allowAfterThis: true, allowAfterSuper: true },
     ],
 
     // disallow ternary operators when simpler alternatives exist
@@ -253,13 +253,13 @@ module.exports = {
       {
         blankLine: 'always',
         prev: 'directive',
-        next: '*'
+        next: '*',
       },
       {
         blankLine: 'any',
         prev: 'directive',
-        next: 'directive'
-      }
+        next: 'directive',
+      },
     ],
 
     // disallow the use of Math.pow in favor of the ** operator
@@ -314,14 +314,14 @@ module.exports = {
       {
         line: {
           exceptions: ['-', '+'],
-          markers: ['=', '!', '/']
+          markers: ['=', '!', '/'],
         },
         block: {
           exceptions: ['-', '+'],
           markers: ['=', '!'],
-          balanced: true
-        }
-      }
+          balanced: true,
+        },
+      },
     ],
 
     // enforce spacing around colons of switch statements
@@ -334,6 +334,6 @@ module.exports = {
     'unicode-bom': 'off',
 
     // require parenthesis around regex literals
-    'wrap-regex': 'off'
-  }
+    'wrap-regex': 'off',
+  },
 };

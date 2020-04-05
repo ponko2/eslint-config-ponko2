@@ -7,17 +7,17 @@ module.exports = {
     './rules/es6',
     './rules/strict',
     './rules/style',
-    './rules/variables'
+    './rules/variables',
   ]
     .map(require.resolve)
     .concat('plugin:prettier/recommended'),
   env: {
-    es2020: true
+    es2020: true,
   },
   parserOptions: {
-    ecmaVersion: 2020
+    ecmaVersion: 2020,
   },
   rules: {
-    'prettier/prettier': ['error', { singleQuote: true }]
-  }
+    'prettier/prettier': ['error', { singleQuote: true }],
+  },
 };

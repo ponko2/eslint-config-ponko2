@@ -33,6 +33,6 @@ module.exports = {
     'no-restricted-modules': 'off',
 
     // disallow synchronous methods
-    'no-sync': 'off'
-  }
+    'no-sync': 'off',
+  },
 };

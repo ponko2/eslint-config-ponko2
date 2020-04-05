@@ -3,6 +3,6 @@
 module.exports = {
   rules: {
     // require or disallow strict mode directives
-    strict: ['error', 'safe']
-  }
+    strict: ['error', 'safe'],
+  },
 };

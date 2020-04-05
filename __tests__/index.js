@@ -25,10 +25,10 @@ const cli = new CLIEngine({
     'prettier/prettier': [
       'error',
       {
-        parser: 'babel'
-      }
-    ]
-  }
+        parser: 'babel',
+      },
+    ],
+  },
 });
 
 describe('no warnings with valid code', () => {

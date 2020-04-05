@@ -80,8 +80,8 @@ module.exports = {
       {
         skipStrings: true,
         skipRegExps: true,
-        skipTemplates: true
-      }
+        skipTemplates: true,
+      },
     ],
 
     // disallow characters which are made with multiple code points in character class syntax
@@ -130,6 +130,6 @@ module.exports = {
     'valid-jsdoc': 'off',
 
     // enforce comparing typeof expressions against valid strings
-    'valid-typeof': ['error', { requireStringLiterals: true }]
-  }
+    'valid-typeof': ['error', { requireStringLiterals: true }],
+  },
 };

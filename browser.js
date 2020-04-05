@@ -4,13 +4,13 @@ module.exports = {
   extends: ['./base'].map(require.resolve),
   env: {
     browser: true,
-    node: false
+    node: false,
   },
   parserOptions: {
     sourceType: 'script',
     ecmaFeatures: {
-      impliedStrict: false
-    }
+      impliedStrict: false,
+    },
   },
   rules: {
     // require return statements after callbacks
@@ -44,6 +44,6 @@ module.exports = {
     'no-restricted-modules': 'off',
 
     // disallow synchronous methods
-    'no-sync': 'off'
-  }
+    'no-sync': 'off',
+  },
 };
