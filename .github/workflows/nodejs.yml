@@ -1,6 +1,10 @@
-name: Node CI
+name: Node.js CI
 
-on: [push]
+on:
+  push:
+    branches: [ master ]
+  pull_request:
+    branches: [ master ]
 
 jobs:
   build:
@@ -12,15 +16,11 @@ jobs:
         node-version: [10.x, 12.x, 13.x]
 
     steps:
-    - uses: actions/checkout@v1
+    - uses: actions/checkout@v2
     - name: Use Node.js ${{ matrix.node-version }}
       uses: actions/setup-node@v1
       with:
         node-version: ${{ matrix.node-version }}
-    - name: npm install, test, and lint
-      run: |
-        npm ci
-        npm test
-        npm run lint
-      env:
-        CI: true
+    - run: npm ci
+    - run: npm test
+    - run: npm run lint
