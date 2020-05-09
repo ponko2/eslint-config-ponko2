@@ -54,7 +54,7 @@ module.exports = {
     'no-ex-assign': 'error',
 
     // disallow unnecessary boolean casts
-    'no-extra-boolean-cast': 'error',
+    'no-extra-boolean-cast': ['error', { enforceForLogicalOperands: true }],
 
     // disallow unnecessary parentheses
     'no-extra-parens': 'off',
@@ -116,6 +116,9 @@ module.exports = {
 
     // disallow negating the left operand of relational operators
     'no-unsafe-negation': 'error',
+
+    // disallow useless backreferences in regular expressions
+    'no-useless-backreference': 'error',
 
     // disallow assignments that can lead to race conditions due to usage of await or yield
     'require-atomic-updates': 'off',

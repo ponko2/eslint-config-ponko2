@@ -1,7 +1,7 @@
 'use strict';
 
 module.exports = {
-  extends: ['./base', './rules/node'].map(require.resolve),
+  extends: ['./base'].map(require.resolve),
   env: {
     browser: false,
     node: true,

@@ -6,7 +6,10 @@ module.exports = {
     'accessor-pairs': 'off',
 
     // enforce return statements in callbacks of array methods
-    'array-callback-return': ['error', { allowImplicit: true }],
+    'array-callback-return': [
+      'error',
+      { allowImplicit: true, checkForEach: true },
+    ],
 
     // enforce the use of variables within the scope they are defined
     'block-scoped-var': 'error',
@@ -25,6 +28,9 @@ module.exports = {
 
     // require default cases in switch statements
     'default-case': 'error',
+
+    // enforce default clauses in switch statements to be last
+    'default-case-last': 'error',
 
     // enforce default parameters to be last
     'default-param-last': 'error',
@@ -232,7 +238,7 @@ module.exports = {
     'no-useless-return': 'error',
 
     // disallow void operators
-    'no-void': 'error',
+    'no-void': ['error', { allowAsStatement: true }],
 
     // disallow specified warning terms in comments
     'no-warning-comments': 'off',
