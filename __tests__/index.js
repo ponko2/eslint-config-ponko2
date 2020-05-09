@@ -83,3 +83,20 @@ describe('unused rules', () => {
     expect(ruleFinder.getUnusedRules()).toHaveLength(0);
   });
 });
+
+describe('deprecated rules', () => {
+  it('browser', () => {
+    const ruleFinder = getRuleFinder('./browser.js');
+    expect(ruleFinder.getDeprecatedRules()).toHaveLength(0);
+  });
+
+  it('index', () => {
+    const ruleFinder = getRuleFinder('./index.js');
+    expect(ruleFinder.getDeprecatedRules()).toHaveLength(0);
+  });
+
+  it('node', () => {
+    const ruleFinder = getRuleFinder('./node.js');
+    expect(ruleFinder.getDeprecatedRules()).toHaveLength(0);
+  });
+});

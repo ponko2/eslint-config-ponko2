@@ -87,9 +87,6 @@ module.exports = {
     // disallow characters which are made with multiple code points in character class syntax
     'no-misleading-character-class': 'error',
 
-    // disallow negating the left operand in in expressions
-    'no-negated-in-lhs': 'off',
-
     // disallow calling global object properties as functions
     'no-obj-calls': 'error',
 
@@ -125,9 +122,6 @@ module.exports = {
 
     // require calls to isNaN() when checking for NaN
     'use-isnan': 'error',
-
-    // enforce valid JSDoc comments
-    'valid-jsdoc': 'off',
 
     // enforce comparing typeof expressions against valid strings
     'valid-typeof': ['error', { requireStringLiterals: true }],

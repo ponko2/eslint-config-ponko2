@@ -78,9 +78,6 @@ module.exports = {
     // enforce consistent indentation
     indent: 'off',
 
-    // enforce consistent indentation
-    'indent-legacy': 'off',
-
     // enforce the consistent use of either double or single quotes in JSX attributes
     'jsx-quotes': 'off',
 
@@ -98,9 +95,6 @@ module.exports = {
 
     // require empty lines around comments
     'lines-around-comment': 'off',
-
-    // require or disallow newlines around directives
-    'lines-around-directive': 'off',
 
     // require or disallow an empty line between class members
     'lines-between-class-members': [
@@ -144,12 +138,6 @@ module.exports = {
 
     // enforce or disallow parentheses when invoking a constructor with no arguments
     'new-parens': 'off',
-
-    // require or disallow an empty line after variable declarations
-    'newline-after-var': 'off',
-
-    // require an empty line before return statements
-    'newline-before-return': 'off',
 
     // require a newline after each call in a method chain
     'newline-per-chained-call': 'off',
@@ -195,9 +183,6 @@ module.exports = {
 
     // disallow specified syntax
     'no-restricted-syntax': ['error', 'LabeledStatement', 'WithStatement'],
-
-    // disallow spacing between function identifiers and their applications
-    'no-spaced-func': 'off',
 
     // disallow all tabs
     'no-tabs': 'off',
@@ -273,9 +258,6 @@ module.exports = {
 
     // enforce the consistent use of either backticks, double, or single quotes
     quotes: 'off',
-
-    // require JSDoc comments
-    'require-jsdoc': 'off',
 
     // require or disallow semicolons instead of ASI
     semi: 'off',

@@ -80,9 +80,6 @@ module.exports = {
     // disallow parseInt() and Number.parseInt() in favor of binary, octal, and hexadecimal literals
     'prefer-numeric-literals': 'error',
 
-    // require Reflect methods where applicable
-    'prefer-reflect': 'off',
-
     // require rest parameters instead of arguments
     'prefer-rest-params': 'error',
 
