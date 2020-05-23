@@ -84,6 +84,9 @@ module.exports = {
       },
     ],
 
+    // disallow literal numbers that lose precision
+    'no-loss-of-precision': 'error',
+
     // disallow characters which are made with multiple code points in character class syntax
     'no-misleading-character-class': 'error',
 
