@@ -93,6 +93,9 @@ module.exports = {
     // disallow calling global object properties as functions
     'no-obj-calls': 'error',
 
+    // disallow returning values from Promise executor functions
+    'no-promise-executor-return': 'error',
+
     // disallow calling some Object.prototype methods directly on objects
     'no-prototype-builtins': 'error',
 
@@ -113,6 +116,9 @@ module.exports = {
 
     // disallow unreachable code after return, throw, continue, and break statements
     'no-unreachable': 'error',
+
+    // disallow loops with a body that allows only one iteration
+    'no-unreachable-loop': 'error',
 
     // disallow control flow statements in finally blocks
     'no-unsafe-finally': 'error',
