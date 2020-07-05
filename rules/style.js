@@ -66,6 +66,9 @@ module.exports = {
     // disallow specified identifiers
     'id-blacklist': 'off',
 
+    // disallow specified identifiers
+    'id-denylist': 'off',
+
     // enforce minimum and maximum identifier lengths
     'id-length': 'off',
 
