@@ -64,9 +64,6 @@ module.exports = {
     'function-paren-newline': 'off',
 
     // disallow specified identifiers
-    'id-blacklist': 'off',
-
-    // disallow specified identifiers
     'id-denylist': 'off',
 
     // enforce minimum and maximum identifier lengths
