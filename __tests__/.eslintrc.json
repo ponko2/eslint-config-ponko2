@@ -1,11 +1,8 @@
 {
   "root": true,
-  "plugins": ["jest"],
   "extends": ["../index.js", "plugin:jest/recommended", "plugin:jest/style"],
   "rules": {
     "jest/consistent-test-it": "error",
-    "jest/no-jasmine-globals": "error",
-    "jest/no-test-prefixes": "error",
     "jest/prefer-spy-on": "error",
     "jest/prefer-strict-equal": "error"
   }
