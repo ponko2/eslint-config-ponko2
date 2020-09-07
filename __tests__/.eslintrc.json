@@ -5,7 +5,6 @@
   "rules": {
     "jest/consistent-test-it": "error",
     "jest/no-jasmine-globals": "error",
-    "jest/no-test-callback": "error",
     "jest/no-test-prefixes": "error",
     "jest/prefer-spy-on": "error",
     "jest/prefer-strict-equal": "error"
