@@ -6,7 +6,7 @@
   "devDependencies": {
     "cross-env": "^7.0.2",
     "eslint": "^7.10.0",
-    "eslint-config-prettier": "^6.12.0",
+    "eslint-config-prettier": "^6.13.0",
     "eslint-find-rules": "^3.6.1",
     "eslint-plugin-jest": "^24.1.0",
     "eslint-plugin-prettier": "^3.1.4",
@@ -35,7 +35,7 @@
   "main": "index.js",
   "peerDependencies": {
     "eslint": "^7.10.0",
-    "eslint-config-prettier": "^6.12.0",
+    "eslint-config-prettier": "^6.13.0",
     "eslint-plugin-prettier": "^3.1.4",
     "prettier": "^2.1.2"
   },
