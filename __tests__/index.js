@@ -1,4 +1,4 @@
-const { CLIEngine } = require('eslint');
+const { ESLint } = require('eslint');
 const eslintrc = require('../');
 const getRuleFinder = require('eslint-find-rules');
 
@@ -16,26 +16,30 @@ if (message !== "") {
 }
 `;
 
-const cli = new CLIEngine({
+const eslint = new ESLint({
   useEslintrc: false,
   baseConfig: eslintrc,
-  envs: ['browser'],
-  rules: {
-    'no-console': 0,
-    'prettier/prettier': [
-      'error',
-      {
-        parser: 'babel',
-      },
-    ],
+  overrideConfig: {
+    env: {
+      browser: true,
+    },
+    rules: {
+      'no-console': 'off',
+      'prettier/prettier': [
+        'error',
+        {
+          parser: 'babel',
+        },
+      ],
+    },
   },
 });
 
 describe('no warnings with valid code', () => {
   let result;
 
-  beforeEach(() => {
-    result = cli.executeOnText(validCode).results[0];
+  beforeEach(async () => {
+    [result] = await eslint.lintText(validCode);
   });
 
   it('did not warning', () => {
@@ -54,8 +58,8 @@ describe('no warnings with valid code', () => {
 describe('a warning with invalid code', () => {
   let result;
 
-  beforeEach(() => {
-    result = cli.executeOnText(invalidCode).results[0];
+  beforeEach(async () => {
+    [result] = await eslint.lintText(invalidCode);
   });
 
   it('did error', () => {

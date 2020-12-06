@@ -12,10 +12,7 @@ module.exports = {
     .map(require.resolve)
     .concat('plugin:prettier/recommended'),
   env: {
-    es2020: true,
-  },
-  parserOptions: {
-    ecmaVersion: 2020,
+    es2021: true,
   },
   rules: {
     'prettier/prettier': ['error', { singleQuote: true }],
