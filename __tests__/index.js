@@ -25,12 +25,6 @@ const eslint = new ESLint({
     },
     rules: {
       'no-console': 'off',
-      'prettier/prettier': [
-        'error',
-        {
-          parser: 'babel',
-        },
-      ],
     },
   },
 });

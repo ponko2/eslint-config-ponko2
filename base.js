@@ -8,13 +8,8 @@ module.exports = {
     './rules/strict',
     './rules/style',
     './rules/variables',
-  ]
-    .map(require.resolve)
-    .concat('plugin:prettier/recommended'),
+  ].map(require.resolve),
   env: {
     es2021: true,
-  },
-  rules: {
-    'prettier/prettier': ['error', { singleQuote: true }],
   },
 };

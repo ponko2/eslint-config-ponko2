@@ -9,7 +9,6 @@
     "eslint-config-prettier": "^7.2.0",
     "eslint-find-rules": "^3.6.1",
     "eslint-plugin-jest": "^24.1.5",
-    "eslint-plugin-prettier": "^3.3.1",
     "husky": "^5.0.9",
     "is-ci": "^3.0.0",
     "jest": "^26.6.3",
@@ -36,10 +35,7 @@
   "license": "MIT",
   "main": "index.js",
   "peerDependencies": {
-    "eslint": "^7.20.0",
-    "eslint-config-prettier": "^7.2.0",
-    "eslint-plugin-prettier": "^3.3.1",
-    "prettier": "^2.2.1"
+    "eslint": "^7.20.0"
   },
   "repository": {
     "type": "git",
@@ -50,7 +46,12 @@
     "eslint-check:browser": "eslint-config-prettier browser.js",
     "eslint-check:index": "eslint-config-prettier index.js",
     "eslint-check:node": "eslint-config-prettier node.js",
-    "lint": "eslint --report-unused-disable-directives .",
+    "fix": "run-s fix:eslint fix:prettier",
+    "fix:eslint": "npm run lint:eslint -- --fix",
+    "fix:prettier": "npm run lint:prettier -- --write",
+    "lint": "run-p --aggregate-output -c -l lint:*",
+    "lint:eslint": "eslint . --report-unused-disable-directives",
+    "lint:prettier": "prettier . --check",
     "postinstall": "is-ci || husky install",
     "postpublish": "pinst --enable",
     "prepublishOnly": "pinst --disable",
