@@ -6,7 +6,7 @@
   "devDependencies": {
     "cross-env": "^7.0.3",
     "eslint": "^7.25.0",
-    "eslint-config-prettier": "^8.2.0",
+    "eslint-config-prettier": "^8.3.0",
     "eslint-find-rules": "^3.6.1",
     "eslint-plugin-jest": "^24.3.5",
     "husky": "^6.0.0",
