@@ -15,10 +15,9 @@ jobs:
     strategy:
       matrix:
         node-version:
-          - 10.x
-          - 12.x
-          - 14.x
-          - 15.x
+          - "12"
+          - "14"
+          - "16"
 
     steps:
       - uses: actions/checkout@v2
@@ -26,13 +25,7 @@ jobs:
         uses: actions/setup-node@v2
         with:
           node-version: ${{ matrix.node-version }}
-      - name: Cache Node.js modules
-        uses: actions/cache@v2
-        with:
-          path: ~/.npm # npm cache files are stored in `~/.npm` on Linux/macOS
-          key: ${{ runner.os }}-node-${{ hashFiles('**/package-lock.json') }}
-          restore-keys: |
-            ${{ runner.os }}-node-
+          cache: npm
       - run: npm ci
       - run: npm test
       - run: npm run lint
