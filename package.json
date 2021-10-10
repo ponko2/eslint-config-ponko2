@@ -12,7 +12,7 @@
     "husky": "^7.0.2",
     "is-ci": "^3.0.0",
     "jest": "^27.2.4",
-    "lint-staged": "^11.2.0",
+    "lint-staged": "^11.2.3",
     "npm-run-all": "^4.1.5",
     "prettier": "^2.4.1"
   },
