@@ -7,7 +7,7 @@
     "cross-env": "^7.0.3",
     "eslint": "^7.32.0",
     "eslint-config-prettier": "^8.3.0",
-    "eslint-find-rules": "^3.6.1",
+    "eslint-find-rules": "^4.0.0",
     "eslint-plugin-jest": "^25.2.4",
     "husky": "^7.0.4",
     "is-ci": "^3.0.1",
