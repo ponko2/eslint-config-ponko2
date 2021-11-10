@@ -66,35 +66,35 @@ describe('a warning with invalid code', () => {
 });
 
 describe('unused rules', () => {
-  it('browser', () => {
-    const ruleFinder = getRuleFinder('./browser.js');
+  it('browser', async () => {
+    const ruleFinder = await getRuleFinder('./browser.js');
     expect(ruleFinder.getUnusedRules()).toHaveLength(0);
   });
 
-  it('index', () => {
-    const ruleFinder = getRuleFinder('./index.js');
+  it('index', async () => {
+    const ruleFinder = await getRuleFinder('./index.js');
     expect(ruleFinder.getUnusedRules()).toHaveLength(0);
   });
 
-  it('node', () => {
-    const ruleFinder = getRuleFinder('./node.js');
+  it('node', async () => {
+    const ruleFinder = await getRuleFinder('./node.js');
     expect(ruleFinder.getUnusedRules()).toHaveLength(0);
   });
 });
 
 describe('deprecated rules', () => {
-  it('browser', () => {
-    const ruleFinder = getRuleFinder('./browser.js');
+  it('browser', async () => {
+    const ruleFinder = await getRuleFinder('./browser.js');
     expect(ruleFinder.getDeprecatedRules()).toHaveLength(0);
   });
 
-  it('index', () => {
-    const ruleFinder = getRuleFinder('./index.js');
+  it('index', async () => {
+    const ruleFinder = await getRuleFinder('./index.js');
     expect(ruleFinder.getDeprecatedRules()).toHaveLength(0);
   });
 
-  it('node', () => {
-    const ruleFinder = getRuleFinder('./node.js');
+  it('node', async () => {
+    const ruleFinder = await getRuleFinder('./node.js');
     expect(ruleFinder.getDeprecatedRules()).toHaveLength(0);
   });
 });
