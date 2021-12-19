@@ -427,6 +427,9 @@ module.exports = {
     // disallow `parseInt()` and `Number.parseInt()` in favor of binary, octal, and hexadecimal literals
     'prefer-numeric-literals': 'error',
 
+    // disallow use of `Object.prototype.hasOwnProperty.call()` and prefer use of `Object.hasOwn()`
+    'prefer-object-has-own': 'off',
+
     // disallow using Object.assign with an object literal as the first argument and prefer the use of object spread instead.
     'prefer-object-spread': 'error',
 
