@@ -8,7 +8,7 @@
     "eslint": "^8.5.0",
     "eslint-config-prettier": "^8.3.0",
     "eslint-find-rules": "^4.0.0",
-    "eslint-plugin-jest": "^25.3.2",
+    "eslint-plugin-jest": "^25.3.3",
     "husky": "^7.0.4",
     "is-ci": "^3.0.1",
     "jest": "^27.4.5",
