@@ -8,10 +8,14 @@
     "jest/no-if": "error",
     "jest/no-test-return-statement": "error",
     "jest/prefer-called-with": "error",
+    "jest/prefer-comparison-matcher": "error",
+    "jest/prefer-equality-matcher": "error",
+    "jest/prefer-expect-resolves": "error",
     "jest/prefer-hooks-on-top": "error",
     "jest/prefer-spy-on": "error",
     "jest/prefer-strict-equal": "error",
     "jest/prefer-todo": "error",
+    "jest/require-hook": "error",
     "jest/require-top-level-describe": "error"
   }
 }
