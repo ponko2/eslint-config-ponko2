@@ -4,8 +4,8 @@
   "rules": {
     "no-undefined": "off",
     "jest/consistent-test-it": "error",
+    "jest/no-conditional-in-test": "error",
     "jest/no-duplicate-hooks": "error",
-    "jest/no-if": "error",
     "jest/no-test-return-statement": "error",
     "jest/prefer-called-with": "error",
     "jest/prefer-comparison-matcher": "error",
