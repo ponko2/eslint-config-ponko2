@@ -35,6 +35,9 @@ module.exports = {
     // disallow reassigning `const` variables
     'no-const-assign': 'error',
 
+    // disallow expressions where the operation doesn't affect the value
+    'no-constant-binary-expression': 'error',
+
     // disallow constant expressions in conditions
     'no-constant-condition': ['warn', { checkLoops: false }],
 
