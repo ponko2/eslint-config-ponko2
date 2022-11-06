@@ -81,6 +81,9 @@ module.exports = {
     // require or disallow initialization in variable declarations
     'init-declarations': 'off',
 
+    // Require or disallow logical assignment logical operator shorthand
+    'logical-assignment-operators': 'error',
+
     // enforce a maximum number of classes per file
     'max-classes-per-file': 'off',
 
