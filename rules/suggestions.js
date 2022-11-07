@@ -150,6 +150,9 @@ module.exports = {
     // disallow empty functions
     'no-empty-function': 'error',
 
+    // Disallow empty static blocks
+    'no-empty-static-block': 'error',
+
     // disallow `null` comparisons without type-checking operators
     'no-eq-null': 'off',
 
