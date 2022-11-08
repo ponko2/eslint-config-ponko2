@@ -104,6 +104,9 @@ module.exports = {
     // disallow characters which are made with multiple code points in character class syntax
     'no-misleading-character-class': 'error',
 
+    // Disallow `new` operators with global non-constructor functions
+    'no-new-native-nonconstructor': 'error',
+
     // disallow `new` operators with the `Symbol` object
     'no-new-symbol': 'error',
 
