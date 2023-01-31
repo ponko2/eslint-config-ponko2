@@ -289,7 +289,18 @@ module.exports = {
     'no-regex-spaces': 'error',
 
     // disallow specified names in exports
-    'no-restricted-exports': 'off',
+    'no-restricted-exports': [
+      'error',
+      {
+        restrictDefaultExports: {
+          direct: true,
+          named: true,
+          defaultFrom: true,
+          namedFrom: true,
+          namespaceFrom: true,
+        },
+      },
+    ],
 
     // disallow specified global variables
     'no-restricted-globals': 'off',
