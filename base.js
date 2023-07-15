@@ -7,6 +7,6 @@ module.exports = {
     './rules/suggestions',
   ].map(require.resolve),
   env: {
-    es2022: true,
+    es2024: true,
   },
 };
