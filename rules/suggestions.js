@@ -317,9 +317,6 @@ module.exports = {
     // disallow assignment operators in `return` statements
     'no-return-assign': ['error', 'always'],
 
-    // disallow unnecessary `return await`
-    'no-return-await': 'error',
-
     // disallow `javascript:` urls
     'no-script-url': 'error',
 
