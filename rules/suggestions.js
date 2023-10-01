@@ -237,14 +237,14 @@ module.exports = {
     // disallow `new` operators with the `Function` object
     'no-new-func': 'error',
 
-    // disallow `Object` constructors
-    'no-new-object': 'error',
-
     // disallow `new` operators with the `String`, `Number`, and `Boolean` objects
     'no-new-wrappers': 'error',
 
     // disallow `\8` and `\9` escape sequences in string literals
     'no-nonoctal-decimal-escape': 'error',
+
+    // disallow calls to the `Object` constructor without an argument
+    'no-object-constructor': 'error',
 
     // disallow octal literals
     'no-octal': 'error',
