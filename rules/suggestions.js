@@ -126,9 +126,6 @@ module.exports = {
     // disallow lexical declarations in case clauses
     'no-case-declarations': 'error',
 
-    // disallow arrow functions where they could be confused with comparisons
-    'no-confusing-arrow': 'off',
-
     // disallow the use of `console`
     'no-console': 'off',
 
@@ -171,12 +168,6 @@ module.exports = {
     // disallow unnecessary labels
     'no-extra-label': 'error',
 
-    // disallow unnecessary semicolons
-    'no-extra-semi': 'off',
-
-    // disallow leading or trailing decimal points in numeric literals
-    'no-floating-decimal': 'off',
-
     // disallow assignments to native objects or read-only global variables
     'no-global-assign': 'error',
 
@@ -215,9 +206,6 @@ module.exports = {
 
     // disallow magic numbers
     'no-magic-numbers': 'off',
-
-    // disallow mixed binary operators
-    'no-mixed-operators': 'off',
 
     // disallow use of chained assignment expressions
     'no-multi-assign': 'error',
@@ -413,9 +401,6 @@ module.exports = {
     // enforce variables to be declared either together or separately in functions
     'one-var': ['error', { uninitialized: 'always', initialized: 'never' }],
 
-    // require or disallow newlines around variable declarations
-    'one-var-declaration-per-line': 'off',
-
     // require or disallow assignment operator shorthand where possible
     'operator-assignment': ['error', 'always'],
 
@@ -462,9 +447,6 @@ module.exports = {
     // require template literals instead of string concatenation
     'prefer-template': 'error',
 
-    // require quotes around object literal property names
-    'quote-props': 'off',
-
     // enforce the consistent use of the radix argument when using `parseInt()`
     radix: 'error',
 
@@ -485,16 +467,6 @@ module.exports = {
 
     // require variables within the same declaration block to be sorted
     'sort-vars': 'off',
-
-    // enforce consistent spacing after the `//` or `/*` in a comment
-    'spaced-comment': [
-      'error',
-      'always',
-      {
-        line: { exceptions: ['-', '+'], markers: ['=', '!', '/'] },
-        block: { exceptions: ['-', '+'], markers: ['=', '!'], balanced: true },
-      },
-    ],
 
     // require or disallow strict mode directives
     strict: ['error', 'safe'],
