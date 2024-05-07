@@ -7,8 +7,6 @@ updates:
       time: "07:00"
       timezone: Asia/Tokyo
     open-pull-requests-limit: 10
-    reviewers:
-      - ponko2
   - package-ecosystem: npm
     directory: /
     schedule:
@@ -16,6 +14,4 @@ updates:
       time: "07:00"
       timezone: Asia/Tokyo
     open-pull-requests-limit: 10
-    reviewers:
-      - ponko2
     versioning-strategy: increase
