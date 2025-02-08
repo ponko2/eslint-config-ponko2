@@ -9,7 +9,7 @@
   "devDependencies": {
     "@vitest/eslint-plugin": "^1.1.25",
     "cross-env": "^7.0.3",
-    "eslint": "^8.57.1",
+    "eslint": "^9.20.0",
     "eslint-config-prettier": "^10.0.1",
     "eslint-find-rules": "^5.0.0",
     "husky": "^9.1.7",
@@ -31,7 +31,7 @@
   "license": "MIT",
   "main": "index.js",
   "peerDependencies": {
-    "eslint": "^8.57.1"
+    "eslint": "^9.20.0"
   },
   "repository": {
     "type": "git",

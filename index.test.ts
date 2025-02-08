@@ -1,5 +1,5 @@
 import getRuleFinder from 'eslint-find-rules';
-import { FlatESLint } from 'eslint/use-at-your-own-risk';
+import { ESLint } from 'eslint';
 import { beforeEach, describe, expect, it } from 'vitest';
 import baseConfig from '.';
 
@@ -17,7 +17,7 @@ if (message !== "") {
 }
 `;
 
-const eslint = new FlatESLint({
+const eslint = new ESLint({
   baseConfig,
   overrideConfig: {
     rules: {

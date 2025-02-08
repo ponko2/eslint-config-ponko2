@@ -24,7 +24,7 @@ module.exports = {
     // Require `super()` calls in constructors
     'constructor-super': 'error',
 
-    // Enforce “for” loop update clause moving the counter in the right direction
+    // Enforce `for` loop update clause moving the counter in the right direction
     'for-direction': 'error',
 
     // Enforce `return` statements in getters
@@ -120,9 +120,6 @@ module.exports = {
     // Disallow `new` operators with global non-constructor functions
     'no-new-native-nonconstructor': 'error',
 
-    // Disallow `new` operators with the `Symbol` object
-    'no-new-symbol': 'error',
-
     // Disallow calling global object properties as functions
     'no-obj-calls': 'error',
 
@@ -188,6 +185,9 @@ module.exports = {
 
     // Disallow the use of variables before they are defined
     'no-use-before-define': ['error', { functions: false, classes: true }],
+
+    // Disallow variable assignments when the value is not used
+    'no-useless-assignment': 'error',
 
     // Disallow useless backreferences in regular expressions
     'no-useless-backreference': 'error',
@@ -264,7 +264,7 @@ module.exports = {
     // Require or disallow named `function` expressions
     'func-names': 'off',
 
-    // Enforce the consistent use of either `function` declarations or expressions
+    // Enforce the consistent use of either `function` declarations or expressions assigned to variables
     'func-style': 'off',
 
     // Require grouped accessor pairs in object literals and classes
@@ -308,9 +308,6 @@ module.exports = {
 
     // Enforce a maximum number of statements allowed in function blocks
     'max-statements': 'off',
-
-    // Enforce a particular style for multiline comments
-    'multiline-comment-style': 'off',
 
     // Require constructor names to begin with a capital letter
     'new-cap': ['error', { newIsCap: true }],
@@ -509,7 +506,7 @@ module.exports = {
     // Disallow assignment operators in `return` statements
     'no-return-assign': ['error', 'always'],
 
-    // Disallow `javascript:` urls
+    // Disallow `javascript:` URLs
     'no-script-url': 'error',
 
     // Disallow comma operators
@@ -657,7 +654,7 @@ module.exports = {
     // Disallow async functions which have no `await` expression
     'require-await': 'off',
 
-    // Enforce the use of `u` or `v` flag on RegExp
+    // Enforce the use of `u` or `v` flag on regular expressions
     'require-unicode-regexp': 'off',
 
     // Require generator functions to contain `yield`
@@ -688,9 +685,6 @@ module.exports = {
     // Layout & Formatting
     // These rules care about how the code looks rather than how it executes:
     // ---------------------------------------------------------------------------
-
-    // Enforce position of line comments
-    'line-comment-position': 'off',
 
     // Require or disallow Unicode byte order mark (BOM)
     'unicode-bom': 'off',
