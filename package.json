@@ -19,8 +19,7 @@
     "base.js",
     "browser.js",
     "index.js",
-    "node.js",
-    "rules"
+    "node.js"
   ],
   "jest": {
     "testEnvironment": "node",
