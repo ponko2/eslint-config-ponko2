@@ -1,6 +1,7 @@
 'use strict';
 
 const globals = require('globals');
+const js = require('@eslint/js');
 
 /** @type {import("eslint").Linter.Config} */
 module.exports = {
@@ -10,6 +11,8 @@ module.exports = {
     },
   },
   rules: {
+    ...js.configs.recommended.rules,
+
     // ---------------------------------------------------------------------------
     // Possible Problems
     // These rules relate to possible logic errors in code:
@@ -21,185 +24,41 @@ module.exports = {
       { allowImplicit: true, checkForEach: true },
     ],
 
-    // Require `super()` calls in constructors
-    'constructor-super': 'error',
-
-    // Enforce `for` loop update clause moving the counter in the right direction
-    'for-direction': 'error',
-
-    // Enforce `return` statements in getters
-    'getter-return': ['error', { allowImplicit: true }],
-
-    // Disallow using an async function as a Promise executor
-    'no-async-promise-executor': 'error',
-
     // Disallow `await` inside of loops
     'no-await-in-loop': 'error',
-
-    // Disallow reassigning class members
-    'no-class-assign': 'error',
-
-    // Disallow comparing against -0
-    'no-compare-neg-zero': 'error',
-
-    // Disallow assignment operators in conditional expressions
-    'no-cond-assign': ['error', 'always'],
-
-    // Disallow reassigning `const` variables
-    'no-const-assign': 'error',
-
-    // Disallow expressions where the operation doesn’t affect the value
-    'no-constant-binary-expression': 'error',
-
-    // Disallow constant expressions in conditions
-    'no-constant-condition': ['warn', { checkLoops: false }],
 
     // Disallow returning value from constructor
     'no-constructor-return': 'error',
 
-    // Disallow control characters in regular expressions
-    'no-control-regex': 'error',
-
-    // Disallow the use of `debugger`
-    'no-debugger': 'error',
-
-    // Disallow duplicate arguments in `function` definitions
-    'no-dupe-args': 'error',
-
-    // Disallow duplicate class members
-    'no-dupe-class-members': 'error',
-
-    // Disallow duplicate conditions in if-else-if chains
-    'no-dupe-else-if': 'error',
-
-    // Disallow duplicate keys in object literals
-    'no-dupe-keys': 'error',
-
-    // Disallow duplicate case labels
-    'no-duplicate-case': 'error',
-
     // Disallow duplicate module imports
     'no-duplicate-imports': 'off',
-
-    // Disallow empty character classes in regular expressions
-    'no-empty-character-class': 'error',
-
-    // Disallow empty destructuring patterns
-    'no-empty-pattern': 'error',
-
-    // Disallow reassigning exceptions in `catch` clauses
-    'no-ex-assign': 'error',
-
-    // Disallow fallthrough of `case` statements
-    'no-fallthrough': 'error',
-
-    // Disallow reassigning `function` declarations
-    'no-func-assign': 'error',
-
-    // Disallow assigning to imported bindings
-    'no-import-assign': 'error',
 
     // Disallow variable or `function` declarations in nested blocks
     'no-inner-declarations': 'error',
 
-    // Disallow invalid regular expression strings in `RegExp` constructors
-    'no-invalid-regexp': 'error',
-
-    // Disallow irregular whitespace
-    'no-irregular-whitespace': [
-      'error',
-      { skipStrings: true, skipRegExps: true, skipTemplates: true },
-    ],
-
-    // Disallow literal numbers that lose precision
-    'no-loss-of-precision': 'error',
-
-    // Disallow characters which are made with multiple code points in character class syntax
-    'no-misleading-character-class': 'error',
-
-    // Disallow `new` operators with global non-constructor functions
-    'no-new-native-nonconstructor': 'error',
-
-    // Disallow calling global object properties as functions
-    'no-obj-calls': 'error',
-
     // Disallow returning values from Promise executor functions
     'no-promise-executor-return': 'error',
-
-    // Disallow calling some `Object.prototype` methods directly on objects
-    'no-prototype-builtins': 'error',
-
-    // Disallow assignments where both sides are exactly the same
-    'no-self-assign': ['error', { props: true }],
 
     // Disallow comparisons where both sides are exactly the same
     'no-self-compare': 'error',
 
-    // Disallow returning values from setters
-    'no-setter-return': 'error',
-
-    // Disallow sparse arrays
-    'no-sparse-arrays': 'error',
-
     // Disallow template literal placeholder syntax in regular strings
     'no-template-curly-in-string': 'error',
-
-    // Disallow `this` / `super` before calling `super()` in constructors
-    'no-this-before-super': 'error',
-
-    // Disallow the use of undeclared variables unless mentioned in `/*global */` comments
-    'no-undef': ['error', { typeof: true }],
-
-    // Disallow confusing multiline expressions
-    'no-unexpected-multiline': 'off',
 
     // Disallow unmodified loop conditions
     'no-unmodified-loop-condition': 'off',
 
-    // Disallow unreachable code after `return` , `throw` , `continue` , and `break` statements
-    'no-unreachable': 'error',
-
     // Disallow loops with a body that allows only one iteration
     'no-unreachable-loop': 'error',
 
-    // Disallow control flow statements in `finally` blocks
-    'no-unsafe-finally': 'error',
-
-    // Disallow negating the left operand of relational operators
-    'no-unsafe-negation': 'error',
-
-    // Disallow use of optional chaining in contexts where the `undefined` value is not allowed
-    'no-unsafe-optional-chaining': [
-      'error',
-      { disallowArithmeticOperators: true },
-    ],
-
-    // Disallow unused private class members
-    'no-unused-private-class-members': 'error',
-
-    // Disallow unused variables
-    'no-unused-vars': [
-      'error',
-      { vars: 'all', args: 'after-used', ignoreRestSiblings: true },
-    ],
-
     // Disallow the use of variables before they are defined
-    'no-use-before-define': ['error', { functions: false, classes: true }],
+    'no-use-before-define': ['error', { functions: false }],
 
     // Disallow variable assignments when the value is not used
     'no-useless-assignment': 'error',
 
-    // Disallow useless backreferences in regular expressions
-    'no-useless-backreference': 'error',
-
     // Disallow assignments that can lead to race conditions due to usage of `await` or `yield`
     'require-atomic-updates': 'off',
-
-    // Require calls to `isNaN()` when checking for `NaN`
-    'use-isnan': 'error',
-
-    // Enforce comparing `typeof` expressions against valid strings
-    'valid-typeof': ['error', { requireStringLiterals: true }],
 
     // ---------------------------------------------------------------------------
     // Suggestions
@@ -216,7 +75,7 @@ module.exports = {
     'block-scoped-var': 'error',
 
     // Enforce camelcase naming convention
-    camelcase: ['error', { properties: 'never', ignoreDestructuring: false }],
+    camelcase: ['error', { properties: 'never' }],
 
     // Enforce or disallow capitalization of the first letter of a comment
     'capitalized-comments': 'off',
@@ -234,7 +93,7 @@ module.exports = {
     'consistent-this': 'off',
 
     // Enforce consistent brace style for all control statements
-    curly: ['error', 'all'],
+    curly: 'error',
 
     // Require `default` cases in `switch` statements
     'default-case': 'error',
@@ -246,20 +105,13 @@ module.exports = {
     'default-param-last': 'error',
 
     // Enforce dot notation whenever possible
-    'dot-notation': [
-      'error',
-      { allowKeywords: true, allowPattern: '^[a-z]+(_[a-z]+)+$' },
-    ],
+    'dot-notation': ['error', { allowPattern: '^[a-z]+(_[a-z]+)+$' }],
 
     // Require the use of `===` and `!==`
     eqeqeq: ['error', 'always', { null: 'ignore' }],
 
     // Require function names to match the name of the variable or property to which they are assigned
-    'func-name-matching': [
-      'error',
-      'always',
-      { includeCommonJSModuleExports: false },
-    ],
+    'func-name-matching': 'error',
 
     // Require or disallow named `function` expressions
     'func-names': 'off',
@@ -310,7 +162,7 @@ module.exports = {
     'max-statements': 'off',
 
     // Require constructor names to begin with a capital letter
-    'new-cap': ['error', { newIsCap: true }],
+    'new-cap': 'error',
 
     // Disallow the use of `alert` , `confirm` , and `prompt`
     'no-alert': 'warn',
@@ -324,17 +176,11 @@ module.exports = {
     // Disallow the use of `arguments.caller` or `arguments.callee`
     'no-caller': 'error',
 
-    // Disallow lexical declarations in case clauses
-    'no-case-declarations': 'error',
-
     // Disallow the use of `console`
     'no-console': 'off',
 
     // Disallow `continue` statements
     'no-continue': 'error',
-
-    // Disallow deleting variables
-    'no-delete-var': 'error',
 
     // Disallow equal signs explicitly at the beginning of regular expressions
     'no-div-regex': 'off',
@@ -342,14 +188,8 @@ module.exports = {
     // Disallow `else` blocks after `return` statements in `if` statements
     'no-else-return': ['error', { allowElseIf: false }],
 
-    // Disallow empty block statements
-    'no-empty': 'error',
-
     // Disallow empty functions
     'no-empty-function': 'error',
-
-    // Disallow empty static blocks
-    'no-empty-static-block': 'error',
 
     // Disallow `null` comparisons without type-checking operators
     'no-eq-null': 'off',
@@ -363,14 +203,8 @@ module.exports = {
     // Disallow unnecessary calls to `.bind()`
     'no-extra-bind': 'error',
 
-    // Disallow unnecessary boolean casts
-    'no-extra-boolean-cast': ['error', { enforceForLogicalOperands: true }],
-
     // Disallow unnecessary labels
     'no-extra-label': 'error',
-
-    // Disallow assignments to native objects or read-only global variables
-    'no-global-assign': 'error',
 
     // Disallow shorthand type conversions
     'no-implicit-coercion': 'off',
@@ -429,14 +263,8 @@ module.exports = {
     // Disallow `new` operators with the `String` , `Number` , and `Boolean` objects
     'no-new-wrappers': 'error',
 
-    // Disallow `&amp;#92;8` and `&amp;#92;9` escape sequences in string literals
-    'no-nonoctal-decimal-escape': 'error',
-
     // Disallow calls to the `Object` constructor without an argument
     'no-object-constructor': 'error',
-
-    // Disallow octal literals
-    'no-octal': 'error',
 
     // Disallow octal escape sequences in string literals
     'no-octal-escape': 'error',
@@ -470,12 +298,6 @@ module.exports = {
 
     // Disallow the use of the `__proto__` property
     'no-proto': 'error',
-
-    // Disallow variable redeclaration
-    'no-redeclare': 'error',
-
-    // Disallow multiple spaces in regular expressions
-    'no-regex-spaces': 'error',
 
     // Disallow specified names in exports
     'no-restricted-exports': [
@@ -515,9 +337,6 @@ module.exports = {
     // Disallow variable declarations from shadowing variables declared in the outer scope
     'no-shadow': 'error',
 
-    // Disallow identifiers from shadowing restricted names
-    'no-shadow-restricted-names': 'error',
-
     // Disallow ternary operators
     'no-ternary': 'off',
 
@@ -540,35 +359,19 @@ module.exports = {
     'no-unneeded-ternary': ['error', { defaultAssignment: false }],
 
     // Disallow unused expressions
-    'no-unused-expressions': [
-      'error',
-      {
-        allowShortCircuit: false,
-        allowTernary: false,
-        allowTaggedTemplates: false,
-      },
-    ],
-
-    // Disallow unused labels
-    'no-unused-labels': 'error',
+    'no-unused-expressions': 'error',
 
     // Disallow unnecessary calls to `.call()` and `.apply()`
     'no-useless-call': 'off',
 
-    // Disallow unnecessary `catch` clauses
-    'no-useless-catch': 'error',
-
     // Disallow unnecessary computed property keys in objects and classes
-    'no-useless-computed-key': ['error', { enforceForClassMembers: true }],
+    'no-useless-computed-key': 'error',
 
     // Disallow unnecessary concatenation of literals or template literals
     'no-useless-concat': 'error',
 
     // Disallow unnecessary constructors
     'no-useless-constructor': 'error',
-
-    // Disallow unnecessary escape characters
-    'no-useless-escape': 'error',
 
     // Disallow renaming import, export, and destructured assignments to the same name
     'no-useless-rename': 'error',
@@ -585,9 +388,6 @@ module.exports = {
     // Disallow specified warning terms in comments
     'no-warning-comments': 'off',
 
-    // Disallow `with` statements
-    'no-with': 'error',
-
     // Require or disallow method and property shorthand syntax for object literals
     'object-shorthand': [
       'error',
@@ -603,7 +403,7 @@ module.exports = {
     'one-var': ['error', { uninitialized: 'always', initialized: 'never' }],
 
     // Require or disallow assignment operator shorthand where possible
-    'operator-assignment': ['error', 'always'],
+    'operator-assignment': 'error',
 
     // Require using arrow functions for callbacks
     'prefer-arrow-callback': 'off',
@@ -612,11 +412,7 @@ module.exports = {
     'prefer-const': ['error', { ignoreReadBeforeAssign: true }],
 
     // Require destructuring from arrays and/or objects
-    'prefer-destructuring': [
-      'error',
-      { array: false, object: true },
-      { enforceForRenamedProperties: false },
-    ],
+    'prefer-destructuring': ['error', { array: false, object: true }],
 
     // Disallow the use of `Math.pow` in favor of the `**` operator
     'prefer-exponentiation-operator': 'error',
@@ -657,9 +453,6 @@ module.exports = {
     // Enforce the use of `u` or `v` flag on regular expressions
     'require-unicode-regexp': 'off',
 
-    // Require generator functions to contain `yield`
-    'require-yield': 'error',
-
     // Enforce sorted import declarations within modules
     'sort-imports': 'off',
 
@@ -670,7 +463,7 @@ module.exports = {
     'sort-vars': 'off',
 
     // Require or disallow strict mode directives
-    strict: ['error', 'safe'],
+    strict: 'error',
 
     // Require symbol descriptions
     'symbol-description': 'error',
