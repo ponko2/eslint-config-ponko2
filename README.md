@@ -9,10 +9,10 @@
 
 Base + Node.js + Browser
 
-```json
-{
-  "extends": "ponko2"
-}
+```js
+const ponko2 = require('eslint-config-ponko2');
+
+module.exports = [ponko2];
 ```
 
 ### eslint-config-ponko2/node
@@ -20,21 +20,22 @@ Base + Node.js + Browser
 Base + Node.js
 
 ```sh
-$ npm install --save-dev eslint-plugin-node
+$ npm install --save-dev eslint-plugin-n
 ```
 
-```json
-{
-  "extends": ["ponko2/node", "plugin:node/recommended"]
-}
+```js
+const n = require('eslint-plugin-n');
+const ponko2 = require('eslint-config-ponko2/node');
+
+module.exports = [n.configs['flat/recommended-script'], ponko2];
 ```
 
 ### eslint-config-ponko2/browser
 
 Base + Browser
 
-```json
-{
-  "extends": "ponko2/browser"
-}
+```js
+const ponko2 = require('eslint-config-ponko2/browser');
+
+module.exports = [ponko2];
 ```
