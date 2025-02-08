@@ -1,6 +1,7 @@
-const { ESLint } = require('eslint');
-const eslintrc = require('../');
-const getRuleFinder = require('eslint-find-rules');
+import getRuleFinder from 'eslint-find-rules';
+import { FlatESLint } from 'eslint/use-at-your-own-risk';
+import { beforeEach, describe, expect, it } from 'vitest';
+import baseConfig from '.';
 
 const validCode = `const message = "Hello, World!";
 
@@ -16,13 +17,9 @@ if (message !== "") {
 }
 `;
 
-const eslint = new ESLint({
-  useEslintrc: false,
-  baseConfig: eslintrc,
+const eslint = new FlatESLint({
+  baseConfig,
   overrideConfig: {
-    env: {
-      browser: true,
-    },
     rules: {
       'no-console': 'off',
     },
@@ -67,34 +64,46 @@ describe('a warning with invalid code', () => {
 
 describe('unused rules', () => {
   it('browser', async () => {
-    const ruleFinder = await getRuleFinder('./browser.js');
+    const ruleFinder = await getRuleFinder('./browser.js', {
+      useFlatConfig: true,
+    });
     expect(ruleFinder.getUnusedRules()).toHaveLength(0);
   });
 
   it('index', async () => {
-    const ruleFinder = await getRuleFinder('./index.js');
+    const ruleFinder = await getRuleFinder('./index.js', {
+      useFlatConfig: true,
+    });
     expect(ruleFinder.getUnusedRules()).toHaveLength(0);
   });
 
   it('node', async () => {
-    const ruleFinder = await getRuleFinder('./node.js');
+    const ruleFinder = await getRuleFinder('./node.js', {
+      useFlatConfig: true,
+    });
     expect(ruleFinder.getUnusedRules()).toHaveLength(0);
   });
 });
 
 describe('deprecated rules', () => {
   it('browser', async () => {
-    const ruleFinder = await getRuleFinder('./browser.js');
+    const ruleFinder = await getRuleFinder('./browser.js', {
+      useFlatConfig: true,
+    });
     expect(ruleFinder.getDeprecatedRules()).toHaveLength(0);
   });
 
   it('index', async () => {
-    const ruleFinder = await getRuleFinder('./index.js');
+    const ruleFinder = await getRuleFinder('./index.js', {
+      useFlatConfig: true,
+    });
     expect(ruleFinder.getDeprecatedRules()).toHaveLength(0);
   });
 
   it('node', async () => {
-    const ruleFinder = await getRuleFinder('./node.js');
+    const ruleFinder = await getRuleFinder('./node.js', {
+      useFlatConfig: true,
+    });
     expect(ruleFinder.getDeprecatedRules()).toHaveLength(0);
   });
 });

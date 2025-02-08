@@ -1,8 +1,13 @@
 'use strict';
 
+const globals = require('globals');
+
+/** @type {import("eslint").Linter.Config} */
 module.exports = {
-  env: {
-    es2024: true,
+  languageOptions: {
+    globals: {
+      ...globals.es2025,
+    },
   },
   rules: {
     // ---------------------------------------------------------------------------

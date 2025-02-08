@@ -1,16 +1,17 @@
 'use strict';
 
+const globals = require('globals');
+const base = require('./base');
+
+/** @type {import("eslint").Linter.Config} */
 module.exports = {
-  extends: ['./base'].map(require.resolve),
-  env: {
-    browser: true,
-    node: false,
-  },
-  parserOptions: {
+  ...base,
+  languageOptions: {
+    ...base.languageOptions,
     sourceType: 'script',
-    ecmaFeatures: {
-      impliedStrict: false,
+    globals: {
+      ...base.languageOptions?.globals,
+      ...globals.browser,
     },
   },
-  rules: {},
 };
