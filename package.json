@@ -7,7 +7,7 @@
     "globals": "^16.0.0"
   },
   "devDependencies": {
-    "@vitest/eslint-plugin": "^1.1.39",
+    "@vitest/eslint-plugin": "^1.1.42",
     "cross-env": "^7.0.3",
     "eslint": "^9.20.0",
     "eslint-config-prettier": "^10.1.2",
