@@ -38,10 +38,10 @@
     "url": "https://github.com/ponko2/eslint-config-ponko2.git"
   },
   "scripts": {
-    "eslint-check": "run-p eslint-check:**",
-    "eslint-check:browser": "eslint-config-prettier browser.js",
-    "eslint-check:index": "eslint-config-prettier index.js",
-    "eslint-check:node": "eslint-config-prettier node.js",
+    "check": "run-p check:**",
+    "check:browser": "eslint-config-prettier browser.js",
+    "check:index": "eslint-config-prettier index.js",
+    "check:node": "eslint-config-prettier node.js",
     "fix": "run-s fix:eslint fix:prettier",
     "fix:eslint": "npm run lint:eslint -- --fix",
     "fix:prettier": "npm run lint:prettier -- --write",
