@@ -8,7 +8,7 @@ permissions: {}
 jobs:
   required:
     name: "Required Checks: Test"
-    if: always()
+    if: ${{ always() }}
     needs:
       - actionlint
       - changed-files
@@ -37,7 +37,7 @@ jobs:
             echo "results=${results}"
           } | tee -a "$GITHUB_OUTPUT"
       - name: Check for failed status
-        if: always() && steps.status.outputs.result != 'success'
+        if: ${{ always() && steps.status.outputs.result != 'success' }}
         run: |
           echo "One or more required build workflows failed: ${{ steps.status.outputs.results }}"
           exit 1
