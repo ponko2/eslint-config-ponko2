@@ -18,6 +18,7 @@ jobs:
       - ghalint
       - prettier
       - test
+      - triggering-actor
       - yamllint
       - zizmor
     runs-on: ubuntu-latest
@@ -41,8 +42,17 @@ jobs:
         run: |
           echo "One or more required build workflows failed: ${{ steps.status.outputs.results }}"
           exit 1
+  triggering-actor:
+    name: Validate triggering actor
+    runs-on: ubuntu-latest
+    timeout-minutes: 60
+    steps:
+      - name: Fail if the triggering actor is a bot
+        if: ${{ endsWith(github.triggering_actor, '[bot]') }}
+        run: exit 1
   changed-files:
     name: Get changed files
+    needs: triggering-actor
     runs-on: ubuntu-latest
     timeout-minutes: 60
     outputs:
@@ -90,7 +100,9 @@ jobs:
   actionlint:
     name: actionlint
     if: ${{ needs.changed-files.outputs.workflows == 'true' }}
-    needs: changed-files
+    needs:
+      - changed-files
+      - triggering-actor
     runs-on: ubuntu-latest
     timeout-minutes: 60
     permissions:
@@ -107,7 +119,9 @@ jobs:
   check:
     name: Check
     if: ${{ needs.changed-files.outputs.config == 'true' }}
-    needs: changed-files
+    needs:
+      - changed-files
+      - triggering-actor
     runs-on: ubuntu-latest
     timeout-minutes: 60
     permissions:
@@ -125,6 +139,7 @@ jobs:
       - run: npm run check
   editorconfig:
     name: EditorConfig
+    needs: triggering-actor
     runs-on: ubuntu-latest
     timeout-minutes: 60
     permissions:
@@ -138,7 +153,9 @@ jobs:
   eslint:
     name: ESLint
     if: ${{ needs.changed-files.outputs.eslint == 'true' }}
-    needs: changed-files
+    needs:
+      - changed-files
+      - triggering-actor
     runs-on: ubuntu-latest
     timeout-minutes: 60
     permissions:
@@ -163,7 +180,9 @@ jobs:
   ghalint:
     name: ghalint
     if: ${{ needs.changed-files.outputs.workflows == 'true' }}
-    needs: changed-files
+    needs:
+      - changed-files
+      - triggering-actor
     runs-on: ubuntu-latest
     timeout-minutes: 60
     permissions:
@@ -186,7 +205,9 @@ jobs:
   prettier:
     name: Prettier
     if: ${{ needs.changed-files.outputs.prettier == 'true' }}
-    needs: changed-files
+    needs:
+      - changed-files
+      - triggering-actor
     runs-on: ubuntu-latest
     timeout-minutes: 60
     permissions:
@@ -215,7 +236,9 @@ jobs:
   test:
     name: Test
     if: ${{ needs.changed-files.outputs.config == 'true' }}
-    needs: changed-files
+    needs:
+      - changed-files
+      - triggering-actor
     runs-on: ubuntu-latest
     timeout-minutes: 60
     permissions:
@@ -239,7 +262,9 @@ jobs:
   yamllint:
     name: yamllint
     if: ${{ needs.changed-files.outputs.yamllint == 'true' }}
-    needs: changed-files
+    needs:
+      - changed-files
+      - triggering-actor
     runs-on: ubuntu-latest
     timeout-minutes: 60
     permissions:
@@ -256,7 +281,9 @@ jobs:
   zizmor:
     name: zizmor
     if: ${{ needs.changed-files.outputs.workflows == 'true' }}
-    needs: changed-files
+    needs:
+      - changed-files
+      - triggering-actor
     runs-on: ubuntu-latest
     timeout-minutes: 60
     permissions:
