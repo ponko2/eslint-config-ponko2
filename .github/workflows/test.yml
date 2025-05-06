@@ -48,7 +48,10 @@ jobs:
     timeout-minutes: 60
     steps:
       - name: Fail if the triggering actor is a bot
-        if: ${{ endsWith(github.triggering_actor, '[bot]') }}
+        if: ${{ github.event_name == 'pull_request' &&
+          endsWith(github.triggering_actor, '[bot]') &&
+          contains(github.event.pull_request.labels.*.name, 'dependencies') &&
+          contains(github.event.pull_request.labels.*.name, 'github_actions') }}
         run: exit 1
   changed-files:
     name: Get changed files
