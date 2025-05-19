@@ -14,7 +14,7 @@
     "eslint-find-rules": "5.0.0",
     "husky": "9.1.7",
     "lint-staged": "16.0.0",
-    "npm-run-all2": "8.0.1",
+    "npm-run-all2": "8.0.2",
     "prettier": "3.5.3",
     "vitest": "3.1.3"
   },
@@ -38,7 +38,7 @@
     "url": "https://github.com/ponko2/eslint-config-ponko2.git"
   },
   "scripts": {
-    "check": "run-p check:**",
+    "check": "run-p check:*",
     "check:browser": "eslint-config-prettier browser.js",
     "check:index": "eslint-config-prettier index.js",
     "check:node": "eslint-config-prettier node.js",
