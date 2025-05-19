@@ -200,16 +200,8 @@ jobs:
           cache: npm
       - name: Install dependencies
         run: npm ci
-      - run: npx prettier --write .
-      - uses: reviewdog/action-setup@e04ffabe3898a0af8d0fb1af00c188831c4b5893 # v1.3.2
-      - name: Run reviewdog
-        env:
-          REVIEWDOG_GITHUB_API_TOKEN: ${{ secrets.GITHUB_TOKEN }}
-        run: |
-          TMPFILE=$(mktemp)
-          git diff >"${TMPFILE}"
-          { git stash -u && git stash drop; } || true
-          reviewdog -f=diff -fail-level=error -filter-mode=nofilter -name=Prettier -reporter=github-pr-annotations <"${TMPFILE}"
+      - name: Run Prettier
+        run: npm run lint:prettier
   test:
     name: Test
     if: ${{ needs.changed-files.outputs.config == 'true' }}
