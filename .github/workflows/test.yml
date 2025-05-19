@@ -175,12 +175,10 @@ jobs:
           cache: npm
       - name: Install dependencies
         run: npm ci
-      - uses: reviewdog/action-eslint@2fee6dd72a5419ff4113f694e2068d2a03bb35dd # v1.33.2
-        with:
-          fail_level: error
-          filter_mode: nofilter
-          reporter: github-pr-annotations
-          tool_name: ESLint
+      - name: Add problem matchers
+        run: echo "::add-matcher::.github/eslint-matcher.json"
+      - name: Run ESLint
+        run: npm run lint:eslint
   prettier:
     name: Prettier
     if: ${{ needs.changed-files.outputs.prettier == 'true' }}
@@ -206,7 +204,7 @@ jobs:
       - uses: reviewdog/action-setup@e04ffabe3898a0af8d0fb1af00c188831c4b5893 # v1.3.2
       - name: Run reviewdog
         env:
-          REVIEWDOG_GITHUB_API_TOKEN: ${{ github.token }}
+          REVIEWDOG_GITHUB_API_TOKEN: ${{ secrets.GITHUB_TOKEN }}
         run: |
           TMPFILE=$(mktemp)
           git diff >"${TMPFILE}"
@@ -252,11 +250,8 @@ jobs:
       - uses: actions/checkout@11bd71901bbe5b1630ceea73d27597364c9af683 # v4.2.2
         with:
           persist-credentials: false
-      - uses: reviewdog/action-yamllint@f01d8a48fd8d89f89895499fca2cff09f9e9e8c0 # v1.21.0
-        with:
-          fail_level: error
-          filter_mode: nofilter
-          reporter: github-pr-annotations
+      - name: Run yamllint
+        run: yamllint --format=github --strict .
   zizmor:
     name: zizmor
     if: ${{ needs.changed-files.outputs.workflows == 'true' }}
@@ -274,6 +269,6 @@ jobs:
       - name: Run zizmor
         uses: docker://ghcr.io/zizmorcore/zizmor:1.7.0@sha256:05a722e7c356725b7d7ea9c563871fe0afe511e5d7c114e14f4b07a196e5b022
         env:
-          GH_TOKEN: ${{ github.token }}
+          GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
         with:
           args: -p --format=github --min-severity=low .github/workflows
