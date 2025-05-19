@@ -45,6 +45,9 @@ module.exports = {
     // Disallow template literal placeholder syntax in regular strings
     'no-template-curly-in-string': 'error',
 
+    // Disallow `let` or `var` variables that are read but never assigned
+    'no-unassigned-vars': 'error',
+
     // Disallow unmodified loop conditions
     'no-unmodified-loop-condition': 'off',
 
