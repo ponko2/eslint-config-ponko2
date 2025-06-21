@@ -81,15 +81,15 @@ jobs:
               - ".github/workflows/*.{yaml,yml}"
             eslint:
               - *config
-              - "**.{cjs,js,mjs}"
+              - "**/*.{cjs,js,mjs}"
               - eslint.config.*
             prettier:
               - *config
-              - "**.{cjs,js,json,md,mjs,yaml,yml}"
+              - "**/*.{cjs,js,json,md,mjs,yaml,yml}"
               - prettier.config.*
             yamllint:
               - *common
-              - "**.{yaml,yml}"
+              - "**/*.{yaml,yml}"
   actionlint:
     name: actionlint
     if: ${{ needs.changed-files.outputs.actions == 'true' }}
