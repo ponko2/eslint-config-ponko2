@@ -8,7 +8,7 @@
   },
   "devDependencies": {
     "@vitest/eslint-plugin": "1.3.4",
-    "cross-env": "7.0.3",
+    "cross-env": "10.0.0",
     "eslint": "9.32.0",
     "eslint-config-prettier": "10.1.8",
     "eslint-find-rules": "5.0.0",
