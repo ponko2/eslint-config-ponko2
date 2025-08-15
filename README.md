@@ -2,6 +2,7 @@
 
 [![npm version](https://badge.fury.io/js/eslint-config-ponko2.svg)](https://badge.fury.io/js/eslint-config-ponko2)
 [![CI](https://github.com/ponko2/eslint-config-ponko2/actions/workflows/ci.yml/badge.svg)](https://github.com/ponko2/eslint-config-ponko2/actions/workflows/ci.yml)
+[![CodeQL](https://github.com/ponko2/eslint-config-ponko2/actions/workflows/github-code-scanning/codeql/badge.svg)](https://github.com/ponko2/eslint-config-ponko2/actions/workflows/github-code-scanning/codeql)
 
 ## Usage
 
