@@ -447,6 +447,9 @@ module.exports = {
     // Require template literals instead of string concatenation
     'prefer-template': 'error',
 
+    // Disallow losing originally caught error when re-throwing custom errors
+    'preserve-caught-error': 'error',
+
     // Enforce the consistent use of the radix argument when using `parseInt()`
     radix: 'error',
 
