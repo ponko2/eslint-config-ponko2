@@ -68,8 +68,8 @@ jobs:
             common: &common
               - .github/workflows/ci.yml
             dependencies: &dependencies
-              - package-lock.json
               - package.json
+              - pnpm-lock.yaml
             config: &config
               - *common
               - *dependencies
@@ -153,13 +153,14 @@ jobs:
         uses: actions/checkout@08c6903cd8c0fde910a37f88322edcfb5dd907a8 # v5.0.0
         with:
           persist-credentials: false
+      - name: Set up pnpm
+        uses: pnpm/action-setup@a7487c7e89a18df4991f7f222e4898a00d66ddda # v4.1.0
       - name: Set up Node.js
         uses: actions/setup-node@a0853c24544627f65ddf259abe73b1d18a591444 # v5.0.0
         with:
           node-version: lts/*
-          cache: npm
-      - run: npm ci
-      - run: npm run check
+      - run: pnpm install
+      - run: pnpm run check
   editorconfig:
     name: EditorConfig
     needs: verify-author
@@ -188,17 +189,18 @@ jobs:
         uses: actions/checkout@08c6903cd8c0fde910a37f88322edcfb5dd907a8 # v5.0.0
         with:
           persist-credentials: false
+      - name: Set up pnpm
+        uses: pnpm/action-setup@a7487c7e89a18df4991f7f222e4898a00d66ddda # v4.1.0
       - name: Set up Node.js
         uses: actions/setup-node@a0853c24544627f65ddf259abe73b1d18a591444 # v5.0.0
         with:
           node-version: lts/*
-          cache: npm
       - name: Install dependencies
-        run: npm ci
+        run: pnpm install
       - name: Add problem matchers
         run: echo "::add-matcher::.github/eslint-matcher.json"
       - name: Run ESLint
-        run: npm run lint:eslint
+        run: pnpm run lint:eslint
   prettier:
     name: Prettier
     if: ${{ always() && !failure() && !cancelled() &&
@@ -213,15 +215,16 @@ jobs:
         uses: actions/checkout@08c6903cd8c0fde910a37f88322edcfb5dd907a8 # v5.0.0
         with:
           persist-credentials: false
+      - name: Set up pnpm
+        uses: pnpm/action-setup@a7487c7e89a18df4991f7f222e4898a00d66ddda # v4.1.0
       - name: Set up Node.js
         uses: actions/setup-node@a0853c24544627f65ddf259abe73b1d18a591444 # v5.0.0
         with:
           node-version: lts/*
-          cache: npm
       - name: Install dependencies
-        run: npm ci
+        run: pnpm install
       - name: Run Prettier
-        run: npm run lint:prettier
+        run: pnpm run lint:prettier
   test:
     name: Test
     if: ${{ always() && !failure() && !cancelled() &&
@@ -241,13 +244,14 @@ jobs:
         uses: actions/checkout@08c6903cd8c0fde910a37f88322edcfb5dd907a8 # v5.0.0
         with:
           persist-credentials: false
+      - name: Set up pnpm
+        uses: pnpm/action-setup@a7487c7e89a18df4991f7f222e4898a00d66ddda # v4.1.0
       - name: Set up Node.js ${{ matrix.node-version }}
         uses: actions/setup-node@a0853c24544627f65ddf259abe73b1d18a591444 # v5.0.0
         with:
           node-version: ${{ matrix.node-version }}
-          cache: npm
-      - run: npm ci
-      - run: npm test
+      - run: pnpm install
+      - run: pnpm test
   yamllint:
     name: yamllint
     if: ${{ always() && !failure() && !cancelled() &&

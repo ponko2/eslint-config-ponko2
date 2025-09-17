@@ -30,6 +30,7 @@
   ],
   "license": "MIT",
   "main": "index.js",
+  "packageManager": "pnpm@10.16.1",
   "peerDependencies": {
     "eslint": "^9.35.0"
   },
@@ -43,8 +44,8 @@
     "check:index": "eslint-config-prettier index.js",
     "check:node": "eslint-config-prettier node.js",
     "fix": "run-s fix:eslint fix:prettier",
-    "fix:eslint": "npm run lint:eslint -- --fix",
-    "fix:prettier": "npm run lint:prettier -- --write",
+    "fix:eslint": "pnpm run lint:eslint -- --fix",
+    "fix:prettier": "pnpm run lint:prettier -- --write",
     "lint": "run-p --aggregate-output -c -l lint:*",
     "lint:eslint": "eslint . --report-unused-disable-directives",
     "lint:prettier": "prettier . --check",
