@@ -44,11 +44,11 @@
     "check:index": "eslint-config-prettier index.js",
     "check:node": "eslint-config-prettier node.js",
     "fix": "run-s fix:eslint fix:prettier",
-    "fix:eslint": "pnpm run lint:eslint -- --fix",
-    "fix:prettier": "pnpm run lint:prettier -- --write",
+    "fix:eslint": "eslint --fix --report-unused-disable-directives .",
+    "fix:prettier": "prettier --write .",
     "lint": "run-p --aggregate-output -c -l lint:*",
-    "lint:eslint": "eslint . --report-unused-disable-directives",
-    "lint:prettier": "prettier . --check",
+    "lint:eslint": "eslint --report-unused-disable-directives .",
+    "lint:prettier": "prettier --check .",
     "prepare": "node .husky/install.mjs",
     "test": "cross-env ESLINT_CONFIG_PRETTIER_NO_DEPRECATED=true vitest"
   }
