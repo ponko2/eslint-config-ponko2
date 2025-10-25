@@ -16,7 +16,7 @@
     "lint-staged": "16.2.5",
     "npm-run-all2": "8.0.4",
     "prettier": "3.6.2",
-    "vitest": "3.2.4"
+    "vitest": "4.0.1"
   },
   "files": [
     "base.js",
