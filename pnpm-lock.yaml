@@ -9,7 +9,7 @@ importers:
   .:
     dependencies:
       globals:
-        specifier: ^16.4.0
+        specifier: ^16.5.0
         version: 16.5.0
     devDependencies:
       '@vitest/eslint-plugin':
