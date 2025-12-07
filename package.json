@@ -18,6 +18,13 @@
     "prettier": "3.7.4",
     "vitest": "4.0.15"
   },
+  "devEngines": {
+    "runtime": {
+      "name": "node",
+      "version": "^24.11.1",
+      "onFail": "download"
+    }
+  },
   "files": [
     "base.js",
     "browser.js",
