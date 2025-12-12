@@ -37,7 +37,7 @@
   ],
   "license": "MIT",
   "main": "index.js",
-  "packageManager": "pnpm@10.24.0",
+  "packageManager": "pnpm@10.25.0",
   "peerDependencies": {
     "eslint": "^9.39.1"
   },
