@@ -9,7 +9,7 @@
   "devDependencies": {
     "@vitest/eslint-plugin": "1.5.2",
     "cross-env": "10.1.0",
-    "eslint": "9.39.1",
+    "eslint": "9.39.2",
     "eslint-config-prettier": "10.1.8",
     "eslint-find-rules": "5.0.0",
     "husky": "9.1.7",
@@ -39,7 +39,7 @@
   "main": "index.js",
   "packageManager": "pnpm@10.25.0",
   "peerDependencies": {
-    "eslint": "^9.39.1"
+    "eslint": "^9.39.2"
   },
   "repository": {
     "type": "git",
