@@ -27,7 +27,7 @@
           '';
         in
         {
-          devShells.default = pkgs.mkShell {
+          devShells.default = pkgs.mkShellNoCC {
             packages = with pkgs; [
               nodejs
               pnpm
