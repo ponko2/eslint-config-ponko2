@@ -1,3 +1,7 @@
-minimumReleaseAge: 1440
 ignoredBuiltDependencies:
   - esbuild
+
+minimumReleaseAge: 1440
+
+onlyBuiltDependencies:
+  - lefthook

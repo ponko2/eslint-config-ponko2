@@ -12,8 +12,7 @@
     "eslint": "9.39.2",
     "eslint-config-prettier": "10.1.8",
     "eslint-find-rules": "5.0.0",
-    "husky": "9.1.7",
-    "lint-staged": "16.2.7",
+    "lefthook": "2.0.13",
     "npm-run-all2": "8.0.4",
     "prettier": "3.7.4",
     "vitest": "4.0.16"
@@ -56,7 +55,6 @@
     "lint": "run-p --aggregate-output -c -l lint:*",
     "lint:eslint": "eslint --report-unused-disable-directives .",
     "lint:prettier": "prettier --check .",
-    "prepare": "node .husky/install.mjs",
     "test": "cross-env ESLINT_CONFIG_PRETTIER_NO_DEPRECATED=true vitest"
   }
 }

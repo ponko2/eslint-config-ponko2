@@ -1,0 +1,23 @@
+pre-commit:
+  parallel: true
+  jobs:
+    - group:
+        parallel: false
+        jobs:
+          - name: ESLint
+            run: pnpm exec eslint --fix {staged_files}
+            glob: "*.{cjs,js,mjs}"
+            stage_fixed: true
+          - name: Prettier
+            run: pnpm exec prettier --write {staged_files}
+            glob: "*.{cjs,js,mjs}"
+            stage_fixed: true
+    - name: EditorConfig
+      run: editorconfig-checker {staged_files}
+    - name: Prettier
+      run: pnpm exec prettier --write {staged_files}
+      glob: "*.{json,md,yaml,yml}"
+      stage_fixed: true
+    - name: yamllint
+      run: yamllint --list-files --strict {staged_files}
+      glob: "*.{yaml,yml}"
