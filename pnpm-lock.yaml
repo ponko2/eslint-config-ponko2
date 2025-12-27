@@ -13,8 +13,8 @@ importers:
         version: 16.5.0
     devDependencies:
       '@vitest/eslint-plugin':
-        specifier: 1.6.3
-        version: 1.6.3(eslint@9.39.2)(typescript@5.9.3)(vitest@4.0.16(yaml@2.8.2))
+        specifier: 1.6.4
+        version: 1.6.4(eslint@9.39.2)(typescript@5.9.3)(vitest@4.0.16(yaml@2.8.2))
       cross-env:
         specifier: 10.1.0
         version: 10.1.0
@@ -437,8 +437,8 @@ packages:
     resolution: {integrity: sha512-Xzmnb58+Db78gT/CCj/PVCvK+zxbnsw6F+O1oheYszJbBSdEjVhQi3C/Xttzxgi/GLmpvOggRs1RFpiJ8+c34Q==}
     engines: {node: ^18.18.0 || ^20.9.0 || >=21.1.0}
 
-  '@vitest/eslint-plugin@1.6.3':
-    resolution: {integrity: sha512-2h4GQ113DR2KGQkZyXXXyKpAv9L130YCe/0be44VeSUsYXdh9XGt0+snCPTijNxG0vJo0YDrdFvpY1bOUfx5ng==}
+  '@vitest/eslint-plugin@1.6.4':
+    resolution: {integrity: sha512-+qw32ux8HMVNrJnQOYgdjrMYmCn9vsiKnJUv5MoOg40e18WOvhWurzHdbRB3vXLfUrP7+jYyQbd6TuRhL23AkQ==}
     engines: {node: '>=18'}
     peerDependencies:
       eslint: '>=8.57.0'
@@ -1598,7 +1598,7 @@ snapshots:
       '@typescript-eslint/types': 8.50.0
       eslint-visitor-keys: 4.2.1
 
-  '@vitest/eslint-plugin@1.6.3(eslint@9.39.2)(typescript@5.9.3)(vitest@4.0.16(yaml@2.8.2))':
+  '@vitest/eslint-plugin@1.6.4(eslint@9.39.2)(typescript@5.9.3)(vitest@4.0.16(yaml@2.8.2))':
     dependencies:
       '@typescript-eslint/scope-manager': 8.50.0
       '@typescript-eslint/utils': 8.50.0(eslint@9.39.2)(typescript@5.9.3)
