@@ -16,19 +16,14 @@
         "x86_64-linux"
       ];
       perSystem =
-        { pkgs, system, ... }:
+        { pkgs, ... }:
+        let
+          pnpm = pkgs.runCommand "pnpm" { buildInputs = [ pkgs.corepack ]; } ''
+            mkdir -p $out/bin
+            corepack enable pnpm --install-directory=$out/bin
+          '';
+        in
         {
-          _module.args.pkgs = import inputs.nixpkgs {
-            inherit system;
-            overlays = [
-              (final: _prev: {
-                pnpm = final.runCommand "pnpm" { buildInputs = [ final.corepack ]; } ''
-                  mkdir -p $out/bin
-                  corepack enable pnpm --install-directory=$out/bin
-                '';
-              })
-            ];
-          };
           devShells.default = pkgs.mkShellNoCC {
             packages = with pkgs; [
               editorconfig-checker
