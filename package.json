@@ -12,7 +12,7 @@
     "eslint": "9.39.2",
     "eslint-config-prettier": "10.1.8",
     "eslint-find-rules": "5.0.0",
-    "lefthook": "2.0.13",
+    "lefthook": "2.0.14",
     "npm-run-all2": "8.0.4",
     "prettier": "3.7.4",
     "vitest": "4.0.17"
