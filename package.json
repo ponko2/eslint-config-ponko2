@@ -14,7 +14,7 @@
     "eslint-find-rules": "5.0.0",
     "lefthook": "2.0.15",
     "npm-run-all2": "8.0.4",
-    "prettier": "3.7.4",
+    "prettier": "3.8.0",
     "vitest": "4.0.17"
   },
   "devEngines": {
