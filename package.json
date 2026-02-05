@@ -4,7 +4,7 @@
   "version": "22.0.0",
   "author": "Takahito Nakano",
   "dependencies": {
-    "globals": "^17.2.0"
+    "globals": "^17.3.0"
   },
   "devDependencies": {
     "@vitest/eslint-plugin": "1.6.6",
