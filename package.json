@@ -4,6 +4,7 @@
   "version": "22.0.0",
   "author": "Takahito Nakano",
   "dependencies": {
+    "@eslint/js": "^10.0.0",
     "globals": "^17.3.0"
   },
   "devDependencies": {
