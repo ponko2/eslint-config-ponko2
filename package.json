@@ -4,12 +4,13 @@
   "version": "22.0.0",
   "author": "Takahito Nakano",
   "dependencies": {
+    "@eslint/js": "^10.0.0",
     "globals": "^17.3.0"
   },
   "devDependencies": {
     "@vitest/eslint-plugin": "1.6.9",
     "cross-env": "10.1.0",
-    "eslint": "9.39.2",
+    "eslint": "10.0.0",
     "eslint-config-prettier": "10.1.8",
     "eslint-find-rules": "5.0.0",
     "lefthook": "2.1.1",
@@ -38,7 +39,7 @@
   "main": "index.js",
   "packageManager": "pnpm@10.29.3",
   "peerDependencies": {
-    "eslint": "^9.39.2"
+    "eslint": "^10.0.0"
   },
   "repository": {
     "type": "git",
