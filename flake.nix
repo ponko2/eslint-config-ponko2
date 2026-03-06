@@ -32,6 +32,7 @@
             ];
             shellHook = ''
               pnpm install
+              export PATH="$PWD/node_modules/.bin:$PATH"
             '';
           };
           formatter = pkgs.nixfmt-tree;
