@@ -16,7 +16,7 @@
     "lefthook": "2.1.4",
     "npm-run-all2": "8.0.4",
     "prettier": "3.8.1",
-    "vitest": "4.0.18"
+    "vitest": "4.1.0"
   },
   "devEngines": {
     "runtime": {
